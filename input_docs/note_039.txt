@@ -1,0 +1,17 @@
+Lattice - quick call with Karen
+Tom, 30 Sep, 12 min
+
+Karen called to share an update.
+
+Headline: their renewal review on 7 Oct is now reframed. Devon (procurement) has decided to use it as a vendor evaluation rather than a renewal scoping. We're being evaluated against Apex on three criteria:
+1. Price
+2. Functional capability (specifically the Salesforce integration)
+3. Reference customer feedback
+
+Karen's read: we'll lose on (1), we'll lose on (2), and we should win on (3) if we can produce the right references quickly. She suggested specifically Concorde and Helmsley as references that would carry weight given their size and tenure.
+
+I asked whether there's any framing that would change the (2) outcome. Karen said no, the integration question is binary for Devon.
+
+She wants the three reference contacts by Wednesday EOD.
+
+Plan: get Sarah on this immediately. The Concorde reference will need Aisha to make the ask given Helena Brandt is a partner-level relationship.

@@ -1,0 +1,36 @@
+Research snippet: onboarding friction across engagement portfolio
+Compiled by: Ben Markovich
+Date: 8 Oct 2026
+For: onboarding redesign workstream (see note_048)
+
+Quantitative snapshot
+
+Across 18 engagements started in the past 24 months:
+- 7 engagements (39%) had a documented onboarding-related slip of >7 days
+- 4 engagements (22%) had buyer-volunteered complaints about onboarding experience
+- 2 engagements (11%) lost time on the engagement was directly attributed to onboarding by the engagement lead in the close-out review
+
+Cumulative time impact
+
+Estimated total slipped delivery time across the 7 affected engagements: 14.5 weeks. That's roughly equivalent to 0.5 FTE of engagement-lead capacity over the 24-month period.
+
+Buyer-volunteered phrases captured
+
+A sample of how onboarding has been described by clients in their own words (across calls and emails):
+- "rocky first 8 weeks"
+- "we underestimated what we'd need to do on our side"
+- "the analyst figured it out as she went"
+- "I would have churned six months ago if the work itself wasn't valuable"
+- "one of those things nobody complains about loudly enough to fix"
+
+Pattern
+
+The friction is not about Meridian's checklist or process. The friction is the assumption that the client has an internal owner with both technical fluency and commercial context. Roughly 40% of mid-market clients do not have that person available at engagement start.
+
+Two decision pathways
+
+If we believe this is a structural mid-market segment characteristic, we should design for it (paid guided onboarding option, or pre-engagement readiness assessment, or self-serve tooling).
+
+If we believe this is a client-by-client lottery, we should treat it as engagement risk and load it into pricing rather than redesign the product.
+
+The scale of the cumulative impact suggests the first interpretation.

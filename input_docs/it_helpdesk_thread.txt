@@ -1,0 +1,16 @@
+Re: Re: Re: Vine Street network access tickets
+
+From: it-support@meridian
+To: all-staff@meridian
+Date: 7 Oct
+
+Consolidated update on the issues raised over the past 36 hours:
+
+1. WiFi credentials: new SSID is "meridian-vine", password as per Slack #general pinned message
+2. Printer setup: working on it, expect resolution by EOD
+3. VoIP for desk phones: not configured yet, use mobile or laptop client until further notice
+4. VPN issues from new IP range: ticket open with provider, no ETA
+5. The coffee machine is making noises. Please stop reporting this as an IT ticket. It is not in scope.
+
+Thanks for your patience.
+IT

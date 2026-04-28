@@ -1,0 +1,47 @@
+Meeting summary: onboarding redesign workshop (internal)
+Date: 5 Oct 2026
+Attendees: Sarah Patel (chair), Priya Singh, Tom Whitaker, Ben Markovich, Olivia Brand, two engineers (Rohit, Maja)
+Compiled by: Ben Markovich
+
+Half-day workshop. Triggered by the BridgeWave renewal conversation (note_038) and the Stellaris signal (note_042) where onboarding came up unprompted as a friction point.
+
+Diagnostic from existing accounts
+
+Five engagements in the past 18 months had visible onboarding-related issues:
+- BridgeWave: data prep blocker, 2-week slip (see note_018)
+- Stellaris: rocky first 8 weeks, recovery slow
+- Pinion (lost): never converted past discovery, partly because demo of onboarding put the buyer off
+- Northpoint: smooth start but revealed scope mismatch in week 4 that was never fully recovered
+- Helmsley: onboarding fine for the in-scope BU; complications arose only when scope crept
+
+Common pattern: our checklist assumes the client has someone allocated who can drive data prep and integration. When that person doesn't exist, the timeline slips by 2-4 weeks.
+
+What might change
+
+Three options discussed:
+
+A. Pre-engagement readiness assessment
+We add a 1-week paid readiness assessment before the engagement starts. We identify whether the client has the internal owner and necessary integrations. If not, we either help them prepare or scope the engagement around the constraint.
+
+B. Optional guided onboarding
+We offer an additional paid scope (~$15k) where one of our analysts drives the data prep work directly. Clients without internal owner can opt in.
+
+C. Self-serve onboarding tooling
+We invest in tooling that lets clients with limited technical resource self-serve through the data prep stage. Larger investment, longer payoff, but addresses the root cause.
+
+Discussion
+
+Sarah's view: we need (A) and (B) immediately, (C) is a 2027 conversation.
+
+Rohit (engineering): self-serve tooling is achievable but not in addition to the connector roadmap and the platform work. We can do one of those things, not all of them.
+
+This is the connector / platform / onboarding tooling trade-off and is now the central question for the engineering capacity discussion (see note_022).
+
+Decisions
+- Develop (A) and (B) for client pilot in November
+- (C) deferred to engineering capacity decision
+
+Action items
+- Priya: pre-engagement readiness assessment template, 18 Oct
+- Tom: guided onboarding pricing model, 18 Oct
+- Sarah: brief Aisha on the engineering trade-off, 11 Oct

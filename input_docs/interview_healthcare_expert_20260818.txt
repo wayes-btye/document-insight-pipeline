@@ -1,0 +1,98 @@
+Expert interview transcript: healthcare commercial advisory market entry
+Date: 18 Aug 2026
+Duration: 47 min
+Interviewer: Marcus Chen (Meridian)
+Expert: Dr Helen Ashworth, former VP Commercial Operations, Northwood Health Group (2018-2024), now independent advisor
+Transcription style: clean verbatim, light edits for readability
+Project ref: internal capability assessment for healthcare vertical entry
+
+[00:00] MARCUS: Thanks for making time, Helen. Just to confirm, you're OK with me recording, transcribing for internal use only?
+
+HELEN: Yes that's fine.
+
+MARCUS: Great. So the context. We're doing some internal capability assessment work, looking at whether we should build out a healthcare practice. You did six years at Northwood, you've now moved into advisory yourself. I want to draw on your view of how the buying side actually thinks about external commercial advisory in this sector.
+
+HELEN: Sure.
+
+MARCUS: So maybe to start broad, how often did Northwood actually engage external commercial strategy advisors during your time?
+
+HELEN: Hmm. Let me think. So in the first three years, basically not at all. We had an internal strategy function and the CFO was old-school about consulting spend. He'd say something like "if we don't know our own business better than someone we hired six weeks ago, we have bigger problems."
+
+[laughs]
+
+But that changed around 2021 when the M&A activity picked up. At that point we engaged, I think it was three or four firms over a two year period. Mostly transaction-related. Pricing harmonisation post-acquisition, that kind of thing.
+
+MARCUS: And were those healthcare specialists or generalists?
+
+HELEN: Mix. The first one was a healthcare specialist, name's not important. The work was good but they came in with very strong views about sector best practice that didn't always fit our specific situation. The second engagement we tried a generalist firm. McKinsey-trained alums, no particular healthcare background, but hugely intelligent. That worked better for us in some ways, worse in others.
+
+MARCUS: Worse how?
+
+HELEN: They had to spend the first six weeks coming up to speed on the regulatory environment. Things that the specialists already knew. CMS reimbursement quirks, why we structured our outpatient billing the way we did, what the JCAHO requirements actually mean operationally. We were paying junior associates on their team to learn from us.
+
+MARCUS: So the value of the specialist firm was the regulatory and operational fluency.
+
+HELEN: Yes. But this is where it gets nuanced. The first firm, the specialist, they couldn't tell us anything about commercial strategy that our internal team didn't already know. They were a sector encyclopaedia attached to a generic strategy framework. The generalist firm came in with stronger commercial frameworks but had no sector teeth.
+
+What we actually needed and never quite found was someone who was deep on commercial strategy AND had enough healthcare to not be a tourist.
+
+MARCUS: That's interesting. Was that gap a function of the market, or were you just unlucky with the firms you happened to engage?
+
+HELEN: I'd say it's a real gap. Most of the strong healthcare consulting capacity in our market is at the operations or clinical end. McKinsey and Bain and BCG do good commercial work but at price points that only system-level engagements justify. The boutique commercial advisory space, the Meridians of the world, no offence, almost universally lacks healthcare credibility.
+
+MARCUS: None taken, that's exactly the question I'm trying to get at.
+
+HELEN: Right. So if you're considering entering, the question I'd ask back is, what is your differentiated angle? Because if your answer is "we're going to do for healthcare what we do for SaaS, slightly adapted" you will struggle to win the second-meeting credibility test.
+
+MARCUS: What does that test actually look like in practice?
+
+HELEN: [pause] OK so picture this. You've had a good first call with someone like me. Good rapport, you've done your homework. We schedule a second meeting where I bring in our COO or our CMO or whoever is going to actually be the day-to-day client.
+
+The first thing they're going to do, within the first ten minutes, is test you. Not deliberately, not even consciously most of the time. They'll say something like "of course we have the usual issues with the 340B pricing" or "the no surprises act has changed how we think about this." If you blink at those references, you're done. If you can engage with them, even just with informed follow-up questions, you stay in the room.
+
+MARCUS: 340B and no surprises being...
+
+HELEN: 340B is a federal drug pricing programme that lets certain hospitals buy outpatient drugs at a discount. Hugely consequential for the financial model of any safety-net hospital. No Surprises Act is about out-of-network billing, came in 2022, completely reshaped how providers negotiate with payers.
+
+MARCUS: Got it. So the credibility test is really a vocabulary test in disguise.
+
+HELEN: Vocabulary plus implication. You need to know what 340B is, AND you need to be able to say something intelligent about how it shifts a pricing strategy conversation. The first part you can fake with a glossary. The second part takes real engagement.
+
+MARCUS: So practical question. If Meridian wanted to enter this market credibly, what would be the cheapest way to acquire the second-meeting credibility?
+
+HELEN: [pause] That's a good question. I'd say two routes. One, hire a senior. Someone with five-plus years inside a health system or a payer who is willing to come over to the consulting side. Pay them well. Use them to lead the first three engagements. Their credibility transfers to the firm.
+
+Two, do a free or heavily discounted engagement with one well-respected mid-size health system in exchange for being able to use it as a case study. The case study becomes your second-meeting evidence.
+
+The wrong answer is to read three industry reports and start pitching. That gets sniffed out in week one.
+
+MARCUS: And in terms of the kind of work that actually has demand right now, what would you point us at?
+
+HELEN: Three things, I'd say. First, anything related to value-based care contracting. Most providers are still terrible at modelling the financial implications of these contracts and they keep signing bad ones. Second, payer negotiations and rate strategy. The data analytics around this have got way better in the last three years and most providers haven't caught up. Third, commercial strategy for digital health spinouts. There's a whole class of provider-launched companies that have great products but no idea how to sell them.
+
+MARCUS: Of those three, where would the boutique commercial advisory firm have the biggest advantage versus the big firms?
+
+HELEN: The third. The first two require sector depth and analytical infrastructure that take years to build. The third is essentially B2B SaaS go-to-market with a healthcare context wrapper. You have the SaaS know-how. The healthcare context is learnable.
+
+MARCUS: That's really helpful. Last question and then I'll let you go. From the buying side, what makes a sales process from a firm like ours feel intelligent versus tone-deaf?
+
+HELEN: [pause] Specificity. The firms that won me over were the ones who, by the second email, were referencing something specific to my organisation that they couldn't have known without doing real research. Not "we noticed you have facilities in three states", that's LinkedIn. Something like "I noticed your last 10-K mentioned the integration challenges from the Forsyth acquisition, and I wanted to share how we approached a similar situation at..." that kind of thing.
+
+The other thing. Being honest about what you don't know. The firms that pretended to be healthcare experts when they weren't lost trust very quickly. The firms that said "we're commercial strategy experts and we want to apply that to healthcare, here's how we plan to acquire the sector context responsibly", those conversations were much better.
+
+MARCUS: That's incredibly useful Helen. Anything else you'd want me to take away if I was building the case for entry internally?
+
+HELEN: Just the obvious thing. Don't enter if you're not committed to a multi-year build. The firms I worked with that dabbled in healthcare and then quietly left the sector did real reputational damage to themselves. People remember.
+
+MARCUS: Understood. Thanks again, really appreciate it.
+
+HELEN: My pleasure. Send me the writeup when it's done.
+
+[end recording 47:18]
+
+Marcus's notes (added post-call)
+- Strong signal that the boutique commercial-advisory healthcare gap is real
+- Two acquisition paths: senior hire OR loss-leader case-study engagement
+- Best-fit work for our profile: healthcare digital health commercial strategy (third of Helen's three)
+- Credibility test is real and likely to fail us in current state
+- Will share with Aisha and Olivia ahead of vertical decision

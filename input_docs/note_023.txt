@@ -1,0 +1,33 @@
+Meeting summary: Concorde Manufacturing QBR
+Date: 8 Sep 2026
+Attendees: Aisha Brennan, Tom Whitaker (Meridian), Helena Brandt (Concorde CFO), Pierre Mauer (Concorde Strategy), James Okafor (Concorde Procurement)
+
+Annual QBR with Concorde, our third-largest client by Q3 revenue ($610k).
+
+Headline
+
+The relationship is in good shape. Concorde is happy with the work and Helena confirmed the engagement model is working. The renewal in May is "a non-event" in her words.
+
+But two structural conversations came up that warrant attention.
+
+Pricing structure
+
+James (procurement) used most of his airtime to ask about pricing structure for next year. He was direct: "we benchmark all professional services renewals against three comparable quotes." He hasn't done that exercise yet for us but it's on his Q1 worklist. He doesn't expect to renegotiate the absolute number but wants to understand whether our structure is consistent with sector norms.
+
+Pierre stepped in to reassure us this is procedural rather than threatening. But the message is clear: Concorde will be more procurement-driven from 2027.
+
+Integration roadmap
+
+Helena raised the Salesforce connector question again. They've raised it on the past two QBRs. Pierre's team is now using both Salesforce and a separate analytics platform; the integration ask has expanded to include the analytics side.
+
+Aisha was honest that we don't have a connector roadmap to share yet. She committed to circling back with a position by 30 Sep.
+
+Other items
+
+- Helena mentioned that Concorde's London office is closing in Q1 2027. Pierre's team is consolidating into the Frankfurt operation. No impact on our engagement scope.
+- Helena flagged in passing that Concorde's regulatory review function has begun internal work on EU AI Act readiness. She asked if we have anything to offer on this. Aisha said we'd come back.
+
+Action items
+- Aisha: Salesforce connector roadmap position to Helena, 30 Sep
+- Tom: EU AI Act readiness, internal capability check, 30 Sep
+- Tom: send across the comparable benchmarking framework James asked about, 14 Sep

@@ -1,0 +1,491 @@
+# Sealed corpus manifest: ground truth for Tier 2 evaluation.
+#
+# Populated after corpus generation. Once this file is locked, the
+# extraction pipeline (src/) MUST NOT import it. The eval harness
+# (eval/) does. This procedural separation is what lets the
+# grading numbers mean anything.
+#
+# `actual_doc_count` reflects the substantive carriers of each theme
+# in the committed corpus (not incidental mentions). `expected_docs`
+# is the canonical list of files where each theme is substantively
+# present and where citation precision will be measured against.
+#
+# A doc may carry multiple themes. A doc cited under one theme will
+# only count toward citation precision for THAT theme.
+
+scenario:
+  name: "Meridian Advisory Q3-Q4 portfolio review"
+  description: |
+    Fictional B2B commercial advisory firm working with mid-market SaaS
+    and services companies. ~100 documents reflect a quarter of operational
+    artifacts: client meeting notes, prospect call summaries, internal
+    memos repurposed as meeting summaries or research snippets, market
+    commentary, research clippings, interview transcripts (customer,
+    expert, win/loss, internal exit), and a small amount of admin chatter.
+  authoring_period: "fictional Q3-Q4 2026, with year-end retrospective material"
+  total_docs: 101
+  total_words_approx: 25994
+
+themes:
+  # ---------- Primary (high salience) ----------
+
+  - id: pricing_pressure
+    canonical_name: "Pricing pressure on renewals"
+    aliases:
+      - "pricing pressure"
+      - "pricing competition"
+      - "margin compression"
+      - "discount requests"
+      - "renewal pushback"
+      - "price sensitivity"
+      - "procurement-driven pricing"
+      - "pricing benchmarking"
+      - "price negotiation"
+    nature: explicit
+    salience: high
+    target_doc_count: 18
+    actual_doc_count: 24
+    expected_docs:
+      - note_001.txt
+      - note_011.txt
+      - note_012.txt
+      - note_014.txt
+      - note_020.txt
+      - note_023.txt
+      - note_026.txt
+      - note_033.txt
+      - note_036.txt
+      - note_038.txt
+      - note_041.txt
+      - note_044.txt
+      - note_055.txt
+      - note_056.txt
+      - note_061.txt
+      - note_066.txt
+      - note_077.txt
+      - note_080.txt
+      - note_094.txt
+      - note_099.txt
+      - q3_lost_deals.txt
+      - pricing_benchmarking.txt
+      - interview_pinion_winloss_20260729.txt
+      - interview_bridgewave_carlos_retro_20261020.txt
+      - interview_concorde_helena_20261005.txt
+      - interview_prospect_meridian_evaluation_20260930.txt
+      - year_end_lessons_2026.txt
+    description: |
+      Multiple clients pushing back on renewal pricing, requesting larger
+      discounts, citing budget pressure. Margin compression risk for the firm.
+      Procurement-driven benchmarking has become standard at top accounts.
+
+  - id: mid_market_churn_risk
+    canonical_name: "Rising churn signals in mid-market segment"
+    aliases:
+      - "mid-market attrition"
+      - "50-500 employee segment risk"
+      - "churn warning signs"
+      - "renewal slippage"
+      - "client relationship management"
+      - "client retention"
+      - "account churn"
+      - "non-renewal"
+      - "client disengagement"
+    nature: explicit
+    salience: high
+    target_doc_count: 14
+    actual_doc_count: 14
+    expected_docs:
+      - note_002.txt
+      - note_016.txt
+      - note_026.txt
+      - note_032.txt
+      - note_036.txt
+      - note_042.txt
+      - note_045.txt
+      - note_056.txt
+      - note_068.txt
+      - note_071.txt
+      - note_074.txt
+      - note_075.txt
+      - note_079.txt
+      - year_end_lessons_2026.txt
+    description: |
+      Increasing churn signals concentrated among mid-market clients
+      (50-500 employees). Northpoint and Stellaris are confirmed losses;
+      BridgeWave is a scope-reduction case; pattern visible across portfolio.
+
+  - id: integration_gap
+    canonical_name: "Native integration gap (Salesforce, HubSpot)"
+    aliases:
+      - "missing CRM integration"
+      - "integration request"
+      - "third-party connector gap"
+      - "Salesforce connector"
+      - "HubSpot connector"
+      - "integration challenges"
+      - "integration capabilities"
+      - "connector gap"
+      - "native integration"
+      - "CRM integration"
+    nature: explicit
+    salience: high
+    target_doc_count: 16
+    actual_doc_count: 22
+    expected_docs:
+      - note_001.txt
+      - note_013.txt
+      - note_014.txt
+      - note_022.txt
+      - note_023.txt
+      - note_024.txt
+      - note_029.txt
+      - note_036.txt
+      - note_038.txt
+      - note_039.txt
+      - note_055.txt
+      - note_056.txt
+      - note_062.txt
+      - note_074.txt
+      - note_078.txt
+      - note_079.txt
+      - note_095.txt
+      - helmsley-renewal-brief.txt
+      - integration_roadmap_internal.txt
+      - forecast_2027.txt
+      - interview_helmsley_daniel_heath_20260919.txt
+      - interview_bridgewave_carlos_retro_20261020.txt
+      - interview_engineer_exit_20260815.txt
+      - interview_prospect_meridian_evaluation_20260930.txt
+      - year_end_lessons_2026.txt
+    description: |
+      Clients repeatedly asking for native integrations with Salesforce
+      and HubSpot. Currently handled via manual export/import. Decisive
+      factor in multiple lost deals and renewal contractions. Connector
+      commitment for Salesforce H1 2027 is the formal response.
+
+  - id: competitive_displacement_apex
+    canonical_name: "Competitive displacement by Apex Strategy Group"
+    aliases:
+      - "Apex displacement"
+      - "Apex competitive loss"
+      - "lost to Apex"
+      - "Apex pricing pressure"
+      - "Apex Strategy Group"
+      - "Apex competition"
+      - "competitive threat from Apex"
+      - "Apex aggressive pricing"
+      - "market positioning against Apex"
+    nature: explicit
+    salience: high
+    target_doc_count: 12
+    actual_doc_count: 22
+    expected_docs:
+      - note_001.txt
+      - note_014.txt
+      - note_017.txt
+      - note_020.txt
+      - note_024.txt
+      - note_026.txt
+      - note_034.txt
+      - note_037.txt
+      - note_049.txt
+      - note_055.txt
+      - note_056.txt
+      - note_062.txt
+      - note_064.txt
+      - note_074.txt
+      - note_076.txt
+      - note_080.txt
+      - note_088.txt
+      - note_094.txt
+      - note_096.txt
+      - note_099.txt
+      - apex_brief.txt
+      - q3_lost_deals.txt
+      - competitor_radar_q4.txt
+      - interview_pinion_winloss_20260729.txt
+      - interview_bridgewave_carlos_retro_20261020.txt
+      - interview_prospect_meridian_evaluation_20260930.txt
+    description: |
+      Apex Strategy Group has emerged as the primary mid-market competitive
+      threat in 2026. 30-40% pricing discount is consistent. Confirmed and
+      suspected losses across multiple deals. Series B and aggressive
+      hiring suggest sustained competitive pressure into 2027.
+
+  # ---------- Secondary (medium salience) ----------
+
+  - id: partnership_relay
+    canonical_name: "Partnership opportunity with Relay Systems"
+    aliases:
+      - "Relay partnership"
+      - "Relay Systems integration"
+      - "Relay co-sell"
+      - "Relay Systems"
+      - "Relay arrangement"
+      - "joint marketing with Relay"
+      - "co-sell agreement"
+    nature: explicit
+    salience: medium
+    target_doc_count: 9
+    actual_doc_count: 16
+    expected_docs:
+      - note_003.txt
+      - note_021.txt
+      - note_025.txt
+      - note_035.txt
+      - note_037.txt
+      - note_058.txt
+      - note_063.txt
+      - note_064.txt
+      - note_070.txt
+      - note_081.txt
+      - note_095.txt
+      - note_097.txt
+      - partnership_landscape.txt
+      - relay_outcome_post_mortem.txt
+      - interview_eu_ai_act_lawyer_20260925.txt
+    description: |
+      Relay Systems partnership conversation through Q3-Q4. Began as
+      strategic possibility, ended as non-exclusive marketing arrangement.
+      Outcome and post-mortem inform broader partnership-strategy lessons.
+
+  - id: onboarding_friction
+    canonical_name: "Slow time-to-value during onboarding"
+    aliases:
+      - "onboarding friction"
+      - "slow time to value"
+      - "implementation drag"
+      - "client onboarding pain"
+      - "onboarding issues"
+      - "onboarding challenges"
+      - "onboarding delays"
+      - "rocky onboarding"
+      - "onboarding redesign"
+    nature: explicit
+    salience: medium
+    target_doc_count: 10
+    actual_doc_count: 11
+    expected_docs:
+      - note_018.txt
+      - note_036.txt
+      - note_038.txt
+      - note_042.txt
+      - note_048.txt
+      - note_067.txt
+      - onboarding_research.txt
+      - onboarding_pilot_results.txt
+      - interview_bridgewave_carlos_retro_20261020.txt
+      - year_end_lessons_2026.txt
+    description: |
+      Clients citing slow onboarding and lengthy time-to-value during
+      initial implementation. ~40% of mid-market engagements affected.
+      Buyer-perceived friction point. Onboarding redesign workstream
+      addresses this with named onboarding lead and pre-engagement
+      readiness assessment.
+
+  - id: account_concentration_risk
+    canonical_name: "Top-3-account revenue concentration"
+    aliases:
+      - "revenue concentration"
+      - "top accounts risk"
+      - "account concentration"
+      - "Crestline Helmsley Concorde dependency"
+      - "client concentration"
+      - "revenue dependency"
+      - "concentration risk"
+      - "diversification"
+    nature: implicit
+    salience: medium
+    target_doc_count: 7
+    actual_doc_count: 11
+    expected_docs:
+      - note_007.txt
+      - note_013.txt
+      - note_050.txt
+      - note_053.txt
+      - note_063.txt
+      - note_065.txt
+      - note_073.txt
+      - helmsley-renewal-brief.txt
+      - forecast_2027.txt
+      - year_end_lessons_2026.txt
+      - interview_helmsley_daniel_heath_20260919.txt
+      - interview_concorde_helena_20261005.txt
+    description: |
+      Top three clients (Crestline, Helmsley, Concorde) account for ~49%
+      of Q3 booked revenue, up from 41% same quarter prior year. Implicit
+      theme — surfaces by aggregating revenue figures across documents.
+      Tests cross-document inference. Strategic decision deferred to
+      January partner meeting.
+
+  # ---------- Minor (low salience) ----------
+
+  - id: eu_ai_act_compliance
+    canonical_name: "EU AI Act readiness for advisory deliverables"
+    aliases:
+      - "EU AI Act"
+      - "AI Act compliance"
+      - "AI regulation readiness"
+      - "EU regulatory compliance"
+      - "regulatory compliance"
+      - "regulatory readiness"
+      - "AI compliance"
+      - "AI Act"
+    nature: explicit
+    salience: low
+    target_doc_count: 5
+    actual_doc_count: 13
+    expected_docs:
+      - note_004.txt
+      - note_023.txt
+      - note_029.txt
+      - note_030.txt
+      - note_044.txt
+      - note_054.txt
+      - note_077.txt
+      - note_094.txt
+      - note_098.txt
+      - forecast_2027.txt
+      - interview_helmsley_daniel_heath_20260919.txt
+      - interview_eu_ai_act_lawyer_20260925.txt
+      - interview_concorde_helena_20261005.txt
+    description: |
+      Emerging compliance concern around EU AI Act applicability to
+      client deliverables. Phase 2 obligations in effect Aug 2027.
+      Crestline carve-out is the first revenue against this capability.
+      Partnership opportunity with specialist law firm under consideration.
+
+  - id: vertical_expansion_healthcare
+    canonical_name: "Healthcare vertical expansion opportunity"
+    aliases:
+      - "healthcare expansion"
+      - "healthcare inbound"
+      - "healthcare vertical entry"
+      - "biotech opportunity"
+      - "healthcare market"
+      - "healthcare vertical"
+      - "healthcare opportunity"
+      - "vertical expansion"
+    nature: explicit
+    salience: low
+    target_doc_count: 4
+    actual_doc_count: 9
+    expected_docs:
+      - note_005.txt
+      - note_028.txt
+      - note_047.txt
+      - note_063.txt
+      - note_067.txt
+      - vertical_decision_brief.txt
+      - competitor_radar_q4.txt
+      - interview_healthcare_expert_20260818.txt
+      - note_096.txt
+    description: |
+      Q3 inbound healthcare enquiries up 3.5x year-over-year. Verdant
+      pilot (Oct-Nov) is the first real engagement. Helen Ashworth
+      interview frames the credibility gap. Decision deferred to Q1
+      pending Verdant Phase 2 conversion.
+
+  - id: talent_retention_engineering
+    canonical_name: "Engineering attrition risk"
+    aliases:
+      - "engineering retention"
+      - "tech team attrition"
+      - "engineer departures"
+      - "compensation gap"
+      - "talent retention"
+      - "engineering attrition"
+      - "senior talent retention"
+      - "engineering talent"
+    nature: implicit
+    salience: low
+    target_doc_count: 5
+    actual_doc_count: 7
+    expected_docs:
+      - note_022.txt
+      - note_049.txt
+      - note_053.txt
+      - note_063.txt
+      - note_069.txt
+      - integration_roadmap_internal.txt
+      - interview_engineer_exit_20260815.txt
+    description: |
+      Engineering team attrition signals scattered across internal docs.
+      One confirmed senior departure, two at-risk seniors successfully
+      retained through comp adjustment and structural commitments.
+      Compounds the integration capability question.
+
+# Distractors — themes designed NOT to be surfaced as report items.
+# Surfacing any of these as a theme, insight, risk, opportunity or
+# action counts as a false positive in Tier 2.
+
+distractors:
+  - id: office_relocation
+    canonical_name: "Office relocation and admin chatter"
+    aliases:
+      - "office relocation"
+      - "office move"
+      - "vine street"
+      - "desk assignment"
+      - "facilities"
+      - "office lease"
+      - "IT helpdesk"
+    nature: noise
+    actual_doc_count: 3
+    expected_docs:
+      - note_006.txt
+      - note_031.txt
+      - it_helpdesk_thread.txt
+    description: |
+      Admin chatter about office moves, lease, desk assignments,
+      IT helpdesk tickets. Operationally real, strategically irrelevant.
+      A tool that surfaces this as a "theme" or "risk" is over-eager
+      on low-signal noise.
+
+  - id: dismissed_consumer_pivot
+    canonical_name: "Dismissed consumer pivot (negation handling test)"
+    aliases:
+      - "consumer pivot"
+      - "pivot to consumer"
+      - "consumer expansion"
+      - "consumer market"
+      - "consumer-side opportunity"
+      - "B2C opportunity"
+    nature: negation
+    actual_doc_count: 3
+    expected_docs:
+      - note_008.txt
+      - note_051.txt
+      - note_060.txt
+    description: |
+      Consumer-side strategy mentioned across multiple docs only in the
+      form of explicit dismissal: "we are not pivoting to consumer",
+      "the partner asked about consumer; we declined", etc. Tests
+      negation handling. Surfacing this as an opportunity, recommended
+      action, or theme is a serious failure: the tool would be
+      recommending the opposite of what the documents actually say.
+
+# Pure noise files — no theme content at all.
+# Tool should not cite these for any theme.
+pure_noise:
+  - re_resched.txt          # 17-word scheduling fragment
+  - zoom_recording_notice.txt  # System notification
+
+# Doc type distribution (committed corpus):
+doc_type_breakdown:
+  client_notes: 30
+  meeting_summaries: 20
+  interview_transcripts: 8
+  research_snippets: 18
+  market_commentary: 18
+  edge_case_noise: 5
+  total: 99
+  # Note: file count is 101 (some noise files counted in noise category;
+  # 2 docs cross-counted). Total file count via `ls input_docs/`: 101.
+
+# File naming variety (verifies tool is glob-driven, not name-driven):
+filename_conventions:
+  numeric: "note_NNN.txt"            # ~85 of 101 files
+  topical: "topic_word_brief.txt"    # ~10 of 101 files
+  dated_topical: "interview_X_YYYYMMDD.txt"  # 8 interview transcripts
+  realistic_noise: "re_resched.txt, it_helpdesk_thread.txt, zoom_recording_notice.txt"

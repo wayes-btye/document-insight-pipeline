@@ -1,0 +1,42 @@
+Research snippet: 2026 lessons learned synthesis
+Compiled by: Sarah Patel
+Date: 18 Dec 2026
+For: January partner offsite
+
+Themes that recur across the year's commercial activity, drawn from the running record (this is a synthesis, not a new analysis).
+
+1. Pricing pressure is sector-wide and persistent
+
+Across every renewal conversation in Q3-Q4, pricing has been the headline concern raised by the buyer. Procurement-driven benchmarking is now standard at our top-three accounts (Crestline, Helmsley, Concorde). Camden Research data suggests this is sector-wide, not specific to our firm. We have held senior pricing this year by leaning on differentiation, but the muscle has been used a lot.
+
+2. Apex is a mid-market threat, not an enterprise one
+
+Confirmed losses and partial losses to Apex in 2026 cluster firmly in the mid-market segment. Larger accounts have not switched. The Apex challenge to our enterprise base remains theoretical.
+
+3. The integration gap is decisive in mid-market
+
+Three confirmed losses (Marigold, partial Lattice, BridgeWave scope reduction) named integration capability as decisive. Three more (Pinion, Vellum, Stellaris) named it as contributing. The Salesforce connector commitment for H1 2027 is the response. Whether it lands on time is the load-bearing question for 2027 mid-market retention.
+
+4. Onboarding friction is structural, not incidental
+
+39% of engagements started in the past 24 months had documented onboarding-related delivery slip. Buyers have started naming it in retention conversations. The onboarding redesign workstream addresses this.
+
+5. Concentration risk is increasing
+
+Top 3 clients moved from 41% (Q3 2025) to 49% (Q3 2026) of quarterly booked revenue. This is the trend that requires explicit strategic stance in 2027.
+
+6. Engineering retention is load-bearing
+
+The Salesforce connector commitment, the future platform investments, and continued client confidence all depend on retaining the senior engineering bench. The comp review and continuous review cadence are responses but the structural tension between client connector demand and platform investment remains unresolved.
+
+7. Partnership opportunities require dedicated capability
+
+The Relay outcome (marketing arrangement, not strategic partnership) suggests we currently lack the partnership-development capability needed to land transformative partnerships. The EU AI Act partnership opportunity (interview_eu_ai_act_lawyer_20260925) is the next test.
+
+8. Healthcare is a defer-and-test, not commit-and-build, decision
+
+Verdant pilot likely converting to Phase 2 turns healthcare from experiment to small workstream. The "credible vertical practice" decision deferred to Q1 2027 with concrete data.
+
+What would change my read
+
+If we lose the connector roadmap (engineer departure or scope slip) the 2027 mid-market revenue picture becomes seriously exposed. If we land the connector and BridgeWave behaves as promised, mid-market is recoverable.

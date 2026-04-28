@@ -1,0 +1,38 @@
+Inbound enquiry log, Q3 (extract: healthcare segment)
+
+Compiled by: Olivia Brand, Ops
+Period: Jul-Sep
+
+Filter: prospects identifying healthcare/life-sciences as primary sector
+
+Q3 healthcare-tagged enquiries: 7
+Q2 healthcare-tagged enquiries: 2
+Q1 healthcare-tagged enquiries: 1
+
+Notable enquiries:
+
+Verdant Therapeutics (mid Sep)
+- 280 employees, Series C biotech
+- Found us via Karen Doerr (Lattice) referral
+- Asking about commercial strategy support for first commercial launch
+- "Have spoken to two firms, neither has biotech experience"
+- Status: discovery call scheduled 4 Oct
+
+Argentum Health Systems (early Sep)
+- 1,200 employees, hospital network technology spinout
+- Found us via LinkedIn (Sarah Patel post on pricing strategy)
+- Looking at us alongside two specialist healthcare consultancies
+- Status: declined engagement, went with specialist firm
+
+Sequoia Diagnostics (early Aug)
+- 90 employees, diagnostics startup
+- Cold inbound via website
+- Budget: under $30k. Below our usual floor.
+- Status: referred onward, not engaged
+
+Other 4 enquiries: smaller, mostly disqualified on budget or stage
+
+Observation
+The pattern is real but the conversion is poor. Both deals we'd most have wanted (Verdant, Argentum) hinged on us having visible healthcare experience. We don't. If healthcare is a deliberate vertical we'd need 1-2 named hires or a credible case study before further inbounds will close.
+
+- Olivia

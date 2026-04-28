@@ -1,0 +1,38 @@
+Meeting summary: Q4 leadership offsite, day 1 (decisions session)
+Date: 16 Oct 2026
+Attendees: Aisha Brennan, Jenna Rodriguez, Sarah Patel, David Kowalski, Olivia Brand, Tom Whitaker (am only)
+Compiled by: Olivia Brand
+
+Decisions taken on day 1.
+
+1. Relay partnership
+
+Decision: pursue with the narrower scope recommended in note_003. Joint marketing only for Q1 2027, no revenue share, exclusivity carve-out against Apex.
+
+Aisha to take the next conversation with Marcus Tanaka. Counter-proposal to be drafted by Jenna and Sarah, ready 21 Oct.
+
+Discussion summary: agreed Relay's exclusivity carve-out request is the test of whether the partnership is real or theatre. If they decline, we walk and treat it as confirmation we were never going to be the chosen partner.
+
+2. Salesforce connector commitment
+
+Decision: commit publicly to Salesforce connector for H1 2027 delivery, communicate to Lattice, Helmsley, Concorde immediately.
+
+Discussion summary: this is conditional on engineering retention. Decision contingent on the comp review (action below) closing successfully by 31 Oct.
+
+3. Engineering retention
+
+Decision: bring forward comp review to close by 31 Oct. Adjust senior engineer salaries to top of band where market data supports. Olivia and David to deliver the data and recommendation by 22 Oct.
+
+If retention conversations fail and either at-risk senior departs, the Salesforce commitment must be rescinded publicly within 14 days. Acknowledged this is uncomfortable but unavoidable.
+
+4. Concentration risk
+
+No decision today, paper to come to November partner meeting (David and Jenna). Aisha was clear this is not deferred indefinitely - the November paper has to lead to a strategic stance.
+
+5. Healthcare entry
+
+Decision: do not formally launch a healthcare practice. But continue the Verdant pilot and treat outcomes as evidence to reassess in Q1 2027.
+
+Discussion summary: Helen Ashworth's interview (interview_healthcare_expert_20260818) was directly cited. Consensus that we are not committed enough to the multi-year build she described. Verdant pilot is exploration not commitment.
+
+Action items log appended.

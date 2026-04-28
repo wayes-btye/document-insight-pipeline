@@ -1,0 +1,76 @@
+Customer interview transcript: Carlos Reyes, VP Commercial BridgeWave Industries
+Conducted by: Sarah Patel (Meridian)
+Date: 20 Oct 2026
+Duration: 32 min
+Format: clean verbatim, light edits
+Context: post-renewal customer retrospective, internal use only
+
+[00:00] SARAH: Carlos, thanks for the time. We've now signed the renewal SoW so this conversation is genuinely a retrospective rather than a sales conversation. I want to understand what you'd improve about the year that was and what made you decide to renew despite the rough patches.
+
+CARLOS: Sure. Be honest with me and I'll be honest with you.
+
+SARAH: Deal. Let's start with the rough patches.
+
+CARLOS: The biggest one is the obvious one. The onboarding ate two weeks we shouldn't have lost. Anya and her team carried more of the data prep than they expected. We were three weeks behind by the time we'd done the work both sides should have agreed up front.
+
+SARAH: At what point did you start considering not renewing?
+
+CARLOS: Honestly, around month four. Not because the work was bad. Because I started getting Apex emails and they were sharper than anything I was hearing from you. By month six I was opening the Apex emails. By the time of our August check-in I'd already done a back-of-envelope on what it would take to switch.
+
+SARAH: What stopped you switching?
+
+CARLOS: Two things. First, the work itself. The quarterly deep-dive in July landed in the boardroom and shifted how we think about a key product line. That's not nothing. Second, the unit economics for switching looked worse than the unit economics for staying, even at Apex's pricing. The transition cost would have been six months of confusion at minimum.
+
+SARAH: That's an interesting framing. Apex's pricing wasn't enough on its own.
+
+CARLOS: For me no. For someone with less context than me, possibly yes. If you'd come up for renewal in my second year of the engagement rather than my third, I would have switched.
+
+SARAH: So tenure protected the renewal more than the price-value argument did.
+
+CARLOS: Yes. Don't take that as more reassuring than it is.
+
+SARAH: Got it. What about the integration question. How real is the HubSpot piece?
+
+CARLOS: Very real. We need it. I told you I'd revisit the scope reduction if you had it by end of Q1. I meant it. If you have it, my scope goes back up. If you don't, my scope stays where it landed. That's not a negotiating position, that's the truth of how Anya can use the work.
+
+SARAH: Understood. The connector roadmap is now a real internal commitment for us. I can't promise HubSpot in 2027 H1 honestly. Salesforce yes, HubSpot more likely H2 or 2028. I want to be straight with you about that.
+
+CARLOS: That's the conversation I needed to have. Thank you. The straight answer is more useful than the warm answer.
+
+SARAH: That's a good piece of feedback for me. We've been too warm and not concrete enough. What else have we been doing wrong?
+
+CARLOS: [pause] One smaller thing. The monthly check-ins felt scripted. Like Tom was working through a list and ticking items off. I'd rather skip a check-in if there's nothing material to discuss than fill the time.
+
+SARAH: Tell Tom that.
+
+CARLOS: I have. Twice. He apologises and then does it again the next month.
+
+SARAH: I'll have a conversation with Tom.
+
+CARLOS: I appreciate that.
+
+SARAH: One more question. From the buyer side, what would have made you renew at the same scope rather than reduced?
+
+CARLOS: A clear roadmap on the integrations, particularly HubSpot. That's it. Pricing you could have held. Engagement model you could have held. The integration was the singular point.
+
+SARAH: And had we held the same scope, what would you have given up to make budget work?
+
+CARLOS: I would have found it. The budget conversation in our company is a conversation about prioritisation, not about absolutes. If the value case is clear, the money is there. The reduced scope was a way of saying "the value case is not as clear as it was last year given what's missing."
+
+SARAH: That's incredibly useful. Last thing, anything I should be asking you that I haven't?
+
+CARLOS: Whether I'd recommend you. The answer is yes, but with caveats I'd want to give the prospective buyer myself. I won't sandbag a reference call but I won't oversell either.
+
+SARAH: Fair. Carlos, thank you. I'll take this back internally and we'll have specific conversations off the back of it.
+
+CARLOS: Good. And tell Tom about the check-ins.
+
+[end recording 31:54]
+
+Sarah's notes
+- Tenure was the renewal protection, not the value argument
+- HubSpot connector is the binary that determines 2027 scope direction
+- Apex's outreach quality is sharper than ours from buyer's perspective
+- Tom's check-in cadence is being perceived as scripted - direct conversation needed
+- Carlos is a willing but qualified reference
+- Confirms broader pattern: Apex pricing alone insufficient, but combined with our roadmap silence is corrosive

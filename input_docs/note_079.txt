@@ -1,0 +1,36 @@
+Meeting summary: December client review
+Date: 5 Dec 2026
+Attendees: Sarah Patel, Tom Whitaker, Priya Singh, Ben Markovich
+Compiled by: Sarah Patel
+
+Standing monthly. End-of-year review across all active engagements.
+
+Renewals closed Q4
+- BridgeWave: $400k (-31%, see note_038)
+- Crestline: $865k base + $45k EU AI Act (effectively flat, see note_077)
+- Lattice: $68k (-13%, with $35k loss to Apex, see note_074)
+
+Renewals lost Q4
+- Northpoint: $140k written off (see note_068)
+- Stellaris: $115k written off (see note_075)
+
+Renewals pending Q1
+- Helmsley: $890k expected (Scenario C from helmsley-renewal-brief.txt)
+- Forge: healthy
+- Smaller accounts: stable
+
+New business closed Q4
+- Verdant pilot: $35k (could expand to $200k+ in 2027)
+- Two smaller advisory engagements ($60k, $45k)
+
+Discussion themes
+
+The pattern across the renewal book: where the integration question was decisive (Lattice, Marigold, BridgeWave), we lost ground. Where it wasn't (Crestline, Forge), we held. The connector commitment landing on time is now the central retention lever for 2027.
+
+The talent retention conversation continues. The two retention conversations following the exit interview have stabilised both at-risk seniors. Engineering plan for 2027 assumes both are retained.
+
+Apex visibility has plateaued. After the Series B announcement and the immediate aggressive outreach, the volume has reduced. Possibility they are working on closing already-engaged opportunities rather than chasing new ones.
+
+Action items
+- Sarah: 2027 engagement portfolio one-pager for partner meeting, 18 Dec
+- Tom: Forge mid-market scope finalisation, 11 Dec

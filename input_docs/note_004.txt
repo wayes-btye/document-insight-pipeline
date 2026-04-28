@@ -1,0 +1,12 @@
+Notes from Camden Research sector update (forwarded by D. Kowalski, 19 Sep)
+
+Worth flagging the section on EU AI Act readiness for European-facing customers.
+
+Key points from the Camden analyst:
+1. Phase 2 obligations (high-risk system documentation) come into effect Aug 2027
+2. B2B advisory firms producing AI-assisted analysis for EU customers may fall in scope depending on use of model outputs in client deliverables
+3. Camden suggests advisory firms with EU exposure begin compliance assessment now if they haven't
+
+Direct quote: "Firms that wait until early 2027 to start compliance work will be paying premium consulting rates to Big Four practices that have already built capacity. The cost differential is likely to exceed 3x."
+
+Two of our clients (Crestline, Helmsley) have material EU revenue. Worth raising at the next ops review.

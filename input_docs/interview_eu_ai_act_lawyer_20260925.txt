@@ -1,0 +1,65 @@
+Expert interview transcript: Christine Marchetti, EU AI Act practice lead, Kerwin & Associates
+Conducted by: Olivia Brand (Meridian)
+Date: 25 Sep 2026
+Duration: 35 min
+Format: clean verbatim, light edits
+Context: capability scoping for EU AI Act readiness offering
+
+[00:00] OLIVIA: Christine, thanks for making time. As I mentioned, we're trying to scope what a credible EU AI Act readiness offering would look like for our advisory firm. You're a practising lawyer in this space, I want to understand how the buy side actually frames this question.
+
+CHRISTINE: Of course. What's your read so far?
+
+OLIVIA: Honestly, mixed. We have two clients with material EU exposure (Crestline, Helmsley) who have asked us about it. Camden Research has been writing about it. Our clients want a clearer answer than we currently have. But I'm not sure if the right move is for us to develop the capability ourselves or to refer to specialists like you.
+
+CHRISTINE: It's a good question and I'll give you a useful answer rather than a self-interested one. The Act has multiple distinct workstreams. For most of our advisory clients, what they actually need is not a regulatory deep-dive, it's an operational readiness exercise.
+
+OLIVIA: Tell me more about that distinction.
+
+CHRISTINE: The regulatory deep-dive question is "are we in scope, what specifically applies, what is the formal compliance position." That's lawyer work. The operational readiness question is "given our processes today, what do we need to change, in what order, with what budget." That's much more advisory work.
+
+OLIVIA: Is the operational readiness question being asked widely yet?
+
+CHRISTINE: Yes. Increasingly so since the September clarification. Most of my advisory firm clients are now getting it from at least one of their major customers. Crestline asking you is typical. Most firms don't have a clear answer.
+
+OLIVIA: How do most advisory firms handle the question today?
+
+CHRISTINE: Three patterns. First, they refer to a law firm and try to position it as a value-add referral. That works once but doesn't scale. Second, they hire one specialist and try to build internal capability. That's expensive and the specialist usually leaves within 18 months. Third, they partner with a law firm or specialist consultancy and white-label the capability. That's where I'd point you.
+
+OLIVIA: When you say partner, what does that look like in practice?
+
+CHRISTINE: Varies. The clean version is: you scope and project-manage the engagement, we provide the legal review and the regulatory expertise. You stay client-facing, we stay back-office. Revenue split is typically 60/40 or 70/30 depending on who originated the work.
+
+OLIVIA: What does a typical engagement look like in terms of scope and price?
+
+CHRISTINE: For an advisory firm reseller engagement, I'd say a three-phase scope. Phase 1 is gap assessment, four weeks, fixed fee around 25k. Phase 2 is policy and process design, six weeks, fixed fee around 60k. Phase 3 is implementation support, ongoing or as-needed, retainer or T+M. Most clients commission phase 1, then about 60% commission phase 2, then about 30% commission phase 3.
+
+OLIVIA: That's helpful. Question on the partnership side. If we partnered with you, what would you need from us to make that work?
+
+CHRISTINE: Three things. First, a credible engagement model that we trust. Second, two or three pilot clients to test the partnership in practice. Third, willingness to formalise after the pilots if it works. We won't invest in a partnership that's permanently informal.
+
+OLIVIA: And what would change for you if we wanted to build the capability internally instead?
+
+CHRISTINE: My honest view is that you shouldn't. Not because we want the partnership business but because building it internally is genuinely harder than it looks. The Act is changing every quarter, the precedents are still forming, the practitioners with depth are scarce and expensive. You'd spend two years building it and still not be at parity with a specialist firm.
+
+OLIVIA: Thank you for the directness. One more question. If we did the partnership and it landed well, what's the realistic 18-month revenue picture?
+
+CHRISTINE: Conservative case, four pilot engagements at phase 1, two converting to phase 2. About 200k in revenue across both partners. Central case, ten engagements with similar conversion, about 600k. Optimistic case, this becomes a meaningful workstream with 1.5M+ revenue annually within 24 months. The optimistic case requires a deliberate go-to-market push, not just inbound.
+
+OLIVIA: That's incredibly useful. Christine, I'll take this back and we'll discuss internally whether to take the partnership conversation further.
+
+CHRISTINE: Please do. Either way, happy to continue talking through the question.
+
+OLIVIA: Last thing. Is there a deadline I should be aware of for making the partnership decision?
+
+CHRISTINE: Not from our side specifically. But from the market side, there's a window in the next 6-9 months where firms that move first will capture disproportionate share. By mid-2027 the offerings will be commoditising.
+
+OLIVIA: Got it. Thanks again.
+
+[end recording 35:08]
+
+Olivia's notes
+- The partnership route is genuinely the right answer for our scale and time horizon
+- Indicative revenue case (600k central, 1.5M+ optimistic at 24 months) is meaningful relative to our overall mid-market segment revenue
+- Crestline and Helmsley would be obvious pilot candidates
+- Action: bring this to Aisha for partnership decision in October partner conversations
+- Note overlap with broader partnership strategy question (note_046, partnership_landscape)

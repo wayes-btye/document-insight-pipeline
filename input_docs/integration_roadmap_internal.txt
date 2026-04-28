@@ -1,0 +1,42 @@
+Research snippet: integration roadmap proposal (internal)
+Compiled by: Rohit Mehta (Engineering), with input from Sarah Patel
+Date: 15 Oct 2026
+For: leadership decision
+
+Question
+Should we commit to building Salesforce and HubSpot connectors in 2027, and if so, in what order?
+
+Demand evidence
+
+Salesforce connector has been raised in the past quarter by:
+- Lattice (decisive in their renewal, see note_001, note_024, note_039)
+- Helmsley (raised on every monthly call, see note_013, note_029, note_050)
+- Concorde (raised at QBR, see note_023, note_044)
+- Marigold (lost deal, integration gap was decisive, see note_056)
+- Crestline (mentioned at recent call, see note_011)
+
+HubSpot connector raised by:
+- BridgeWave (raised at multiple touchpoints, see note_014, note_036, note_055)
+- Two prospects in Q3 pipeline (Pinion, Vellum) where the gap contributed to losses
+
+Salesforce volume of demand is roughly 2x HubSpot in our current portfolio.
+
+Engineering capacity
+
+See note_022 for the full picture. Headline: with current team and assuming we successfully retain the at-risk seniors, we can deliver one connector in 2027 alongside committed platform work. We cannot deliver both.
+
+If we lose either at-risk senior, we cannot deliver any connector work in 2027.
+
+Recommendation
+
+1. Commit to Salesforce connector for 2027 H1 delivery. Communicate this to Lattice, Helmsley, Concorde immediately as a positive signal. Use it to reframe Lattice renewal conversation specifically.
+
+2. Defer HubSpot connector explicitly to 2027 H2 or 2028. Be honest with BridgeWave that this means no movement during their 2027 renewal scope.
+
+3. Make the engineering retention question (note_022) the highest internal priority. Without retention this entire roadmap is unsupported.
+
+4. Continue to track competitor connector positioning. If Apex demonstrates a HubSpot connector publicly, the cost of not having one rises sharply.
+
+Open questions for partners
+- Is there appetite for a small dedicated engineering hire to widen the connector capacity?
+- Are we comfortable commiting publicly to the Salesforce roadmap before the engineering retention is stabilised?

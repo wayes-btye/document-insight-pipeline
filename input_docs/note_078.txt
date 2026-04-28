@@ -1,0 +1,32 @@
+Meeting summary: Salesforce connector kickoff (internal)
+Date: 11 Nov 2026
+Attendees: Sarah Patel, Rohit Mehta, Maja Lindqvist (Engineering), Marcus Chen, Ben Markovich
+Compiled by: Marcus Chen
+
+First working session for the Salesforce connector commitment (see note_063, note_062).
+
+Scope agreed
+- Phase 1: read-only integration, surfacing Meridian outputs as Salesforce records (delivery target 31 Mar 2027)
+- Phase 2: bidirectional sync (deferred decision, target H2 2027)
+- Out of scope for v1: custom field mapping, multi-org support, archival policies
+
+Client communication strategy
+- Prioritised list: Lattice (immediate, given partial loss in note_074), Helmsley, Concorde, Crestline
+- Each gets a personal outreach from the engagement lead within 5 working days
+- BridgeWave separately reminded that HubSpot is not Q1, not Q2
+
+Engineering working agreements
+- Maja is technical lead, Rohit holds product oversight
+- Weekly standups starting 18 Nov
+- Risk register reviewed in standup, not in dedicated meetings
+
+Discussion on dependencies
+
+Maja flagged that the platform work the departed senior had been advocating for would have made the connector cheaper to build. We're now building it the harder way. Estimated 30-40% more engineering time than would have been needed with the platform substrate.
+
+This is the cost of the deprioritisation pattern that the exit interview (interview_engineer_exit_20260815) called out. Worth recording.
+
+Action items
+- Sarah: client outreach lead allocation, 13 Nov
+- Maja: engineering plan, 18 Nov
+- Marcus: weekly status note to leadership, starting 18 Nov

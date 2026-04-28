@@ -1,0 +1,37 @@
+Research snippet: Q3 lost deals review
+Compiled by: Ben Markovich
+Date: 1 Oct 2026
+For: Tom Whitaker, Sarah Patel
+
+Methodology: reviewed all opportunities marked closed-lost in CRM during Jul-Sep 2026. 9 deals total. Where possible, supplemented with conversation notes from the engagement lead.
+
+Loss summary
+
+| # | Prospect | Stage at loss | Lost to | Loss reason (primary) |
+|---|----------|---------------|---------|----------------------|
+| 1 | Halberd Tech | proposal | Apex | price |
+| 2 | Kestrel Foods | scoping | unclear | budget cut |
+| 3 | Marigold Software | proposal | Apex | price + integration claim |
+| 4 | Pinion Industries | discovery | Apex | unclear, suspect price |
+| 5 | Ridgeway Capital | scoping | internal team | brought in-house |
+| 6 | Stellaris Brands (1st conversation) | discovery | no decision | not active buyer |
+| 7 | Tarn Capital (advisory arm) | proposal | competitor (not Apex) | scope mismatch |
+| 8 | Vellum Group | discovery | Apex | price + perceived agility |
+| 9 | Zenith Holdings | scoping | unclear | went quiet |
+
+Patterns
+
+5 of 9 losses were to or suspected to be to Apex. 4 of those 5 cited price as a primary or significant factor.
+
+Two losses (3, 8) cited integration capability as a contributing factor. In Marigold's case the buyer specifically named the Salesforce connector as a deciding feature.
+
+Two losses (5, 6) were not competitive: buyer chose not to engage external support.
+
+Process gaps identified
+- Lost-deal interviews were attempted on 4 of 9. Completed on 1 (Marigold). The rest deferred or declined.
+- Without systematic lost-deal interviewing we are inferring loss reasons from late-stage signals only. This may overweight the signals we hear directly (price) and underweight reasons buyers don't volunteer (delivery confidence, perceived seniority of the team).
+
+Recommendations
+- Dedicate one analyst to lost-deal interview outreach for Q4
+- Update CRM loss-reason taxonomy to capture more granular reasons
+- Begin tracking suspected-Apex losses separately from confirmed-Apex losses

@@ -1,0 +1,38 @@
+Meeting summary: internal sales process review
+Date: 18 Nov 2026
+Attendees: Tom Whitaker (chair), Ben Markovich, Marcus Chen, Sarah Patel
+Compiled by: Ben Markovich
+
+Working session triggered by the Pinion win/loss findings (interview_pinion_winloss_20260729) and the Marigold lost-deal review (note_056).
+
+Themes from the lost deals
+
+Three patterns repeat:
+1. Our proposals are templated. Apex's are tailored. Buyers notice.
+2. Our standard engagement structure (retainer) does not flex easily to milestone-based asks. We lose opportunities where this matters.
+3. We surface our gaps too late in the process. Buyers reach late stages with assumptions about us that are wrong, then bounce.
+
+Process changes proposed
+
+Proposal redesign
+Move from a templated slide deck to a structured-but-tailored format. Each proposal opens with a 2-page synthesis specific to the buyer's stated context. The methodology and credentials sections become appendices rather than centrepiece.
+
+Engagement model flexibility
+Officially support three engagement models in pricing: retainer (default), 60/40 hybrid, milestone. Each has standard pricing structures the engagement leads can offer without escalation.
+
+Early gap surfacing
+Add to the discovery process: explicit "where we're weak" disclosure during second meeting. If integration is the gap (most common), name it before the buyer asks. Frame as "our roadmap on this is X, here's what that means for our recommendation if integration is decisive."
+
+Discussion on cost of changes
+
+Sarah pushed back: the proposal redesign is a substantial change to how engagement leads work. Need to be careful not to add hours per proposal that aren't recoverable.
+
+Tom: counterpoint, the time we currently spend losing late-stage deals is also unrecoverable. The new format should target similar effort, redistributed.
+
+No final agreement on proposal redesign cost-benefit. Pilot proposed instead.
+
+Action items
+- Ben: proposal pilot template, 25 Nov
+- Tom: engagement model pricing one-pager, 25 Nov
+- Marcus: discovery script update with gap-disclosure step, 2 Dec
+- Pilot the changes on next 3 proposals, review outcomes January

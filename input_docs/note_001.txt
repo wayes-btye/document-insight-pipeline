@@ -1,0 +1,26 @@
+Lattice Logistics, Q3 QBR
+Date: 14 Sep
+Attendees: Marcus Chen (Meridian), Tom Whitaker (Meridian), Karen Doerr (Lattice VP Ops), Devon Ridley (Lattice Procurement)
+
+Agenda
+- Account health check
+- Renewal scoping
+- Integration roadmap
+
+Notes
+
+Karen opened by saying the budget situation has tightened since H1. Procurement (Devon) is being asked to revisit all vendor renewals over $50k. We're at $78k annual. She didn't push for a number but the temperature is clear. Asked twice whether we'd be willing to "rethink the engagement structure" for renewal.
+
+Devon was more direct. Showed us a pricing one-pager from Apex that he'd received last month, unsolicited. Apex is quoting $52k for what Devon characterised as "the same scope." We pushed back on the scope claim but didn't get into specifics in the room. Marcus to follow up with a side-by-side after the call.
+
+Integration ask came up unprompted. They've moved their CRM to Salesforce as of August and want to pipe our quarterly outputs into Salesforce as native records, not exports. Karen described the current export-then-import process as "a thing one of my coordinators does at midnight on Sundays." Worth noting their words. They asked when our Salesforce connector would be available. We don't have one. Tom said we'd come back with a roadmap position before the renewal date.
+
+Other items
+- They mentioned their HubSpot instance is being deprecated in favour of Salesforce, so the integration ask is now Salesforce-only from their side
+- Karen flagged that two of her direct reports have left in the past 4 months, not asking us to do anything about it but it's why she's been slow on email
+
+Action items
+- Marcus: side-by-side scope comparison vs Apex quote, by 21 Sep
+- Tom: integration roadmap one-pager (Salesforce specifically), by 21 Sep
+- Tom: schedule follow-up with Karen + Devon for week of 28 Sep
+- Sarah: loop in Aisha given renewal value

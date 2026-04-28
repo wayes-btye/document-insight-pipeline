@@ -1,0 +1,44 @@
+Research snippet: renewal pipeline analysis Q4-Q1
+Compiled by: David Kowalski
+Date: 28 Sep 2026
+For: Aisha Brennan, Jenna Rodriguez
+
+Renewals coming up in the 6-month window 1 Oct 2026 - 31 Mar 2027:
+
+Total exposure: $4.1M (current annual values)
+
+Tracking by status:
+
+Confirmed at risk (probability of full renewal <50%):
+- Northpoint Software: $140k, Jan, status downgraded to non-renewal probable
+- BridgeWave Industries: $580k, Jan, expecting 60% scope renewal at $400k
+
+Pricing pressure expected (full renewal probable but at lower fee):
+- Crestline Insurance: $920k, Feb, defensive scenario $780k
+- Lattice Logistics: $78k, Oct, integration gap is decisive factor (see note_024)
+- Concorde Manufacturing: $610k, May, procurement benchmarking exercise pending
+
+Stable (no current concern):
+- Forge Analytics: $165k, May, healthy
+- Elemental Labs: $95k, signed Q3
+- Helmsley Group: $760k, Apr, scope decision pending (could land $760k-$1.05M)
+
+Modelled outcomes
+
+Defensive (downside cases at amber/red accounts realised):
+- Total renewed: $2.8M
+- Lost or scope-reduced: $1.3M
+
+Central (mid-range outcomes):
+- Total renewed: $3.4M
+- Lost or scope-reduced: $0.7M
+
+Optimistic (Helmsley expansion lands, others hold):
+- Total renewed: $3.85M
+- Lost or scope-reduced: $0.25M
+
+Observations
+
+The defensive case is plausible. Apex pricing pressure is the biggest single variable across the at-risk accounts. The Helmsley upside scenario is largely independent of the Apex dynamic.
+
+Worth discussing at partner meeting whether to model new business plans against the central case or the defensive case for FY27 planning.

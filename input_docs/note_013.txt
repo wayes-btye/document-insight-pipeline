@@ -1,0 +1,21 @@
+Meeting summary: Helmsley monthly client check-in
+Date: 12 Sep 2026
+Attendees: Sarah Patel (Meridian), Marcus Chen (Meridian), Daniel Heath (Helmsley COO), Maya Pendleton (Helmsley Strategy)
+
+Standing monthly call. Mostly status review.
+
+Discussion points
+
+Daniel raised the Salesforce question again. They've been on Salesforce for two years and continue to do manual extracts of our deliverables into their CRM. Maya described the workflow as "one of those things that nobody complains about loudly enough to fix." She estimated 6-8 hours per week of one analyst's time. We've heard this on three previous calls without action on either side.
+
+Sarah agreed to sponsor an internal conversation about whether we can prioritise a Salesforce connector ahead of the Q1 renewal cycle.
+
+Daniel asked about the scope expansion conversation that has been quietly happening. Helmsley's payments business unit has been receiving informal advisory support from our team for several months without being in scope. Daniel wants to either formalise it or shut it down before audit raises questions. Sarah committed to a written scope proposal by end of September.
+
+Decisions
+- Salesforce connector to be raised in next Meridian product review
+- Helmsley scope proposal due 30 Sep
+
+Action items
+- Sarah: scope proposal draft, 27 Sep
+- Marcus: confirm Salesforce request scoping timeline back to Maya, 17 Sep

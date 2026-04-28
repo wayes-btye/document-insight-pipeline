@@ -1,0 +1,20 @@
+Camden Regulatory Bulletin: EU AI Act Phase 2 update
+Issued 12 Sep 2026
+
+Summary of updates since June bulletin:
+
+1. The European Commission has clarified that high-risk AI system documentation obligations under Phase 2 will apply from 2 Aug 2027. No further extension expected.
+
+2. Guidance published 5 Sep clarifies that B2B advisory firms producing client deliverables that incorporate AI-derived analysis fall in scope where the deliverable is used by the client to inform high-risk decisions (defined in Annex III). This includes: hiring, credit, insurance underwriting, certain healthcare decisions, certain education decisions.
+
+3. Penalties for non-compliance under Phase 2 are tiered. Most relevant for our coverage: up to 3% of annual turnover for documentation failures, up to 7% for substantive obligations breaches.
+
+4. National competent authorities have begun appointing initial supervisory teams. Enforcement is expected to be light in the first 12 months (Aug 27 - Aug 28) but inspection frameworks are being prepared.
+
+Practical implications for advisory firms with EU exposure
+- Document model usage in client engagements
+- Establish review procedures for AI-derived outputs before client delivery
+- Maintain version control on prompt templates and model selection
+- Review client contracts to confirm allocation of compliance responsibility
+
+Camden will publish a more detailed practitioner brief in October.

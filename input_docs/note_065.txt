@@ -1,0 +1,20 @@
+Helmsley payments BU - informal review summary
+Sarah, 6 Oct
+
+Maya Pendleton walked me through the work our team has been doing for the payments BU informally over the past 18 months. This was preparation for the formal scope proposal (see helmsley-renewal-brief.txt).
+
+Scale of informal work
+- Approximately 12-15 hours per month from Marcus Chen
+- Occasional additional input from Priya for one-off questions
+- Total estimated value if invoiced: ~$95-110k over 18 months
+
+What the work has produced
+- Three pricing optimisation analyses for the payments product line
+- A go-to-market review for a new payments feature launched in Q1 2026
+- Ongoing competitive intelligence on payments-adjacent fintech players
+
+Maya's view
+She's clear the work has been valuable enough that the BU lead would defend a $180-220k formal annual scope. She also noted that the informal arrangement has worked well precisely because it was light-touch and unbilled, and that formalising might paradoxically reduce the perceived value if it becomes another vendor invoice line item.
+
+Implications for proposal
+This is useful colour for the formal proposal. We should price it at the lower end of Daniel's tolerance ($200k or below) and structure deliverables tightly to retain the perceived sharpness of the informal arrangement.

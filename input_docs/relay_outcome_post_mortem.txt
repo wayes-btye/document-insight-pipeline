@@ -1,0 +1,36 @@
+Research snippet: Relay partnership outcome post-mortem
+Compiled by: Jenna Rodriguez
+Date: 14 Nov 2026
+For: leadership review
+
+Context
+
+The Relay Systems partnership conversation began in July, ran through three substantive meetings, ended with a non-exclusive marketing arrangement (note_081). Relay's formal strategic partnership went to a different boutique firm (note_070).
+
+What we got right
+
+The internal recommendation in note_003 was for narrower-than-proposed scope with exclusivity carve-out as a deal-breaker test. We held that position. We did not get drawn into a larger commitment we would have regretted.
+
+Our analysis (note_064) that the Apex-Relay rumour was negotiation theatre was correct. The exclusivity ask was rejected without serious negotiation, confirming Apex was not a real alternative.
+
+What we got wrong
+
+We were slow to engage publicly. The two firms that won out were the ones publishing joint LinkedIn content with Relay during the selection period. We were operating on the assumption that the partnership decision would be made on the merits of the conversation. The market signalling was at least as important.
+
+We did not have a partnership-development function. Sarah and Jenna ran the Relay conversation alongside their core responsibilities. A dedicated partnership lead would have been more proactive on visibility.
+
+Our marketing co-investment at the time was modest. Even if we had wanted to engage publicly, the muscle was not there.
+
+Lessons applicable beyond Relay
+
+1. Partnership decisions in this segment are made through marketing-engagement signals as much as substantive conversation. Future partnership opportunities should be approached with explicit visibility planning from week one.
+
+2. Exclusivity carve-outs work as test instruments but do not work as the substance of a partnership offer. We should consider what we are offering proactively rather than what we are restricting reactively.
+
+3. The absence of a partnership-development capability cost us optionality. The EU AI Act partnership conversation (interview_eu_ai_act_lawyer_20260925) is the next opportunity to apply this lesson.
+
+What I would do differently
+
+I would have proposed marketing co-investment in our August discussion with Tanaka. I would have published a joint thought-leadership piece in September, well before the formal selection process narrowed. I would have brought Aisha in earlier for partner-level engagement signals.
+
+The marketing arrangement we landed is fine. It is not the strategic partnership it could have been.

@@ -1,0 +1,31 @@
+Research snippet: engineering team capacity outlook
+Compiled by: David Kowalski, Finance + Olivia Brand, Ops
+Date: 24 Sep 2026
+For: Aisha Brennan
+
+Context: capacity planning for 2027 ahead of pipeline commitments.
+
+Current state
+- 14 FTE in product engineering
+- 3 senior engineers (band E5+), 7 mid-level (E3-E4), 4 junior (E1-E2)
+- Average tenure: 2.4 years
+- 2026 attrition to date: 2 departures (1 senior, 1 mid)
+
+Risk indicators
+- Two senior engineers have signalled in 1:1s that they're "exploring options". One has been with us 4 years, the other 5.
+- Compensation review last completed Q1 2025. Market data from Camden suggests we are 8-12% below market for senior backend roles in our region.
+- The engineering team has run 105% utilisation against the planned roadmap for the past two quarters. Burnout signals visible in the recent eng survey (open-text comments).
+- Two of the four juniors are not yet ramped to independent feature delivery.
+
+Planning implications
+
+If both at-risk seniors leave in Q4, we will be unable to deliver the Salesforce connector work that has been raised on three separate client renewals (Lattice, Helmsley, BridgeWave). The HubSpot connector for BridgeWave would also slip.
+
+If we lose one senior, we can probably hold the connector work but lose the planned platform work scheduled for Q1.
+
+Recommendations
+- Bring forward the comp review by 6 months, complete by 31 Oct
+- Conduct retention conversations with the two at-risk seniors in the next 14 days
+- Pause any further headcount commitments to clients until the situation stabilises
+
+This is sensitive. Please limit distribution.

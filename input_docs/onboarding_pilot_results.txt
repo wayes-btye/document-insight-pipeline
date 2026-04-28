@@ -1,0 +1,47 @@
+Research snippet: onboarding redesign pilot - results
+Compiled by: Priya Singh
+Date: 16 Dec 2026
+For: onboarding workstream leadership
+
+Pilot scope
+
+Three new engagements piloted the redesigned onboarding (note_048):
+- Engagement 1: small mid-market client, started Nov
+- Engagement 2: Verdant pilot (note_067)
+- Engagement 3: Forge mid-market expansion scope (note_076)
+
+Components piloted
+- Pre-engagement readiness assessment (1 week, paid as line item)
+- Named onboarding lead (separate from engagement lead)
+- Written escalation path from week 1
+
+Outcomes
+
+Engagement 1: completed onboarding 4 days ahead of original timeline. Client (small mid-market) explicitly thanked us for the pre-engagement assessment, said it surfaced internal issues they hadn't anticipated.
+
+Engagement 2 (Verdant): on time, on scope. Carmen Dalleva commented in week 2 that the engagement "felt different from the start." See note_067.
+
+Engagement 3 (Forge): 2-day slip in week 1, recovered in week 2. Lewis commented that the named onboarding lead structure "made it easier to escalate the slip."
+
+Quantified comparison
+
+Across the three pilot engagements, average week-1 slip vs plan: 1.1 days. Across the prior 12 non-pilot engagements, average week-1 slip vs plan: 6.4 days.
+
+Sample is small but the direction is clear.
+
+Cost of redesigned onboarding
+
+Pre-engagement readiness assessment: $5-8k incremental scope per engagement (paid by client).
+Named onboarding lead overhead: ~30 hours per engagement, primarily front-loaded weeks 1-2.
+
+Net financial impact
+
+Estimated to be revenue-neutral or modestly positive. The added scope offsets the added overhead. Client-perceived quality has improved meaningfully.
+
+Recommendation
+
+Standardise across all new engagements starting Q1 2027. Stop running this as a pilot.
+
+Open question
+
+The pre-engagement readiness assessment surfaces issues that occasionally suggest the engagement should not proceed at the original scope. We need a clear policy for how to handle "the readiness assessment shows you're not ready" outcomes without losing the deal entirely. Suggested approach: structured optionality (smaller scope, deferred timeline, or readiness-prep work as paid sub-engagement). Worth dedicated discussion.

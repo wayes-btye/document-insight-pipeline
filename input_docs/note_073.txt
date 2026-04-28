@@ -1,0 +1,45 @@
+Meeting summary: November partner meeting (concentration risk paper)
+Date: 12 Nov 2026
+Attendees: Aisha Brennan, Jenna Rodriguez, Sarah Patel, David Kowalski, Olivia Brand
+Compiled by: Olivia Brand
+
+Sole agenda item: David and Jenna's paper on revenue concentration and FY27 strategic stance.
+
+The paper
+
+Headline numbers (recap):
+- Top 3 clients = 49% of Q3 booked revenue (vs 41% same quarter last year)
+- Crestline alone = 20% of Q3
+- 5 of top 6 clients are now in active pricing or scope renegotiation
+
+Three scenarios presented:
+
+Scenario 1: Defend
+Continue investing primarily in deepening with the largest clients. Accept the concentration but pair it with stronger structural relationships (account teams, named senior sponsors). Lower acquisition cost; higher concentration risk.
+
+Scenario 2: Diversify
+Accelerate mid-market new business and tolerate lower margin in that segment for 18 months to broaden the base. Higher acquisition cost; reduced concentration; potentially exposed to mid-market churn risk that's already visible (note_026).
+
+Scenario 3: Vertical specialisation
+Accept current revenue mix but invest in a credible vertical (most plausible: healthcare or fintech) over 24 months. Long-term differentiation; near-term margin neutral.
+
+Discussion
+
+Aisha pushed back on the binary framing. Her view: scenarios 1 and 2 are not mutually exclusive. We can defend the largest accounts and accelerate mid-market simultaneously, but the question is what we deprioritise to create the bandwidth.
+
+Jenna conceded the point but pushed back on whether we have the bandwidth to do anything meaningful in two areas at once.
+
+Sarah raised the segmentation question: the mid-market pain (Apex pricing, integration gap) makes acceleration hard. Without the connector roadmap delivered (see integration_roadmap_internal.txt), mid-market acceleration is fighting against the wind.
+
+David noted the concentration risk has been worsening for 4 consecutive quarters. The longer the decision is deferred, the more constrained the optionality.
+
+Decision
+
+Aisha asked David and Jenna to bring back a Phase 2 paper in January with:
+- Specific scenarios for "defend + accelerate" with bandwidth assumptions
+- Trigger conditions that would force a decision rather than a continued straddle
+- Cost of doing neither well, expressed in revenue terms
+
+Action items
+- David and Jenna: Phase 2 paper, draft 15 Jan 2027
+- Sarah: confirm Salesforce connector delivery date with engineering for Phase 2 paper assumptions, 5 Dec

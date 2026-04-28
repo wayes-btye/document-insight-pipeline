@@ -1,0 +1,10 @@
+Camden Regulatory Brief: AI Act enforcement coordination
+27 Sep 2026
+
+Brief update for advisory firms tracking the EU AI Act phase 2 timeline.
+
+Member states have begun appointing enforcement coordination leads within their national competent authorities. Germany and France have published their draft inspection frameworks. Spain expected to follow in October.
+
+Of practical interest: the Spanish framework explicitly contemplates that B2B advisory firms producing AI-derived analysis may be subject to operator-level documentation obligations even where they are not the deployer of the AI system. This is a stricter interpretation than initially expected.
+
+Recommended action for in-scope firms: do not delay readiness work in expectation that scope interpretations will narrow. They are narrowing in some directions and broadening in others.

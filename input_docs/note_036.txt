@@ -1,0 +1,14 @@
+BridgeWave - Carlos follow-up call
+Tom, 26 Sep, 30 min
+
+Carlos rang me back as promised. The reduced-scope renewal is essentially settled in his head. He framed the conversation as "how do we make this work for both of us" rather than "are we renewing."
+
+He spent half the call on the onboarding experience from earlier this year. Same complaint as the POC checkpoint (note_018) but more pointed in private. Quote: "I would have churned six months ago if the work itself wasn't valuable enough to justify the pain."
+
+He wants two specific commitments tied to the renewal:
+1. Named onboarding lead from our side for the new scope reset
+2. Written escalation path if delivery slips again
+
+I committed to both verbally pending Sarah's confirmation. Renewal value will be ~$400k vs $580k current.
+
+He also raised the integration question one more time. Said if we had a HubSpot connector by end of Q1 he'd revisit the scope reduction. That's leverage we currently can't pull.

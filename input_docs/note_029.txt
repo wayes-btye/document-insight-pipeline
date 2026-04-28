@@ -1,0 +1,20 @@
+Helmsley Group: exec briefing prep, internal note
+For: Aisha Brennan
+From: Sarah Patel
+Date: 19 Sep
+
+Quick note ahead of the Helmsley exec briefing tomorrow.
+
+Two items Daniel Heath has confirmed he wants to cover:
+
+1. EU AI Act readiness for advisory deliverables
+
+Helmsley's legal team has asked Daniel to confirm with us how AI tools are used in producing our outputs to them. Specifically: what models, what data flows, how outputs are reviewed before delivery. They want a written response by mid-October. This is procedural, not adversarial, but it does mean we need a clear position. Worth checking with Olivia what we currently document.
+
+2. Salesforce integration
+
+Daniel has flagged this on every monthly call this year. He'll ask again. We have no new answer to give. Aisha, you might consider whether a candid "this is not on our 2026 roadmap, here is when we expect to revisit" position is more useful than continued deflection.
+
+Other context
+
+The Helmsley scope expansion conversation (see helmsley-renewal-brief.txt) is also moving. Daniel wants the formal proposal by 30 Sep. The exec briefing is not the venue for that but expect him to mention it.

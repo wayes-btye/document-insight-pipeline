@@ -1,0 +1,33 @@
+Meeting summary: retention conversation, senior engineer
+Date: 23 Oct 2026
+Attendees: Aisha Brennan, Olivia Brand, Senior Engineer A
+Compiled by: Olivia Brand
+Distribution: Aisha only (sensitive)
+
+Confidential summary, retention conversation with one of the two at-risk senior engineers identified in note_022.
+
+Engineer is named in source notes only.
+
+Key points raised by engineer
+- Compensation is below their read of market by approximately 15%
+- They have one informal offer in hand from a Series B fintech, not yet formalised
+- Their primary frustration is not compensation but the recurring conflict between connector roadmap commitments to clients and the internal platform work they consider the bigger long-term opportunity
+- They've been at Meridian 4 years and are not actively trying to leave but feel unsupported in the current trajectory
+
+Aisha's response
+- Confirmed comp review is being completed by 31 Oct, with adjustment to top of band where market supports it (will land approximately 12% increase for this engineer)
+- Acknowledged the platform-vs-connector tension as a real strategic question and committed to engineer being in the room when the choice is made
+- Asked whether $X (specific equity grant adjustment) would change the picture - engineer indicated yes, in combination with the above
+
+Outcome
+- Engineer agreed to defer the external offer conversation pending the comp review and the platform/connector decision
+- Effective retention probability moved from "likely departure within 90 days" to "likely retained subject to follow-through"
+
+Risks
+- Follow-through on the platform/connector strategic decision is now load-bearing for retention
+- Comp review needs to land at the upper end of what's been signalled, not the middle
+- A second retention conversation needed with the other at-risk senior in the next 7 days
+
+Aisha next steps
+- Personal commitment to engineer to circle back within 14 days with comp confirmation
+- Scheduling second retention conversation with the other senior, week of 28 Oct

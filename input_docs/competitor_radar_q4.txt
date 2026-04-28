@@ -1,0 +1,40 @@
+Research snippet: competitor radar Q4 update
+Compiled by: Ben Markovich
+Date: 20 Nov 2026
+For: monthly partner meeting
+
+Status of named competitors and emerging threats.
+
+Apex Strategy Group
+
+Activity level: high but plateauing. After the Series B announcement and 60-day blitz, outreach to our client base has reduced. Hiring continues at pace (12 named hires since September). Q4 close-pending pipeline (per LinkedIn signals): healthy.
+
+Direct losses to Apex confirmed Q4: 1 (Lattice partial). Other losses suspected but unconfirmed.
+
+Watch items
+- Apex is reportedly opening a Frankfurt office in Q1 2027. This puts them physically closer to our Crestline and Helmsley engagements with EU exposure.
+- Their healthcare hire (former Bain principal) is publishing thought leadership. They are signalling vertical seriousness.
+
+Tannery Insights
+
+Acquired by larger sector consolidator in October. Two senior consultants moved to Apex (note_049). Remainder of the firm being absorbed. Net effect: one fewer competitor at our scale.
+
+Halberd Tech
+
+Lost a named partner (note_049). Quieter in the market than they had been. Possible distress signal.
+
+Newer entrants worth watching
+
+PitchPoint (referenced in partnership_landscape.txt) is positioning as a sales-enablement platform with embedded advisory. Different model from us but overlaps in some buyer conversations.
+
+A new firm "Helio Strategy" registered in October - too early to assess. Founder ex-McKinsey London, operating out of a serviced office. Worth a check-in in Q1.
+
+Sector dynamics
+
+Boutique commercial advisory pricing remains under downward pressure (note_066). Procurement-driven benchmarking is now standard at our larger clients (Crestline, Helmsley, Concorde all confirmed). Differentiation through delivery model flexibility (milestone, hybrid) and integration capability (Salesforce, HubSpot) is the visible competitive battleground.
+
+Recommended posture going into 2027
+- Hold senior pricing, lean on quality differentiation
+- Match engagement-model flexibility with the new pricing tiers (note_080)
+- Land the Salesforce connector by 31 Mar to neutralise the most acute differentiator
+- Continue building lost-deal interview discipline to widen the feedback loop

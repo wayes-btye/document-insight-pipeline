@@ -1,0 +1,28 @@
+Meeting summary: BridgeWave POC checkpoint
+Date: 9 Sep 2026
+Attendees: Tom Whitaker (Meridian), Ben Markovich (Meridian), Carlos Reyes (BridgeWave VP Commercial), Anya Petrov (BridgeWave Ops Manager)
+
+Context
+
+Three weeks into the 6-week onboarding for BridgeWave's new commercial intelligence engagement. This was the mid-point checkpoint.
+
+Status
+
+The data ingestion phase has taken longer than expected. We had estimated 5 working days, actual was 11. The blockers were on the BridgeWave side, not ours, but the impact lands on the project timeline either way.
+
+Anya was candid that her team underestimated the work involved in getting the source CRM exports into the format we needed. They had no internal owner with both technical and commercial context. The work fell to a junior analyst who was figuring it out as she went.
+
+Carlos asked whether there's a way to compress the remaining timeline. We discussed two options:
+1. Accept the 2-week slip, deliver final outputs early November
+2. Reduce scope on the secondary analysis to deliver on original timeline
+
+Carlos chose option 1. He noted that this is the second engagement where their team has hit the same friction during onboarding. He asked whether Meridian has a more structured onboarding playbook or self-serve tooling.
+
+Honest answer: not really. We have a checklist but it assumes the client has someone allocated who can drive the data prep work. When that person doesn't exist, the timeline slips.
+
+Tom said we'd come back with thoughts on whether we can offer a more guided onboarding option in future, possibly as a paid add-on.
+
+Action items
+- Anya: confirmed primary contact for remaining ingestion work
+- Tom: revised timeline document, 11 Sep
+- Ben: flag the broader onboarding-friction theme to the engagement leads forum at next monthly meeting

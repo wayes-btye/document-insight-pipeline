@@ -1,0 +1,32 @@
+Meeting summary: BridgeWave renewal scoping
+Date: 30 Sep 2026
+Attendees: Sarah Patel, Tom Whitaker (Meridian), Carlos Reyes, Anya Petrov (BridgeWave)
+
+Joining a thread that had been mostly conducted on email (see note_014, note_036).
+
+Outcome
+
+Reduced-scope renewal agreed in principle:
+- 2027 fee: $400k (down from $580k)
+- Scope: core monthly insights + quarterly deep-dive only
+- Removed: weekly tactical support, secondary analysis stream
+
+Carlos's commitments to us:
+- Single-vendor designation for the commercial intelligence category through 2027
+- Will be a reference customer for at least one prospect call per quarter
+
+Our commitments to Carlos:
+- Named onboarding lead (Priya) for scope reset, starting 7 Oct
+- Written escalation path within 14 days
+- HubSpot connector status update at next QBR (no commitment to deliver, only to update)
+
+Discussion notes
+
+Anya raised the onboarding friction explicitly: "we need this to feel different from the start of last year." Sarah was direct that the experience this year was below standard and committed to a structural improvement, not just better intentions.
+
+Carlos commented that Apex had been in touch in the past month with an unsolicited proposal at $320k for what he described as "a slightly different scope." He mentioned this in context of why he is willing to pay the renewal premium with us. Relationship value, not pricing parity.
+
+Action items
+- Sarah: written onboarding plan and escalation path, 14 Oct
+- Tom: signed renewal SoW, 21 Oct
+- Carlos: confirmed reference availability calendar, 14 Oct

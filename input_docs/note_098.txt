@@ -1,0 +1,16 @@
+Camden Regulatory Brief, EU AI Act enforcement readiness update
+8 Dec 2026
+
+Status update on EU AI Act Phase 2 enforcement (effective 2 Aug 2027):
+
+- Five member states have published draft inspection frameworks (Germany, France, Spain, Italy, Netherlands). Remaining member states expected to follow Q1 2027.
+- The Spanish framework's broader interpretation of "operator" applicability (covered in note_054) has been adopted in modified form by Italy. Pattern suggests advisory firms producing AI-derived analysis should plan for this scope rather than the narrower one.
+- A working group on cross-border enforcement coordination has been formed under the European AI Office. First report expected Q2 2027.
+
+For advisory firms with EU exposure: readiness work that is not started by mid-Q1 2027 will be increasingly difficult to complete before the August deadline. Specialist capacity is constrained and pricing is firming.
+
+Recommended Q1 actions for in-scope firms:
+- Conduct internal scope assessment
+- Engage specialist counsel for ambiguous obligations
+- Document model usage in client engagements going forward
+- Begin client communication on the firm's compliance position

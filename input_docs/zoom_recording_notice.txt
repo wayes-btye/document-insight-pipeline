@@ -1,0 +1,11 @@
+[System notification - Zoom recording available]
+
+Recording from your meeting "Internal sync" on 12 Oct 2026 is now available.
+
+Duration: 23 minutes
+Participants: 4
+Recording link: https://zoom.example.com/rec/share/XXXXXXX
+
+This recording will expire in 30 days. Click here to extend retention.
+
+Do not reply to this email.

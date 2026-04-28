@@ -1,0 +1,37 @@
+Research snippet: mid-market segment health, Q3 review
+Compiled by: Ben Markovich
+Date: 26 Sep 2026
+For: Sarah Patel, Jenna Rodriguez
+
+Definition: mid-market = clients with 50-500 employees, ARR $80k-$300k for us.
+
+Q3 segment composition
+- 11 active mid-market clients
+- Q3 booked revenue from segment: $1.6M (34% of total)
+- Average ARR: $145k
+- 2 mid-market renewals closed Q3 (BridgeWave bridge extension at reduced scope, Elemental Labs at flat)
+- 3 renewals deferred from Q3 to Q4 (unusual)
+
+Engagement health signals across the 11 accounts
+- Green: 4 accounts (clear renewal intent, expansion conversations active)
+- Amber: 5 accounts (renewal expected but on tighter scope, pricing pressure visible)
+- Red: 2 accounts (Northpoint, plus one more added this quarter: Stellaris)
+
+Stellaris worth flagging
+The Stellaris account has gone quiet over the past 6 weeks. Account manager has not been able to schedule a check-in. Renewal in March. Suggest treating as red until proven otherwise.
+
+Cross-cutting observations
+
+Three patterns repeat across the amber/red accounts:
+1. Stated budget pressure, often citing CFO-led vendor reviews
+2. Scope-reduction asks rather than direct discount asks (perhaps to avoid signalling churn intent)
+3. Apex named or implied in 6 of the 7 amber/red accounts as alternative under consideration
+
+The mid-market segment is where competitive pressure from Apex is most directly visible. The integration gap (Salesforce, HubSpot) is a recurring secondary concern in this segment.
+
+Recommendation
+
+Treat mid-market as a strategic risk segment for FY27 planning. Specifically:
+- Conduct red-flag retention conversations with the 2 red accounts within 30 days
+- Bring forward the connector roadmap discussion to October partner meeting
+- Reconsider whether mid-market segment requires its own engagement model rather than a scaled-down enterprise approach

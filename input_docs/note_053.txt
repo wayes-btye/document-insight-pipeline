@@ -1,0 +1,38 @@
+Meeting summary: monthly finance review
+Date: 1 Oct 2026
+Attendees: Aisha Brennan, David Kowalski, Jenna Rodriguez, Olivia Brand
+Compiled by: David Kowalski
+
+Standing monthly. Q3 close substantially complete.
+
+Numbers (final or near-final)
+
+- Q3 booked revenue: $4.71M (within $10k of estimate in note_007)
+- Q3 collected: $4.45M
+- DSO: 47 days (vs 42 same quarter last year)
+
+YTD vs plan
+- Revenue: $13.2M vs plan $13.6M, $400k behind
+- New business: $2.1M vs plan $2.6M, $500k behind
+- Renewals: held to plan
+
+The new-business shortfall is the live concern. Q4 close-pending pipeline ($1.4M weighted) closes the gap if conversion is strong.
+
+Concentration risk discussion
+
+David walked through the structural revenue dependency: top three clients are now 49% of Q3 booked revenue, vs 41% same quarter last year. Crestline alone is 20% of Q3.
+
+Aisha's concern: this is a vulnerability in our 2027 modelling we haven't formally addressed. We've grown by deepening with existing large clients, not by broadening the base. That worked while the existing clients were stable. With pricing pressure, scope reductions, and Apex circling, the strategy looks less defensible.
+
+Jenna pushed back gently: deepening with large clients is also where the highest-margin work is. Broadening to mid-market means lower margin and higher acquisition cost.
+
+No decision today. Aisha asked David and Jenna to bring a paper to the November partner meeting on whether and how to address the concentration question for FY27.
+
+Other items
+
+- The engineering retention conversation (see note_022) was raised. Aisha confirmed the comp review is being brought forward. Olivia and David working on the data.
+- The Verdant pilot (note_028, note_047) is the largest healthcare-flagged conversation we've ever had. Early but worth tracking carefully.
+
+Action items
+- David and Jenna: concentration paper for November partner meeting, draft 8 Nov
+- Olivia: comp review data, 25 Oct

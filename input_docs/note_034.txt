@@ -1,0 +1,45 @@
+Meeting summary: internal Apex teardown
+Date: 24 Sep 2026
+Attendees: Tom Whitaker (chair), Ben Markovich, Priya Singh, Marcus Chen, Sarah Patel
+Compiled by: Marcus Chen
+
+90-minute working session. Purpose: build a shared internal view of Apex Strategy Group, where they win, where they lose, and what our counter-position should be.
+
+What we know
+
+Drawing on the brief Ben circulated (apex_brief.txt) plus client conversations from the past quarter.
+
+Where Apex wins
+- Price-led conversations, particularly with procurement-heavy buyers
+- Mid-market accounts where the buyer has limited bandwidth to evaluate depth
+- Situations where the buyer has had a prior negative experience with a more expensive firm
+
+Where Apex appears not to win
+- Senior-stakeholder-led decisions (their bench is junior-heavy)
+- Long-term strategic engagements requiring continuity
+- Vertically-specialised work (they pitch the same offering everywhere)
+
+What we don't know
+- Their actual delivery quality. Buyers we've lost to them haven't given us post-mortem feedback.
+- Their renewal rate. Sustained competitive pressure depends on whether their initial wins retain.
+- Whether their data asset claim is real or marketing.
+
+Working hypothesis
+
+Apex is winning new business at our expense in mid-market through aggressive pricing and a credible-enough sales motion. Their win-rate likely suffers when buyers do deep evaluation. Their retention likely suffers when delivery doesn't match the sales promise.
+
+Our counter-position should not be price-matching. It should be:
+1. Force depth-of-evaluation early in the buyer's process
+2. Make our senior involvement visible and quantifiable
+3. Provide reference customers who explicitly chose us over Apex (we currently have one strong reference and need more)
+4. Frame the buyer's decision around outcome certainty rather than input cost
+
+What we don't have ready and need
+- A simple comparison framework that helps a buyer self-assess whether they need us or Apex
+- A "bake-off" engagement structure for buyers who want to try both
+- Tighter feedback loop with lost-deal buyers. Currently we hear about losses through clients (note_001 etc) rather than systematically
+
+Action items
+- Ben: lost-deal interview process draft, 8 Oct
+- Sarah: refresh of standard objection-handling materials with explicit Apex content, 4 Oct
+- Tom: bring counter-position to October partner meeting for sign-off, 16 Oct

@@ -1,0 +1,38 @@
+Research snippet: pricing benchmarking - internal reference
+Compiled by: David Kowalski
+Date: 25 Oct 2026
+For: partner discussion
+
+Purpose: provide a defensible internal view of where our pricing sits relative to comparable firms, ahead of multiple Q4 renewal conversations where pricing is a contested point.
+
+Methodology
+
+Used four data sources:
+1. Camden Research published rate-card data for 12 boutique commercial advisory firms (Q3 2026)
+2. Direct intelligence from buyer conversations across our active client base (5 conversations referencing competitor pricing)
+3. Public RFP responses from two recent procurements where we were a respondent
+4. Internal cost-to-deliver model (overhead, target margin)
+
+Findings
+
+Day-rate positioning
+- Senior consultant: we are 8-12% above sector median
+- Mid-level consultant: we are at sector median
+- Analyst: we are 5% below sector median
+
+Engagement structure positioning
+- We list-price retainer as the default; sector median is 60% retainer / 40% milestone or hybrid
+- Apex prices significantly below us across all bands (covered in apex_brief.txt)
+- One-pager / point-engagement pricing absent from our list pricing; sector median has this for $15-25k brackets
+
+Cost-to-deliver
+At current senior day-rate, we earn target margin (32%) at 70%+ senior utilisation. Below 60% utilisation, margin compresses materially.
+
+Recommendations for partner discussion
+
+1. Adjust list-price retainer to be the upper bound, with a 60/40 hybrid as the default offered structure. Reduces friction in procurement-led conversations.
+2. Add a one-pager / point-engagement tier to the list pricing. Captures opportunities currently lost without conversation.
+3. Hold senior day-rate position - the differentiation argument supports it.
+4. Do not match Apex's pricing. Match Apex's engagement-model flexibility (milestone-based) where it's the actual barrier.
+
+This is for internal reference. Not to be shared with clients or in negotiation.

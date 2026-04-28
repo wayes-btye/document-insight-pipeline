@@ -1,0 +1,10 @@
+Lattice - renewal outcome
+Tom, 9 Oct
+
+Devon's renewal review concluded. We retained at $68k (down from $78k, 13% reduction). Apex was selected for a separate piece of project work valued at $35k.
+
+This is a partial loss disguised as a renewal. We've kept the relationship and the recurring base but Apex now has a foothold inside Lattice. The dynamic for next year's renewal will be very different.
+
+Karen was apologetic. Devon's procurement framework simply didn't accommodate "the firm without the connector." She suggested we get serious about the Salesforce connector roadmap if we want to defend the relationship in 2027.
+
+Internal action: log as renewal at -13%, flag as competitive-displacement risk for 2027 forecasting. Treat the connector roadmap commitment (note_063) as load-bearing for this account specifically.

@@ -1,0 +1,28 @@
+Meeting summary: Verdant Therapeutics pilot kickoff
+Date: 18 Oct 2026
+Attendees: Marcus Chen, Sarah Patel (Meridian), Anita Sandhu, Robert Kane, Carmen Dalleva (Verdant Pricing Lead)
+
+5-week pricing benchmarking pilot ($35k). Started today.
+
+Scope confirmation
+
+Carmen walked us through the specific therapeutic class and the comparator products she wants benchmarked. The list is more concentrated than the discovery call (note_028) had suggested - 6 comparators not 9. This makes the work tighter.
+
+Onboarding flagged
+
+Carmen raised, unprompted, that she'd heard about advisory engagements being "front-loaded with data prep that the client ends up doing." She wanted to confirm Meridian is doing the data work, not them. Sarah was direct: yes, we are. The data work is in scope and our analyst will own it.
+
+This was a positive moment. Carmen had clearly been briefed on common advisory friction points and was reassured by the answer.
+
+Working agreements
+- Weekly check-in Thursdays 10:00, 30 min
+- Mid-pilot review at end of week 3
+- Final readout 22 Nov
+
+Open questions for follow-up
+- Marcus to confirm with Carmen whether the readout audience extends beyond her team
+- Sarah to flag internally that Verdant's onboarding sensitivity is informative for our broader onboarding redesign work (see note_048)
+
+Action items
+- Marcus: comparator data sourcing started, week 1 progress note 25 Oct
+- Sarah: brief Anita on engagement governance one-pager, 21 Oct

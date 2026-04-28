@@ -1,0 +1,39 @@
+Research snippet: Helmsley Group renewal brief
+Compiled by: Marcus Chen, ahead of Sep 30 scope discussion
+For: Sarah Patel, Aisha Brennan
+
+Engagement overview
+- Original SoW: business unit X commercial strategy support
+- Annual fee: $760k (Q3 booked)
+- Renewal: 30 Apr 2027
+- Current scope creep: payments business unit (informal), occasional outputs to corporate strategy team (informal)
+
+Renewal context
+
+Helmsley is our second-largest client by Q3 booking ($760k of $4.7M Q3, 16%). The relationship has been stable for three years. Recent dynamics worth noting:
+
+- Daniel Heath (COO) has flagged the scope-creep question himself and wants to either formalise or pull back before the next audit cycle (FY27 begins in May). This is a forced decision moment.
+- Maya Pendleton (Strategy) has been the executor on the engagement and is well-disposed but has limited budget authority.
+- Helmsley's central procurement team has tightened renewal review processes in 2026 across all professional services vendors. Crestline reported similar (see note_011).
+- The Salesforce integration ask has come up on three separate monthly calls without resolution.
+
+Scenarios for partner discussion
+
+Scenario A: formalise expanded scope
+- Estimated annual fee: $1.05M (+38%)
+- Adds payments BU and corporate strategy formally
+- Risk: procurement may use the size jump as a negotiation lever; net could land at $920k
+
+Scenario B: hold current scope, retire informal work
+- Annual fee: $760k or modest 5-8% increase
+- Removes audit risk
+- Risk: Daniel/Maya value the informal scope; pulling it back may reduce account warmth
+
+Scenario C: hybrid (formalise payments BU only)
+- Estimated annual fee: $890k (+17%)
+- Compromise: lower exposure to procurement push-back, retains the most valuable expanded work
+- Recommended for partner discussion
+
+Open questions
+- What is our internal Salesforce connector roadmap (if any)? This affects how we frame the renewal conversation.
+- Is the 16% Q3 concentration in Helmsley a flag the partners want to address proactively?

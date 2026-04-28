@@ -1,0 +1,44 @@
+Research snippet: 2027 revenue forecast - assumptions and ranges
+Compiled by: David Kowalski
+Date: 19 Dec 2026
+For: January partner meeting
+
+Methodology
+
+Bottom-up by client, with three scenarios (defensive, central, optimistic) for each major account based on Q4 conversations. Smaller accounts modelled as a portfolio at central case only.
+
+Top-line numbers
+
+Defensive case: $14.8M
+Central case: $17.1M
+Optimistic case: $19.4M
+
+Plan being submitted: $17.0M (central case minus 0.5% for prudence)
+
+Key account drivers (defensive vs central deltas)
+
+Crestline ($865k base + $45k EU AI Act): central case assumes EU AI Act conversion to Phase 2 ($120k incremental). Defensive does not.
+
+Helmsley ($890k Scenario C agreed): central case assumes scope holds. Defensive case assumes 5% mid-year contraction.
+
+Concorde (renewal May): Helena's growth scenario (interview_concorde_helena_20261005) suggests upside potential. Central assumes flat at $610k Q3 run-rate. Optimistic assumes 30% expansion.
+
+Verdant (Phase 2 conversion expected): central case $200k, optimistic $280k.
+
+Forge (mid-market expansion scope): central case $200k incremental, optimistic $280k.
+
+Concentration and risk-weighting
+
+Forecast assumes top 3 clients remain at 45-50% of revenue. The scenario where Crestline does not renew at all is not modelled (treated as catastrophic and out of central planning scope). The scenario should still be discussed at the partner meeting.
+
+New business assumptions
+
+Central case includes $2.4M new business (vs $2.1M actual 2026, $2.6M plan 2026). The shortfall in 2026 informs 2027 planning - we are not projecting a sudden conversion improvement.
+
+Watchlist for 2027
+
+- Salesforce connector landing on time (critical for Lattice, Helmsley, BridgeWave behaviour)
+- Engineering retention stabilising (compounds the connector point)
+- EU AI Act partnership materialising (Crestline carve-out is the proof point)
+- Apex Q1-Q2 activity pattern (current pause may not persist)
+- Healthcare vertical decision (Q1 partner meeting)

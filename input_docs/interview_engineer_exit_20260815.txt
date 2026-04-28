@@ -1,0 +1,62 @@
+Internal exit interview transcript: senior engineer (anonymised)
+Conducted by: Olivia Brand (Meridian)
+Date: 15 Aug 2026
+Duration: 28 min
+Format: clean verbatim, light edits
+Confidential, distribution: Aisha Brennan only
+Context: voluntary departure to Series B fintech
+
+[00:00] OLIVIA: Thanks for sitting through this. The standard purpose of an exit interview is for us to learn rather than for me to convince you to stay. You've signed the offer, that decision is settled.
+
+ENGINEER: Understood.
+
+OLIVIA: Let me just start with the simple version. Why are you leaving?
+
+ENGINEER: Three reasons. Compensation is below my market read by about 20%. The work has felt directionless for the last year. And I don't have confidence that the technical decisions I think are important will get prioritised.
+
+OLIVIA: Take me through the technical decisions piece. What specifically?
+
+ENGINEER: We have been talking about the platform work for two and a half years. Every quarter we agree it's important. Every quarter we then deprioritise it for client connector work. After enough cycles I've stopped believing the platform work will actually happen. That's not a complaint about any individual decision. It's a pattern.
+
+OLIVIA: When you say platform work, what specifically would have changed if it had been prioritised?
+
+ENGINEER: We'd have a much more flexible substrate for building integrations. Instead of building a Salesforce connector and then a HubSpot connector and then probably a Hubspot v2 connector when their API changes, we'd have an integration framework that makes each one cheaper and faster. The math works out around the third connector.
+
+OLIVIA: And the client pressure for individual connectors has consistently won over.
+
+ENGINEER: Yes. And it's a reasonable trade-off if you're optimising for the next renewal. It's a worse trade-off if you're optimising for being a real product company in three years. I've concluded the firm is the first kind of firm rather than the second. That's fine. It's just not the firm I thought I was joining.
+
+OLIVIA: That's useful, painful but useful. The compensation piece, what specifically would have kept you?
+
+ENGINEER: Honestly, an honest comp review six months ago. The fintech offer is 18% above what I'm on now in cash, plus better equity. The cash gap is most of it. If we'd been within 5% I'd probably have stayed.
+
+OLIVIA: Why didn't you raise the comp question with us proactively?
+
+ENGINEER: I did, in March. The response was that the comp cycle was annual and we'd revisit in October. I shouldn't have had to formally raise it for the comp to track market.
+
+OLIVIA: That's fair feedback. What about the work itself, separate from the platform question?
+
+ENGINEER: The work is fine. The team is good. Day to day is enjoyable. The friction is structural, not interpersonal.
+
+OLIVIA: Last question, anything we should change to retain the people who are still here?
+
+ENGINEER: Two things specifically. Continuous comp review, not annual. Annual is too slow for this market. And honest conversations about the platform-versus-client trade-off rather than pretending it's not a trade-off. People notice.
+
+OLIVIA: Thank you. I'll be sharing this anonymised with Aisha. Anything you want me to leave out?
+
+ENGINEER: No, share it. The point of doing this is for it to inform something.
+
+OLIVIA: Best wishes for the new role.
+
+ENGINEER: Thank you. The team is good people. Tell them I said so.
+
+[end recording 28:14]
+
+Olivia's notes
+- Three departure drivers: comp 20% below market, structural directionlessness, low confidence in priority follow-through
+- The platform vs connector trade-off is the centre of the engineering retention question
+- Annual comp review cycle is too slow for current market dynamics
+- This is the senior departure flagged in note_022 - not the at-risk seniors still with us
+- Direct echo of the engineering capacity issue (note_022, note_063)
+- Recommend bringing comp review to continuous quarterly cycle for engineering
+- Action: confidential briefing to Aisha

@@ -1,0 +1,38 @@
+Research snippet: vertical decision brief - healthcare
+Compiled by: Sarah Patel
+Date: 28 Nov 2026
+For: January partner meeting
+
+Purpose
+
+Synthesise the evidence on healthcare vertical entry following the Verdant pilot completion and the original capability assessment work (interview_healthcare_expert_20260818).
+
+Evidence base
+
+1. Helen Ashworth interview (Aug 2026): credibility gap between "boutique commercial firm" and "credible healthcare advisor" is real and known to buyers. Two paths to bridge it (senior hire OR loss-leader case study). Best-fit demand pocket for our profile: digital health spinout commercial strategy.
+
+2. Inbound enquiry log Q3 (note_005): 7 healthcare enquiries in Q3, vs 2 in Q2 and 1 in Q1. Trend is real but conversion is poor (1 of 7 converted to engagement, that being the Verdant pilot).
+
+3. Verdant pilot (Oct-Nov 2026, note_028, note_067): completed on time, on scope, on budget. Anita and Robert have indicated they want to commission Phase 2 (commercial launch readiness, 200-280k). Decision Dec 2026. This is the first healthcare engagement that would land at "real" scope.
+
+4. Argentum (note_005): lost. Specifically because of healthcare credibility gap. Confirms Helen's framing.
+
+5. Q4 leadership decision (note_063): not formally launching healthcare practice, but continuing to test through Verdant outcome.
+
+Position now
+
+Verdant Phase 2 conversion would convert healthcare from "experiment" to "small but real workstream" (200-280k incremental in 2027 from a single account).
+
+The Helen Ashworth two-path question becomes:
+- Path A (senior hire): probably 250-300k investment in year 1 for a senior with hospital-system or payer experience
+- Path B (continue loss-leader engagements): cheaper but slower; assumes 2-3 more pilot engagements at <40k each before credible case study emerges
+
+Recommendation
+
+Defer the senior hire decision until end of Q1 2027. Use Q1 to:
+- Convert Verdant Phase 2
+- Pursue 1-2 more healthcare pilot engagements proactively (not just inbound)
+- Track conversion and credibility gain across this small portfolio
+- Reassess at Q1 partner meeting with concrete data rather than projection
+
+Risk of waiting: healthcare-specific competitor activity (specifically Apex's healthcare hire, see competitor_radar_q4.txt) may close the window. Worth tracking.

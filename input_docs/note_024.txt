@@ -1,0 +1,20 @@
+Lattice Logistics, email thread summary (24-29 Sep)
+Tracking: integration follow-up post-QBR
+
+After the 14 Sep QBR (see note_001), Karen Doerr followed up on email. Summary of the exchange:
+
+Karen, 24 Sep: "When can we expect the Salesforce connector position? Devon is asking for it before he scopes the renewal review."
+
+Tom, 25 Sep: "By Friday 30. We're aligning internally on the timeline."
+
+Karen, 26 Sep: "Understood. For context, Devon's renewal review is now scheduled for week of 7 October. The connector question will be a deciding factor."
+
+Tom, 26 Sep: acknowledged.
+
+Karen, 28 Sep: "FYI we had a call with Apex this morning. Their account team confirmed they have a Salesforce connector live with three reference customers. They're sending us names for verification."
+
+Tom, 28 Sep: "Appreciate the heads-up. Let's talk before your Apex follow-up."
+
+Position
+
+The integration gap is now explicitly the difference between us and Apex in Lattice's evaluation. We have one week before the renewal review.

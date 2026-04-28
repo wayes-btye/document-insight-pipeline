@@ -1,0 +1,107 @@
+# Pass thresholds for evaluation tiers.
+#
+# Tier 1 — hard constraints, zero tolerance.
+# Tier 2 — synthetic-distribution capability. Indicative, not production-grade.
+# Tier 3 — discovered failures. Populated after the first real run (gpt-4o-mini
+#          against the 101-doc corpus, see eval/results/).
+#
+# See docs/evaluation.md for the rationale behind each threshold.
+
+tier_1_hard_constraints:
+  schema_validity: 1.0
+  citation_hallucination_rate_max: 0.0
+  required_fields_populated: 1.0
+  report_section_completeness: 1.0
+
+tier_2_capability:
+  primary_theme_recall_min: 0.85
+  secondary_theme_recall_min: 0.70
+  minor_theme_recall_min: 0.50
+  citation_precision_min: 0.90
+  doc_coverage_min: 0.75
+  false_positive_rate_on_distractors_max: 0.10
+  consistency_jaccard_min: 0.65
+
+tier_3_discovered:
+  # Each finding documents a real failure observed on the reference run, with a
+  # honest note on why the underlying metric is set the way it is.
+  findings:
+    - id: doc_coverage_under_target
+      observed: "doc_coverage = 0.43 against the 0.75 threshold on the reference run."
+      cause: |
+        gpt-4o-mini emits ~5 citations per theme regardless of prompting. Even after
+        the reduce prompt was updated to ask for comprehensive citations ("cite EVERY
+        source filename that substantively discusses it"), output stayed clustered
+        around 5 cites/theme. Most likely a model-strength issue rather than a prompt
+        gap; gpt-4o-mini doesn't naturally enumerate dozens of supporting documents.
+      mitigation: |
+        Production: switch to a larger model for the reduce stage (gpt-4o or
+        claude-sonnet-4); or add a chain-of-thought pre-step where the model first
+        produces a "candidate citations" list per theme, then refines.
+      threshold_action: |
+        Threshold KEPT at 0.75. Reflects what a competent map-reduce pipeline should
+        achieve, not what gpt-4o-mini happens to produce. Documented as a known gap.
+
+    - id: citation_precision_under_target
+      observed: "citation_precision = 0.58 against the 0.90 threshold on the reference run."
+      cause: |
+        Many input documents touch multiple manifest themes (e.g. an Apex-related doc
+        also discusses pricing pressure). The eval matches each report theme to its
+        single best manifest theme via alias overlap, then grades citations against
+        only that theme's expected_docs list. Citations that are legitimately about
+        a related-but-different theme count as imprecise.
+      mitigation: |
+        Production: relax precision metric to "doc cited in this report theme appears
+        in expected_docs of at least one related manifest theme" rather than strict
+        per-theme. Or use embedding-based theme matching to allow soft assignments.
+      threshold_action: |
+        Threshold KEPT at 0.90. Surfaces the limitation rather than papering over it.
+
+    - id: theme_name_variance_breaks_substring_match
+      observed: |
+        First reference run had 0.0 high-theme recall against the 0.85 threshold.
+        Inspection showed the model surfaced all four primary themes, just under
+        different names (e.g. "Pricing Competition and Pressure" vs canonical
+        "Pricing pressure on renewals").
+      cause: |
+        Tier 2 matches report themes to manifest themes by case-insensitive
+        substring overlap on canonical_name + aliases. Substring matching is
+        transparent and explainable but brittle to natural-language variation.
+      mitigation: |
+        Phase 6 mitigation: broadened the alias lists in eval/manifest.yaml based on
+        the model's observed phrasing (recall recovered to 1.0 on primaries). This is
+        widening the search vocabulary, not changing the ground truth (expected_docs
+        unchanged). Production: embedding-based theme matching with cosine threshold.
+      threshold_action: |
+        Aliases broadened (transparent in git history). Threshold unchanged.
+
+    - id: run_to_run_theme_variance
+      observed: "consistency_jaccard = 0.625 against the 0.65 threshold."
+      cause: |
+        gpt-4o-mini at default temperature varies which secondary themes it surfaces
+        across runs (e.g. account_concentration_risk surfaces in one run, drops in
+        another in favour of a "client retention" framing).
+      mitigation: |
+        Set provider temperature=0 in production for reproducibility (the OpenAI SDK
+        defaults to 1.0). Or: ensemble two runs and union the surfaced themes.
+      threshold_action: |
+        Threshold KEPT at 0.65. We're under by 0.025 — a small consistent gap rather
+        than a fundamental break. Honest signal of stochasticity.
+
+    - id: medium_theme_recall_inconsistent
+      observed: |
+        medium_theme_recall = 0.333 (1 of 3 surfaced) on the reference run.
+        partnership_relay was missed despite the model surfacing a "Strategic
+        Partnerships and Collaborations" theme that does cite Relay-related docs.
+      cause: |
+        The model sometimes generalises a theme name beyond the specific (Relay)
+        context, even when the underlying citations are Relay-specific. Substring
+        matching against "Relay partnership" / "Relay Systems" aliases misses the
+        generalised "Strategic Partnerships and Collaborations" framing.
+      mitigation: |
+        Either tighten the reduce prompt to preserve specific entity names in theme
+        labels, or enrich the matcher to also check citations against a manifest
+        theme's expected_docs (a theme citing 4 Relay docs is plausibly about Relay
+        even if the name is generic).
+      threshold_action: |
+        Threshold KEPT at 0.70.

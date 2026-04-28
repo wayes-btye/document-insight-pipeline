@@ -1,0 +1,26 @@
+Lost-deal interview - Marigold Software (the only completed one Q3)
+Conducted by: Ben Markovich, 18 Sep
+Buyer: Anish Khan, Head of Commercial, Marigold
+
+Anish was generous with his time. 40 minutes.
+
+Why we lost (his framing)
+
+Two factors in roughly equal weight:
+1. Apex came in 35% below our quote. Anish was direct that price was the entry point but wouldn't have been decisive on its own.
+2. Apex demonstrated a working Salesforce connector during the proposal stage. Marigold has been on Salesforce for three years and the manual extract workflow had been a recurring frustration.
+
+What didn't matter (his framing)
+
+Anish was emphatic that the seniority of the team didn't tip the decision. Both teams felt comparably experienced. He said our delivery model "looked solid but Apex's looked solid too, and they were materially cheaper with the integration."
+
+What he wishes we'd done
+
+He volunteered this without prompting. "If you'd been honest with me earlier in the process that you don't have the connector, I would have known where to push back internally. By the time it came up in week 4 of the conversation we'd already built up momentum on Apex."
+
+He also noted that "the proposal was beautiful but not differentiated." He couldn't tell from the proposal what would be qualitatively different about working with us.
+
+Implications for our process
+- Surface integration capability gaps proactively in the discovery stage
+- Differentiate proposal content beyond credentials and methodology
+- Be willing to qualify ourselves out of opportunities where the integration gap is decisive

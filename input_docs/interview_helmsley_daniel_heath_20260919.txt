@@ -1,0 +1,78 @@
+Customer interview transcript: Daniel Heath, COO Helmsley Group
+Conducted by: Marcus Chen (Meridian)
+Date: 19 Sep 2026
+Duration: 38 min
+Format: clean verbatim, light edits
+Context: pre-renewal customer interview, internal use only
+
+[00:00] MARCUS: Thanks Daniel, appreciate you carving out the time. As I mentioned, this is a structured interview rather than our normal monthly check-in. The intent is for me to understand your perspective on the engagement candidly, so we can use that internally as we think about renewal and roadmap.
+
+DANIEL: Sure, fire away.
+
+MARCUS: Maybe just to start broadly. If you had to characterise the engagement with us over the past year in a sentence, what would you say?
+
+DANIEL: Hmm. Solid but slow. The work is high quality, the analysts are smart. But everything takes longer than I think it should and we keep having the same conversations about integration that we've been having for two years.
+
+MARCUS: Tell me more about the integration piece specifically.
+
+DANIEL: Look, we moved to Salesforce in 2024. We told you then that we were moving. We told you again in 2025 that the manual extract workflow was costing us hours every week. We've now had this conversation, I think, four times in 2026. At some point I have to take Maya seriously when she says her team are spending 6-8 hours a week on something that should be automated.
+
+MARCUS: And in those conversations, what response from us would actually feel different?
+
+DANIEL: Honest answer, even saying "we're not building this in 2027 and here's why" would be better than what we get now. Right now we get warm noises and no commitment. I can't plan around warm noises.
+
+MARCUS: That's fair feedback. What about the work itself, separate from the integration question?
+
+DANIEL: The work is genuinely good. Maya's team uses your monthly outputs as the basis for their planning conversations with the business units. The quarterly deep-dives have changed how we think about pricing in two of the four BUs. So I'm not complaining about value delivered. I'm complaining about friction in extracting that value.
+
+MARCUS: Understood. Let's talk about the scope conversation. You've raised the point about the payments BU informal scope. From your side, what's driving the timing of that?
+
+DANIEL: Two things. First, my finance team will trip over it in the next audit cycle. Second, and this is more strategic, the payments BU is now ~30% of our revenue. The work you're informally doing for them is high-value. If I'm honest with myself, we should be paying you for it. So I'd rather get ahead of both issues at the same time.
+
+MARCUS: When you think about formalising it, what's the upper bound of what you'd be willing to invest?
+
+DANIEL: I haven't put a number on it but if you came in at $200k incremental for the payments BU specifically, with a defined deliverable schedule, that wouldn't make me blink. If it came in at $400k incremental I'd push back hard.
+
+MARCUS: That's helpful directionally. Switching topics, what are you watching in the broader market that affects how you'd think about advisory partners over the next two years?
+
+DANIEL: [pause] Three things. EU AI Act is going to be a real cost for our business and we don't yet know who we're going to use to help us through it. Second, our procurement function has tightened up on professional services renewal across the board. They are going to require benchmarking and we're going to have to do it. Third, we keep getting cold-called by smaller boutique firms with sharper pricing. Apex specifically has been in touch three times this year.
+
+MARCUS: How do you mentally process the Apex outreach?
+
+DANIEL: I delete the emails. But to be fair, our procurement team probably doesn't. If I had a CFO who was harder on professional services spend they would have raised it by now.
+
+MARCUS: When you say tighter procurement, how does that interact with our renewal conversation?
+
+DANIEL: It means I have to be ready for the question "have you tested the market." This year I'm going to have to. It doesn't necessarily mean we leave you, but it does mean the conversation will be more structured than it has been historically.
+
+MARCUS: Got it. What about the EU AI Act question. Is that something you'd want us to address as part of an expanded scope?
+
+DANIEL: That's a good question. I'd been thinking about it as a separate workstream. Probably needs a specialist. But if you have credible capability there, that would be easier than going to a separate firm.
+
+MARCUS: We're working on our position. Let me come back to you on that one specifically.
+
+DANIEL: OK.
+
+MARCUS: Last question and I'll let you go. If you imagine the renewal in April, what does the scenario look like where you're frustrated with the outcome?
+
+DANIEL: [pause] The scenario where I'm frustrated is the one where I've spent the next six months having the same conversations I've been having all year. Same Salesforce question, same scope ambiguity on payments, same vague answers on EU AI Act. By April I'm tired and your competitors are sounding more concrete. So I'd value clarity more than concessions, if that makes sense.
+
+MARCUS: It does. Clarity by when?
+
+DANIEL: Realistically, by end of November on the integration roadmap and the payments scope. EU AI Act position by January is fine.
+
+MARCUS: That's incredibly helpful Daniel. I'll write this up and circulate internally.
+
+DANIEL: Please share the writeup with me too. I want to see how you've heard me.
+
+MARCUS: Will do.
+
+[end recording 38:12]
+
+Marcus's notes
+- Daniel is not preparing to leave but is preparing to be a tougher counterparty
+- Integration roadmap clarity is the highest-value non-monetary commitment we could make
+- Payments BU formalisation has a $200k upper bound he's already comfortable with
+- EU AI Act is a credible expansion lane if we develop the capability
+- Procurement tightening is a sector pattern (echoes Crestline, Concorde)
+- Send the writeup back to Daniel as agreed

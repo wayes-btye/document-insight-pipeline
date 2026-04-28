@@ -1,0 +1,23 @@
+BridgeWave email exchange: summary
+Period: 2-19 Sep
+Compiled by: Priya Singh
+
+Tracking the BridgeWave renewal conversation across email since the August check-in.
+
+Key points from the thread
+
+5 Sep. Carlos Reyes (BridgeWave VP) asked for a "ballpark" on a reduced-scope engagement for next year. Said the leadership team is "rationalising vendor spend across the board, not specific to us."
+
+8 Sep. I sent back two illustrative scopes (60% of current, 75% of current). Did not commit to pricing.
+
+12 Sep. Carlos came back: "the 60% option is closer to where we'd land." Mentioned in passing that they'd been "approached by Apex with a different framing" but didn't elaborate when I asked.
+
+15 Sep. Carlos asked specifically whether we have a CRM connector for HubSpot. They've been using HubSpot for outreach and want our renewal-risk insights piped in. I confirmed we don't have one currently.
+
+19 Sep. Carlos: "appreciate the clarity. Will come back next week with a firmer steer."
+
+Read
+
+The reduced-scope ask is firm. Apex is in the picture but Carlos hasn't given us a competitive threat directly. The integration gap on HubSpot is a real issue for them. If we had it, it might tip the scope back up. Worth flagging in the next product conversation.
+
+Renewal date: 31 Jan

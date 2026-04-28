@@ -1,0 +1,38 @@
+Research snippet: Apex Strategy Group competitive brief
+Compiled by: Ben Markovich
+Date: 21 Sep 2026
+Purpose: standing reference for engagement leads
+
+Background
+
+Apex Strategy Group founded 2019. Headquartered London, second office Boston (opened Q1 2026). Recent Series B closed September 2026 at $180M valuation, $42M raised (Tarn Capital lead). Headcount grown from ~40 to ~95 over past 18 months.
+
+Positioning
+
+Apex positions as "data-led commercial advisory for mid-market." Their narrative emphasises proprietary benchmarking data assembled across their client engagements. We have not been able to verify the depth of this data asset.
+
+Pricing
+
+Public pricing is not disclosed but we have direct knowledge from three buyer conversations:
+- Lattice Logistics (Sep): Apex quoted $52k for scope Lattice characterised as comparable to our $78k engagement
+- BridgeWave (Sep): Apex "approached with a different framing", pricing not shared with us
+- Forge Analytics (Sep): Apex shortlisted alongside one other firm for a pricing project we were not invited to
+
+The pattern is consistently 30-40% below our list pricing. Whether the scope is genuinely comparable is the open question.
+
+Where we have lost in 2026
+- Three confirmed losses (one Q1, two Q2)
+- Two suspected losses (Q3, where the buyer disengaged after Apex contact)
+
+Where Apex is weak
+- Limited senior bench: their named partners are well-credentialled but the delivery teams are junior-heavy
+- No verticalisation: they pitch the same offering across SaaS, services, and (recently) healthcare
+- Reference-thin in segments where they're newest
+
+Recommended posture
+
+Continue selling on depth and senior involvement. Avoid getting drawn into scope-by-scope pricing comparisons in early-stage conversations. When pricing pressure surfaces, frame around outcome not input.
+
+Worth tracking
+- Apex hiring announcements (LinkedIn shows 8 senior hires since Series B announcement)
+- Any sign of Apex partnership announcements (Relay rumour worth watching, see note_003)

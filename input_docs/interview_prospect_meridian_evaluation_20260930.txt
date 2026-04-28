@@ -1,0 +1,81 @@
+Discovery transcript: prospect interview - "Atlas Software" (anonymised)
+Conducted by: Tom Whitaker, Marcus Chen (Meridian)
+Date: 30 Sep 2026
+Duration: 45 min
+Format: clean verbatim, light edits
+Buyer: VP Commercial at the prospect (name redacted at their request)
+Context: discovery interview during prospect's advisor selection process
+
+[00:00] TOM: Thanks for the time. As I mentioned, this is intended as a conversation rather than a sales pitch. I want to understand what you're trying to solve, and we can decide together at the end whether there's a useful next step.
+
+VP: Appreciated. We're a SaaS company, 280 employees, ARR around $42M. We've never used external advisory before. The CFO has now decided we should, and I'm running the selection.
+
+TOM: What triggered the decision?
+
+VP: Honestly, two specific things. First, we've been losing renewal pricing battles to a competitor that we know is more expensive than us. Something is going wrong in how we frame the value conversation. Second, our planning cycle for 2027 is the most uncertain we've had. The board wants better external perspective.
+
+TOM: Useful context. How are you running the selection?
+
+VP: We have a four-firm shortlist. You, Apex, one larger firm, one specialist. The four-firm thing is too many but I haven't been able to narrow. Each conversation has been useful in different ways, which is partly the problem.
+
+MARCUS: What would help you narrow?
+
+VP: Honest answer, two things. One, we need to understand price ranges before we get deep into scope conversations. Two, we'd like to see how each firm would actually approach our specific situation, not generic methodology decks.
+
+TOM: On price ranges, can I ask what your budget envelope looks like?
+
+VP: Between $200k and $350k for year one.
+
+TOM: Within that range, what each firm offers will look quite different. Just to be transparent, our typical engagement at that scale is structured around quarterly deep dives plus ongoing advisory. Apex tends to come in lower with a more transactional model. The specialist firm tends to come in at the upper end with deeper subject matter focus.
+
+VP: That's the kind of useful framing I needed earlier. The selection process has been opaque about the trade-offs.
+
+MARCUS: Can I ask, what specifically has Apex's pitch been like?
+
+VP: Sharper than yours, I'll be honest. Their deck was tailored. They named specific competitors of ours and referenced our recent earnings commentary. They quoted aggressive pricing. The gap between their preparation and what I'd seen from other firms was visible.
+
+TOM: That's useful feedback. I'm noting it.
+
+VP: Their weakness, if I'm being equally candid, is that I felt the team I'd be working with might be less senior than I'd want. The pitch felt orchestrated by their senior people but the day-to-day wouldn't be them.
+
+MARCUS: Have you formed a view on integration capability across the four firms?
+
+VP: Integration with what?
+
+TOM: Your CRM, your data systems. Apex specifically markets a Salesforce integration. We are working on one but don't have it yet.
+
+VP: We're on HubSpot. None of you mentioned HubSpot. Is that something I should have asked about?
+
+TOM: It depends on how the engagement deliverables flow into your day-to-day workflow. For some of our clients it matters a lot, for others it's a non-issue. I'd encourage you to think about how your team would actually use the outputs we'd produce. If it's "they look at them and discuss," integration matters less. If it's "they need to integrate them into their tactical workflow," integration matters more.
+
+VP: That's a useful question. I haven't asked it explicitly.
+
+MARCUS: Question on the four-firm shortlist. What would help you decide?
+
+VP: A practical exercise. Each firm walks through how they'd approach a specific question we're facing. Not a methodology deck. An actual point of view.
+
+TOM: We'd be happy to do that. Would a paid one-week scoping engagement work? Around $25k. We'd produce a written perspective on a specific question of your choosing. You'd have a real artifact to evaluate alongside the other firms.
+
+VP: That's the most useful thing anyone has proposed in this process so far. Yes.
+
+TOM: Let's set that up.
+
+VP: One condition, you have to be willing to take direct feedback at the end. If your perspective doesn't land we both move on without hard feelings.
+
+TOM: Agreed.
+
+VP: And one more thing. Honest answer, what's the case for choosing you over the more aggressive bidder?
+
+TOM: I'd rather show you through the scoping engagement than tell you in this conversation. The case has to be in the work. Pitching against a sharper proposal with a slower proposal is a losing strategy.
+
+VP: That's a more confident answer than I expected. Fine, let's do it.
+
+[end recording 44:52]
+
+Tom's notes
+- Strong prospect, real budget, genuine intent
+- Apex's pitch was visibly better-prepared than ours - confirms note_080 process review themes
+- HubSpot integration was a question the prospect hadn't been asked - we should be raising integration questions proactively
+- Paid scoping engagement is a useful pattern to test, particularly against opaque four-firm shortlists
+- Action: confirm scoping scope with Marcus, agree question with prospect, deliver in 7 working days
+- Internal action: this is the third buyer this quarter who has commented on Apex preparation quality. Persistent issue.

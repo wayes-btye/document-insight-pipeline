@@ -1,0 +1,55 @@
+Meeting summary: Relay Systems partnership review (consolidated)
+Date compiled: 22 Sep 2026
+Compiled by: Jenna Rodriguez
+Distribution: Aisha Brennan, Sarah Patel, leadership@meridian
+Status: decision required by 18 Oct
+
+Background
+
+This summary consolidates three Relay Systems meetings (15 Jul, 12 Aug, 8 Sep) and presents a recommended next step ahead of the October leadership session.
+
+Meeting 1, 15 Jul (initial scoping)
+Attendees: Marcus Tanaka (Relay VP Partnerships), Sarah Wei (Relay BD), Jenna Rodriguez (Meridian)
+
+Initial exploratory call. Relay is a pre-IPO ($340M last round) software firm whose commercial intelligence product overlaps about 30% with our advisory deliverables. Conversation was early-stage. Both sides agreed to follow up in August.
+
+Meeting 2, 12 Aug (mutual deep-dive)
+Attendees: Marcus Tanaka, Sarah Wei, Jenna Rodriguez, Tom Whitaker (Meridian)
+
+Walked through respective customer bases and engagement models. Strong overlap in mid-market SaaS segment, where Meridian has been losing renewals to Apex over the past two quarters. Relay's customer base would represent a warm-introduction pipeline that we currently lack. Discussed pricing structure at high level.
+
+Meeting 3, 8 Sep (proposal walk-through)
+Attendees: Marcus Tanaka, Jenna Rodriguez
+
+Tanaka presented Relay's proposed co-sell motion: Relay SDRs surface our advisory engagements as upsell paths for their software customers, Relay takes 15% of first-year ACV, joint pilots launch in Q1 2027.
+
+Tanaka mentioned Relay is talking to two other advisory firms. Apex is rumoured to be in their conversations.
+
+Assessment
+
+Attractive aspects:
+- Direct exposure to mid-market SaaS segment where we've been losing renewals to Apex
+- Relay's product is genuinely strong, the bundle is coherent for buyers
+- Signals market positioning ahead of competitive pressure
+
+Concerns:
+- 15% ACV revenue share is steep given existing SDR overhead. Math only works at high deal sizes.
+- We are not exclusive in Relay's plans
+- Public partnership ties us to Relay's roadmap, outside our control
+- Risk of being used as a comparable against Apex if Relay is talking to both
+
+Recommendation
+
+Pursue, but narrower than Relay proposes:
+1. Joint marketing only (case study and webinar series) for Q1 2027
+2. No revenue-share commitment at this stage
+3. Exclusivity carve-out: Relay agrees not to enter a deeper partnership with Apex within the SaaS commercial-strategy segment for 12 months
+
+Decisions needed
+- Commitment to pursue (Y/N): by 12 Oct
+- Negotiation lead assignment: by 12 Oct
+- Counter-proposal draft: by 18 Oct (Tanaka requested mid-October timeline conversation)
+
+Open questions for follow-up
+- Sarah: any existing client overlap with Relay's customer base
+- David: 2027 plan baseline assumption for new logo bookings
