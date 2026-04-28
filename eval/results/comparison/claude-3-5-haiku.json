@@ -1,0 +1,270 @@
+{
+  "executive_summary": "Our commercial advisory business faces critical challenges from aggressive market disruption, with Apex Strategy Group undercutting prices and procurement benchmarking eroding traditional margins. High client concentration and emerging competitive dynamics demand immediate strategic repositioning, particularly in mid-market segments where technology integration and pricing flexibility will determine survival. The most urgent priorities are developing proprietary technology capabilities, diversifying client base, and creating more adaptive service models.",
+  "findings": {
+    "themes": [
+      {
+        "name": "Competitive Pricing Pressure",
+        "description": "Widespread downward pricing pressure in commercial advisory market, driven by procurement benchmarking and aggressive competitors like Apex",
+        "citations": [
+          "note_012.txt",
+          "note_020.txt",
+          "note_066.txt",
+          "q3_lost_deals.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "high"
+      },
+      {
+        "name": "Strategic Integration Capabilities",
+        "description": "CRM and software integration, particularly Salesforce connector, becoming critical competitive differentiator",
+        "citations": [
+          "note_024.txt",
+          "note_056.txt",
+          "note_078.txt",
+          "note_095.txt",
+          "q3_lost_deals.txt"
+        ],
+        "salience": "high"
+      },
+      {
+        "name": "Mid-Market Advisory Dynamics",
+        "description": "Increasing focus on mid-market segment with challenges around pricing, integration, and competitive positioning",
+        "citations": [
+          "note_026.txt",
+          "note_076.txt",
+          "note_096.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "high"
+      },
+      {
+        "name": "Client Concentration Risk",
+        "description": "High revenue dependence on top 3-5 clients, creating strategic vulnerability",
+        "citations": [
+          "note_007.txt",
+          "note_033.txt",
+          "note_053.txt",
+          "note_073.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "high"
+      },
+      {
+        "name": "Engineering Talent Retention",
+        "description": "Critical need to retain senior engineering talent through strategic roadmap, compensation, and engagement",
+        "citations": [
+          "note_022.txt",
+          "note_069.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "medium"
+      },
+      {
+        "name": "EU AI Act Compliance",
+        "description": "Emerging regulatory landscape creating new advisory service opportunities and compliance challenges",
+        "citations": [
+          "note_004.txt",
+          "note_030.txt",
+          "note_054.txt",
+          "note_098.txt"
+        ],
+        "salience": "medium"
+      },
+      {
+        "name": "Healthcare Vertical Expansion",
+        "description": "Strategic exploration of healthcare consulting market with cautious, pilot-driven approach",
+        "citations": [
+          "note_028.txt",
+          "note_047.txt",
+          "note_096.txt",
+          "vertical_decision_brief.txt"
+        ],
+        "salience": "medium"
+      }
+    ],
+    "insights": [
+      {
+        "statement": "Apex Strategy Group is aggressively disrupting the mid-market advisory segment by undercutting prices by 30-40% and rapidly scaling from 40 to 95 employees",
+        "citations": [
+          "note_017.txt",
+          "note_020.txt",
+          "note_096.txt",
+          "q3_lost_deals.txt"
+        ],
+        "confidence": "high"
+      },
+      {
+        "statement": "Procurement-driven pricing benchmarking is now standard at top accounts, with integration capabilities becoming a key decision factor",
+        "citations": [
+          "note_066.txt",
+          "note_080.txt",
+          "q3_lost_deals.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "confidence": "high"
+      },
+      {
+        "statement": "Top 3 clients now represent nearly 50% of quarterly revenue, indicating increasing business concentration risk",
+        "citations": [
+          "note_007.txt",
+          "note_033.txt",
+          "note_053.txt",
+          "note_073.txt"
+        ],
+        "confidence": "high"
+      },
+      {
+        "statement": "The EU AI Act is creating a significant new advisory service market opportunity, with potential $200-400M market by 2028",
+        "citations": [
+          "note_030.txt",
+          "note_054.txt",
+          "note_098.txt",
+          "note_095.txt"
+        ],
+        "confidence": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "statement": "Continued downward pricing pressure could erode profit margins and threaten traditional advisory business models",
+        "likelihood": "high",
+        "impact": "high",
+        "citations": [
+          "note_012.txt",
+          "note_020.txt",
+          "note_066.txt",
+          "note_094.txt"
+        ]
+      },
+      {
+        "statement": "High client concentration makes the business vulnerable to individual client changes or non-renewals",
+        "likelihood": "high",
+        "impact": "high",
+        "citations": [
+          "note_007.txt",
+          "note_033.txt",
+          "note_053.txt",
+          "note_073.txt"
+        ]
+      },
+      {
+        "statement": "Lack of Salesforce and HubSpot integration capabilities could lead to significant mid-market client churn",
+        "likelihood": "high",
+        "impact": "high",
+        "citations": [
+          "note_024.txt",
+          "note_026.txt",
+          "note_056.txt",
+          "note_078.txt"
+        ]
+      },
+      {
+        "statement": "Potential loss of senior engineering talent could critically impact product development and client commitments",
+        "likelihood": "medium",
+        "impact": "high",
+        "citations": [
+          "note_022.txt",
+          "note_069.txt",
+          "year_end_lessons_2026.txt"
+        ]
+      }
+    ],
+    "opportunities": [
+      {
+        "statement": "Develop proprietary technology and vertical specialization to differentiate from competitors and defend pricing",
+        "citations": [
+          "note_094.txt",
+          "note_095.txt",
+          "note_099.txt"
+        ]
+      },
+      {
+        "statement": "Establish EU AI Act compliance services as a new high-value advisory offering",
+        "citations": [
+          "note_030.txt",
+          "note_054.txt",
+          "note_095.txt",
+          "note_098.txt"
+        ]
+      },
+      {
+        "statement": "Explore healthcare vertical expansion through targeted pilot engagements, starting with digital health spinouts",
+        "citations": [
+          "note_028.txt",
+          "note_047.txt",
+          "vertical_decision_brief.txt"
+        ]
+      },
+      {
+        "statement": "Create more flexible engagement models with milestone-based pricing to reduce procurement resistance",
+        "citations": [
+          "note_080.txt",
+          "note_099.txt",
+          "pricing_benchmarking.txt"
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "description": "Complete Salesforce connector development in H1 2027 to stabilize mid-market client retention",
+        "owner": "Engineering Leadership",
+        "timeframe": "H1 2027",
+        "citations": [
+          "note_078.txt",
+          "note_095.txt",
+          "year_end_lessons_2026.txt"
+        ]
+      },
+      {
+        "description": "Conduct comprehensive compensation review to retain senior engineering talent",
+        "owner": "HR and Leadership",
+        "timeframe": "Q4 2026",
+        "citations": [
+          "note_022.txt",
+          "note_069.txt",
+          "year_end_lessons_2026.txt"
+        ]
+      },
+      {
+        "description": "Develop EU AI Act compliance service offering and documentation processes",
+        "owner": "Compliance and Service Development Team",
+        "timeframe": "Q1 2027",
+        "citations": [
+          "note_030.txt",
+          "note_054.txt",
+          "note_098.txt"
+        ]
+      },
+      {
+        "description": "Implement onboarding redesign to reduce delivery friction and improve client experience",
+        "owner": "Client Engagement Team",
+        "timeframe": "Q1 2027",
+        "citations": [
+          "onboarding_pilot_results.txt",
+          "onboarding_research.txt",
+          "year_end_lessons_2026.txt"
+        ]
+      }
+    ]
+  },
+  "assumptions": [
+    "Current competitive pressures represent a structural market shift, not a temporary fluctuation",
+    "Senior leadership will prioritize strategic adaptation over maintaining legacy business models",
+    "Engineering talent retention is directly linked to strategic product development roadmap"
+  ],
+  "limitations": [
+    "Analysis does not include detailed financial modeling of proposed strategic shifts",
+    "Competitive intelligence is based on current market snapshot and may evolve rapidly",
+    "Quantitative impact of proposed actions cannot be precisely predicted without further market testing"
+  ],
+  "metadata": {
+    "docs_processed": 101,
+    "docs_failed": 0,
+    "model": "anthropic/claude-3-5-haiku",
+    "timestamp_utc": "2026-04-28T06:52:19+00:00",
+    "total_tokens_input": 146506,
+    "total_tokens_output": 30594,
+    "estimated_cost_usd": 0.239581,
+    "duration_seconds": 112.41
+  }
+}

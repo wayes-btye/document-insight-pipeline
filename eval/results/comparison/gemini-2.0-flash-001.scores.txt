@@ -1,0 +1,29 @@
+Eval against: eval/results/comparison/gemini-2.0-flash-001.json
+Corpus:       /home/claude-user/repositories/document-insight-pipeline/input_docs (101 files)
+Manifest:     /home/claude-user/repositories/document-insight-pipeline/eval/manifest.yaml
+
+Tier 1 — hard constraints  (PASS)
+  OK  schema_validity                          1.000  == 1.0
+  OK  citation_hallucination_rate              0.000  <= 0.0
+  OK  required_fields_populated                1.000  == 1.0
+  OK  report_section_completeness              1.000  == 1.0
+
+Tier 2 — synthetic capability  (FAIL)
+  XX  high_theme_recall                        0.750  >= 0.85
+        surfaced=['competitive_displacement_apex', 'integration_gap', 'pricing_pressure'] missed=['mid_market_churn_risk']
+  XX  medium_theme_recall                      0.667  >= 0.7
+        surfaced=['account_concentration_risk', 'onboarding_friction'] missed=['partnership_relay']
+  OK  low_theme_recall                         1.000  >= 0.5
+  XX  citation_precision                       0.700  >= 0.9
+        
+          'Competitive Pressure from Apex' → pricing_pressure prec=0.62 bad=['note_017.txt', 'note_024.txt', 'note_025.txt', 'note_034.txt', 'note_039.txt', 'note_096.txt']
+          'Pricing Pressure and Procurement Scrutiny' → pricing_pressure prec=0.67 bad=['helmsley-renewal-brief.txt', 'interview_helmsley_daniel_heath_20260919.txt', 'forecast_2027.txt', 'note_053.txt', 'note_074.txt']
+          'Engineering Retention Risks' → integration_gap prec=0.60 bad=['note_020.txt', 'note_053.txt', 'note_063.txt', 'note_069.txt']
+          'Onboarding Friction and Data Preparation Challenges' → onboarding_friction prec=0.90 bad=['note_055.txt']
+          'EU AI Act Compliance' → eu_ai_act_compliance prec=0.80 bad=['note_095.txt', 'relay_outcome_post_mortem.txt']
+          'Revenue Concentration Risk' → account_concentration_risk prec=0.86 bad=['note_099.txt']
+          'Healthcare Vertical Expansion' → vertical_expansion_healthcare prec=0.45 bad=['note_049.txt', 'note_053.txt', 'note_073.txt', 'note_088.txt', 'note_097.txt', 'year_end_lessons_2026.txt']
+  OK  doc_coverage                             0.772  >= 0.75
+  OK  false_positive_rate_on_distractors       0.000  <= 0.1
+
+Overall: FAIL

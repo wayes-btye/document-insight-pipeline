@@ -1,0 +1,28 @@
+Eval against: examples/sample_summary_report.json
+Corpus:       /home/claude-user/repositories/document-insight-pipeline/input_docs (101 files)
+Manifest:     /home/claude-user/repositories/document-insight-pipeline/eval/manifest.yaml
+
+Tier 1 — hard constraints  (PASS)
+  OK  schema_validity                          1.000  == 1.0
+  OK  citation_hallucination_rate              0.000  <= 0.0
+  OK  required_fields_populated                1.000  == 1.0
+  OK  report_section_completeness              1.000  == 1.0
+
+Tier 2 — synthetic capability  (FAIL)
+  XX  high_theme_recall                        0.750  >= 0.85
+        surfaced=['integration_gap', 'mid_market_churn_risk', 'pricing_pressure'] missed=['competitive_displacement_apex']
+  OK  medium_theme_recall                      1.000  >= 0.7
+  OK  low_theme_recall                         0.667  >= 0.5
+  XX  citation_precision                       0.439  >= 0.9
+        
+          'Pricing Pressure and Competitive Pricing Strategies' → pricing_pressure prec=0.50 bad=['apex_brief.txt', 'competitor_radar_q4.txt']
+          'Client Concentration and Dependency Risks' → pricing_pressure prec=0.17 bad=['forecast_2027.txt', 'helmsley-renewal-brief.txt', 'note_007.txt', 'note_073.txt', 'note_053.txt']
+          'Integration and Onboarding Challenges' → mid_market_churn_risk prec=0.20 bad=['integration_roadmap_internal.txt', 'interview_bridgewave_carlos_retro_20261020.txt', 'note_018.txt', 'note_048.txt']
+          'Opportunities in Regulatory Compliance and Healthcare' → eu_ai_act_compliance prec=0.60 bad=['vertical_decision_brief.txt', 'year_end_lessons_2026.txt']
+          'Talent Retention and Engineering Capacity' → talent_retention_engineering prec=0.50 bad=['year_end_lessons_2026.txt']
+          'Partnership Dynamics and Market Engagement' → partnership_relay prec=0.67 bad=['year_end_lessons_2026.txt']
+  XX  doc_coverage                             0.250  >= 0.75
+        uncited substantive docs: 69 (showing 5: ['interview_healthcare_expert_20260818.txt', 'interview_helmsley_daniel_heath_20260919.txt', 'interview_prospect_meridian_evaluation_20260930.txt', 'note_001.txt', 'note_002.txt'])
+  OK  false_positive_rate_on_distractors       0.000  <= 0.1
+
+Overall: FAIL

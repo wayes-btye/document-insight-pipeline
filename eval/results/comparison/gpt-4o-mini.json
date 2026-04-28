@@ -1,0 +1,260 @@
+{
+  "executive_summary": "The advisory sector is facing significant pricing pressure, primarily driven by Apex's aggressive strategies, which threaten our market share, especially in the mid-market segment. Our revenue is heavily reliant on a small number of clients, creating a vulnerability that could jeopardize financial stability. Additionally, integration challenges with Salesforce and onboarding friction are leading to client dissatisfaction and potential churn. However, opportunities exist in developing compliance services related to the EU AI Act, which could enhance our offerings and revenue.",
+  "findings": {
+    "themes": [
+      {
+        "name": "Pricing Pressure",
+        "description": "Significant downward pressure on pricing across the advisory sector, particularly due to competition from Apex and other firms offering lower rates.",
+        "citations": [
+          "apex_brief.txt",
+          "competitor_radar_q4.txt",
+          "note_012.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "high"
+      },
+      {
+        "name": "Competitive Landscape",
+        "description": "Apex's aggressive pricing and expansion strategies pose a significant threat to market share, particularly in the mid-market segment.",
+        "citations": [
+          "apex_brief.txt",
+          "competitor_radar_q4.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "high"
+      },
+      {
+        "name": "Client Concentration Risk",
+        "description": "A significant portion of revenue is dependent on a small number of clients, increasing vulnerability to revenue fluctuations and potential losses.",
+        "citations": [
+          "forecast_2027.txt",
+          "helmsley-renewal-brief.txt",
+          "note_007.txt",
+          "note_073.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "high"
+      },
+      {
+        "name": "Integration Challenges",
+        "description": "Issues related to integration capabilities, particularly with Salesforce, are impacting client satisfaction and renewal outcomes.",
+        "citations": [
+          "integration_roadmap_internal.txt",
+          "interview_bridgewave_carlos_retro_20261020.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "high"
+      },
+      {
+        "name": "Onboarding Friction",
+        "description": "Delays and challenges in the onboarding process are leading to client dissatisfaction and potential churn.",
+        "citations": [
+          "interview_bridgewave_carlos_retro_20261020.txt",
+          "note_036.txt",
+          "note_048.txt",
+          "onboarding_research.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "high"
+      },
+      {
+        "name": "Opportunities in Regulatory Compliance",
+        "description": "The EU AI Act presents a significant opportunity for advisory firms to develop compliance services, with potential revenue growth in this area.",
+        "citations": [
+          "interview_eu_ai_act_lawyer_20260925.txt",
+          "note_004.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "medium"
+      },
+      {
+        "name": "Talent Retention and Engineering Capacity",
+        "description": "Retention of senior engineering talent is critical for maintaining project delivery and client relationships, especially in light of recent attrition.",
+        "citations": [
+          "interview_engineer_exit_20260815.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "medium"
+      },
+      {
+        "name": "Partnership Dynamics",
+        "description": "Strategic partnerships, particularly with software vendors, are becoming increasingly important for enhancing service offerings and market positioning.",
+        "citations": [
+          "note_003.txt",
+          "note_081.txt",
+          "relay_outcome_post_mortem.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "medium"
+      }
+    ],
+    "insights": [
+      {
+        "statement": "Apex's pricing strategy is significantly undercutting competitors, impacting our ability to win bids.",
+        "citations": [
+          "apex_brief.txt"
+        ],
+        "confidence": "high"
+      },
+      {
+        "statement": "The concentration of revenue from a few key clients poses a risk to financial stability and necessitates a strategic response.",
+        "citations": [
+          "forecast_2027.txt",
+          "note_007.txt"
+        ],
+        "confidence": "high"
+      },
+      {
+        "statement": "Integration capabilities, particularly with Salesforce, are critical to client retention and satisfaction.",
+        "citations": [
+          "integration_roadmap_internal.txt"
+        ],
+        "confidence": "high"
+      },
+      {
+        "statement": "Onboarding challenges are leading to significant delays and client dissatisfaction, impacting retention rates.",
+        "citations": [
+          "interview_bridgewave_carlos_retro_20261020.txt",
+          "note_036.txt",
+          "onboarding_research.txt"
+        ],
+        "confidence": "high"
+      },
+      {
+        "statement": "The EU AI Act presents a significant opportunity for advisory firms to develop compliance services, with potential revenue growth in this area.",
+        "citations": [
+          "interview_eu_ai_act_lawyer_20260925.txt",
+          "note_004.txt"
+        ],
+        "confidence": "high"
+      }
+    ],
+    "risks": [
+      {
+        "statement": "The loss of key clients due to concentration risk could significantly impact future revenue.",
+        "likelihood": "high",
+        "impact": "high",
+        "citations": [
+          "forecast_2027.txt",
+          "note_007.txt"
+        ]
+      },
+      {
+        "statement": "Integration challenges, particularly with Salesforce, could jeopardize client renewals and satisfaction.",
+        "likelihood": "high",
+        "impact": "high",
+        "citations": [
+          "integration_roadmap_internal.txt"
+        ]
+      },
+      {
+        "statement": "Onboarding friction may lead to increased churn and dissatisfaction among clients.",
+        "likelihood": "high",
+        "impact": "medium",
+        "citations": [
+          "interview_bridgewave_carlos_retro_20261020.txt",
+          "note_036.txt",
+          "onboarding_research.txt"
+        ]
+      },
+      {
+        "statement": "Failure to retain senior engineering talent may impact project delivery and client relationships.",
+        "likelihood": "medium",
+        "impact": "high",
+        "citations": [
+          "interview_engineer_exit_20260815.txt"
+        ]
+      }
+    ],
+    "opportunities": [
+      {
+        "statement": "Developing compliance services related to the EU AI Act could enhance our service offerings and revenue potential.",
+        "citations": [
+          "interview_eu_ai_act_lawyer_20260925.txt",
+          "note_004.txt"
+        ]
+      },
+      {
+        "statement": "Improving integration capabilities, particularly with Salesforce, could enhance client satisfaction and retention.",
+        "citations": [
+          "integration_roadmap_internal.txt"
+        ]
+      },
+      {
+        "statement": "Redesigning the onboarding process could streamline client engagements and improve satisfaction rates.",
+        "citations": [
+          "onboarding_research.txt",
+          "note_036.txt",
+          "note_048.txt"
+        ]
+      },
+      {
+        "statement": "Exploring strategic partnerships with software vendors could enhance our market positioning and service offerings.",
+        "citations": [
+          "note_003.txt",
+          "note_081.txt",
+          "relay_outcome_post_mortem.txt"
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "description": "Develop a comprehensive plan to mitigate client concentration risk by diversifying the client base.",
+        "owner": "Business Development",
+        "timeframe": "Q1 2024",
+        "citations": [
+          "forecast_2027.txt",
+          "note_007.txt"
+        ]
+      },
+      {
+        "description": "Enhance integration capabilities, particularly with Salesforce, to improve client retention and satisfaction.",
+        "owner": "Engineering Team",
+        "timeframe": "H1 2024",
+        "citations": [
+          "integration_roadmap_internal.txt"
+        ]
+      },
+      {
+        "description": "Redesign the onboarding process to reduce friction and improve client satisfaction rates.",
+        "owner": "Client Services",
+        "timeframe": "Q1 2024",
+        "citations": [
+          "onboarding_research.txt",
+          "note_036.txt",
+          "note_048.txt"
+        ]
+      },
+      {
+        "description": "Explore partnership opportunities with software vendors to enhance service offerings and market positioning.",
+        "owner": "Partnership Development",
+        "timeframe": "Q4 2023",
+        "citations": [
+          "note_003.txt",
+          "note_081.txt",
+          "relay_outcome_post_mortem.txt"
+        ]
+      }
+    ]
+  },
+  "assumptions": [
+    "The competitive landscape will continue to evolve, with Apex maintaining its aggressive pricing strategy.",
+    "Client retention is directly correlated with our integration capabilities and onboarding processes.",
+    "The regulatory environment, particularly the EU AI Act, will create new revenue streams for advisory firms."
+  ],
+  "limitations": [
+    "This analysis does not account for potential market shifts or new entrants that could further disrupt pricing dynamics.",
+    "Data on client satisfaction and churn rates may be incomplete, limiting the accuracy of our assessments.",
+    "The impact of external economic factors on client behavior and revenue is not fully captured in this review."
+  ],
+  "metadata": {
+    "docs_processed": 101,
+    "docs_failed": 0,
+    "model": "openai/gpt-4o-mini",
+    "timestamp_utc": "2026-04-28T06:50:10+00:00",
+    "total_tokens_input": 107620,
+    "total_tokens_output": 17362,
+    "estimated_cost_usd": 0.02656,
+    "duration_seconds": 62.9
+  }
+}

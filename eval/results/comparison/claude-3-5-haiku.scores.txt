@@ -1,0 +1,29 @@
+Eval against: eval/results/comparison/claude-3-5-haiku.json
+Corpus:       /home/claude-user/repositories/document-insight-pipeline/input_docs (101 files)
+Manifest:     /home/claude-user/repositories/document-insight-pipeline/eval/manifest.yaml
+
+Tier 1 — hard constraints  (PASS)
+  OK  schema_validity                          1.000  == 1.0
+  OK  citation_hallucination_rate              0.000  <= 0.0
+  OK  required_fields_populated                1.000  == 1.0
+  OK  report_section_completeness              1.000  == 1.0
+
+Tier 2 — synthetic capability  (FAIL)
+  XX  high_theme_recall                        0.500  >= 0.85
+        surfaced=['integration_gap', 'pricing_pressure'] missed=['competitive_displacement_apex', 'mid_market_churn_risk']
+  XX  medium_theme_recall                      0.333  >= 0.7
+        surfaced=['account_concentration_risk'] missed=['onboarding_friction', 'partnership_relay']
+  OK  low_theme_recall                         1.000  >= 0.5
+  XX  citation_precision                       0.878  >= 0.9
+        
+          'Competitive Pricing Pressure' → pricing_pressure prec=1.00 bad=[]
+          'Strategic Integration Capabilities' → integration_gap prec=0.80 bad=['q3_lost_deals.txt']
+          'Client Concentration Risk' → account_concentration_risk prec=0.80 bad=['note_033.txt']
+          'Engineering Talent Retention' → talent_retention_engineering prec=0.67 bad=['year_end_lessons_2026.txt']
+          'EU AI Act Compliance' → eu_ai_act_compliance prec=1.00 bad=[]
+          'Healthcare Vertical Expansion' → vertical_expansion_healthcare prec=1.00 bad=[]
+  XX  doc_coverage                             0.348  >= 0.75
+        uncited substantive docs: 60 (showing 5: ['apex_brief.txt', 'competitor_radar_q4.txt', 'forecast_2027.txt', 'helmsley-renewal-brief.txt', 'integration_roadmap_internal.txt'])
+  OK  false_positive_rate_on_distractors       0.000  <= 0.1
+
+Overall: FAIL

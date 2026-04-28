@@ -1,0 +1,520 @@
+{
+  "executive_summary": "We face significant competitive pressure from Apex, particularly on price in the mid-market, which is exacerbated by our lack of a Salesforce connector. Delivering the Salesforce connector by H1 2027 is critical for retaining key clients like Northpoint and Bridgewave. Engineering retention is paramount to achieving this goal. We should also explore opportunities to diversify our client base and capitalize on emerging EU AI Act compliance needs.",
+  "findings": {
+    "themes": [
+      {
+        "name": "Competitive Pressure from Apex",
+        "description": "Apex Strategy Group is aggressively pricing and winning deals, particularly in the mid-market, creating pricing pressure and competitive disadvantage.",
+        "citations": [
+          "note_001.txt",
+          "interview_pinion_winloss_20260729.txt",
+          "note_017.txt",
+          "note_020.txt",
+          "note_024.txt",
+          "note_025.txt",
+          "note_026.txt",
+          "note_033.txt",
+          "note_034.txt",
+          "note_038.txt",
+          "note_039.txt",
+          "note_055.txt",
+          "note_056.txt",
+          "note_094.txt",
+          "note_096.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "high"
+      },
+      {
+        "name": "Salesforce Integration Importance",
+        "description": "Clients, especially in the mid-market, require integration with Salesforce, and the lack of a connector is a competitive disadvantage.",
+        "citations": [
+          "note_001.txt",
+          "helmsley-renewal-brief.txt",
+          "integration_roadmap_internal.txt",
+          "interview_helmsley_daniel_heath_20260919.txt",
+          "note_023.txt",
+          "note_024.txt",
+          "note_026.txt",
+          "note_029.txt",
+          "note_039.txt",
+          "note_050.txt",
+          "note_056.txt",
+          "note_063.txt",
+          "note_074.txt",
+          "note_078.txt",
+          "q3_lost_deals.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "high"
+      },
+      {
+        "name": "Pricing Pressure and Procurement Scrutiny",
+        "description": "Clients are facing budget constraints and are increasingly involving procurement teams in renewal negotiations, leading to pricing pressure and the need for competitive pricing.",
+        "citations": [
+          "helmsley-renewal-brief.txt",
+          "interview_helmsley_daniel_heath_20260919.txt",
+          "note_001.txt",
+          "note_020.txt",
+          "note_023.txt",
+          "note_033.txt",
+          "note_041.txt",
+          "note_044.txt",
+          "note_061.txt",
+          "note_066.txt",
+          "note_094.txt",
+          "note_099.txt",
+          "forecast_2027.txt",
+          "note_053.txt",
+          "note_074.txt"
+        ],
+        "salience": "high"
+      },
+      {
+        "name": "Engineering Retention Risks",
+        "description": "The potential loss of senior engineers poses a significant risk to the delivery of key projects, especially the Salesforce connector.",
+        "citations": [
+          "forecast_2027.txt",
+          "integration_roadmap_internal.txt",
+          "interview_engineer_exit_20260815.txt",
+          "note_020.txt",
+          "note_022.txt",
+          "note_053.txt",
+          "note_063.txt",
+          "note_069.txt",
+          "note_078.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "medium"
+      },
+      {
+        "name": "Onboarding Friction and Data Preparation Challenges",
+        "description": "Clients are experiencing friction during onboarding, particularly related to data preparation and integration, leading to project delays and dissatisfaction.",
+        "citations": [
+          "note_018.txt",
+          "note_036.txt",
+          "note_038.txt",
+          "note_042.txt",
+          "note_048.txt",
+          "note_055.txt",
+          "note_067.txt",
+          "onboarding_pilot_results.txt",
+          "onboarding_research.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "medium"
+      },
+      {
+        "name": "EU AI Act Compliance",
+        "description": "The EU AI Act is creating new compliance obligations for B2B advisory firms using AI-derived analysis, requiring documentation and review procedures.",
+        "citations": [
+          "interview_helmsley_daniel_heath_20260919.txt",
+          "note_023.txt",
+          "note_029.txt",
+          "note_030.txt",
+          "note_044.txt",
+          "note_054.txt",
+          "note_077.txt",
+          "note_095.txt",
+          "note_098.txt",
+          "relay_outcome_post_mortem.txt"
+        ],
+        "salience": "medium"
+      },
+      {
+        "name": "Revenue Concentration Risk",
+        "description": "Revenue is increasingly concentrated in the top clients, creating a vulnerability in the financial model.",
+        "citations": [
+          "forecast_2027.txt",
+          "note_007.txt",
+          "note_053.txt",
+          "note_063.txt",
+          "note_073.txt",
+          "note_099.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "medium"
+      },
+      {
+        "name": "Partnership Strategy and Execution",
+        "description": "Partnerships with software vendors and other firms are increasingly important, but require dedicated partnership-development capabilities and proactive engagement.",
+        "citations": [
+          "note_003.txt",
+          "note_021.txt",
+          "note_025.txt",
+          "note_035.txt",
+          "note_037.txt",
+          "note_051.txt",
+          "note_058.txt",
+          "note_063.txt",
+          "note_070.txt",
+          "note_081.txt",
+          "note_095.txt",
+          "note_097.txt",
+          "partnership_landscape.txt",
+          "relay_outcome_post_mortem.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "medium"
+      },
+      {
+        "name": "Healthcare Vertical Expansion",
+        "description": "There is an opportunity to expand into the healthcare vertical, but it requires building credibility and expertise.",
+        "citations": [
+          "interview_healthcare_expert_20260818.txt",
+          "note_028.txt",
+          "note_049.txt",
+          "note_053.txt",
+          "note_063.txt",
+          "note_073.txt",
+          "note_088.txt",
+          "note_096.txt",
+          "note_097.txt",
+          "vertical_decision_brief.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "low"
+      }
+    ],
+    "insights": [
+      {
+        "statement": "Apex is winning deals primarily on price, especially in the mid-market segment.",
+        "citations": [
+          "note_034.txt",
+          "note_056.txt",
+          "q3_lost_deals.txt"
+        ],
+        "confidence": "high"
+      },
+      {
+        "statement": "Integration capabilities, particularly with Salesforce, are a key factor in renewal success.",
+        "citations": [
+          "note_024.txt",
+          "note_056.txt",
+          "q3_lost_deals.txt",
+          "note_079.txt"
+        ],
+        "confidence": "high"
+      },
+      {
+        "statement": "Onboarding friction is a recurring problem, leading to project delays and client dissatisfaction.",
+        "citations": [
+          "note_048.txt",
+          "onboarding_research.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "confidence": "high"
+      },
+      {
+        "statement": "Procurement-driven benchmarking is becoming standard, leading to pricing pressure.",
+        "citations": [
+          "note_044.txt",
+          "note_066.txt",
+          "year_end_lessons_2026.txt",
+          "note_094.txt"
+        ],
+        "confidence": "high"
+      },
+      {
+        "statement": "The company's prioritization of client connectors over platform development is perceived as optimizing for short-term renewals rather than long-term product vision.",
+        "citations": [
+          "interview_engineer_exit_20260815.txt"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "statement": "Partnership decisions are influenced by marketing engagement signals as much as substantive conversations.",
+        "citations": [
+          "relay_outcome_post_mortem.txt",
+          "note_070.txt"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "statement": "Firms with proprietary tooling or technology assets are better positioned to defend pricing through differentiation.",
+        "citations": [
+          "note_066.txt",
+          "note_094.txt"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "statement": "The Salesforce connector commitment landing on time is now the central retention lever for 2027.",
+        "citations": [
+          "note_079.txt"
+        ],
+        "confidence": "high"
+      }
+    ],
+    "risks": [
+      {
+        "statement": "Losing key renewals (Northpoint, BridgeWave, Crestline, Lattice) could significantly impact revenue targets.",
+        "likelihood": "medium",
+        "impact": "high",
+        "citations": [
+          "note_020.txt",
+          "note_033.txt",
+          "note_079.txt",
+          "note_068.txt",
+          "note_075.txt"
+        ]
+      },
+      {
+        "statement": "Engineering attrition could jeopardize the delivery of the Salesforce connector and other key projects.",
+        "likelihood": "medium",
+        "impact": "high",
+        "citations": [
+          "integration_roadmap_internal.txt",
+          "note_022.txt",
+          "note_063.txt",
+          "note_078.txt"
+        ]
+      },
+      {
+        "statement": "Apex's aggressive pricing and expansion into the mid-market could lead to increased competitive pressure and lost deals.",
+        "likelihood": "medium",
+        "impact": "medium",
+        "citations": [
+          "note_017.txt",
+          "note_020.txt",
+          "note_026.txt",
+          "note_034.txt",
+          "note_038.txt",
+          "note_096.txt"
+        ]
+      },
+      {
+        "statement": "Failure to comply with the EU AI Act could result in penalties and reputational damage.",
+        "likelihood": "low",
+        "impact": "medium",
+        "citations": [
+          "note_030.txt",
+          "note_054.txt",
+          "note_098.txt"
+        ]
+      },
+      {
+        "statement": "High revenue concentration in a few key clients exposes the company to significant financial risk.",
+        "likelihood": "medium",
+        "impact": "high",
+        "citations": [
+          "note_053.txt",
+          "note_073.txt",
+          "note_099.txt"
+        ]
+      },
+      {
+        "statement": "Lack of a clear differentiation story may lead to renewal exposure and difficulty defending pricing.",
+        "likelihood": "medium",
+        "impact": "medium",
+        "citations": [
+          "note_094.txt",
+          "note_095.txt",
+          "note_099.txt"
+        ]
+      },
+      {
+        "statement": "Onboarding friction and data preparation challenges can lead to project delays and client dissatisfaction.",
+        "likelihood": "medium",
+        "impact": "low",
+        "citations": [
+          "note_018.txt",
+          "note_048.txt",
+          "onboarding_research.txt"
+        ]
+      },
+      {
+        "statement": "Continued sector consolidation may significantly alter the boutique-firm landscape.",
+        "likelihood": "medium",
+        "impact": "medium",
+        "citations": [
+          "note_088.txt",
+          "note_095.txt"
+        ]
+      }
+    ],
+    "opportunities": [
+      {
+        "statement": "Developing a Salesforce connector can enhance the value proposition and secure key renewals.",
+        "citations": [
+          "note_001.txt",
+          "note_024.txt",
+          "note_074.txt"
+        ]
+      },
+      {
+        "statement": "Formalizing expanded scope with existing clients (e.g., Helmsley) can lead to increased revenue.",
+        "citations": [
+          "helmsley-renewal-brief.txt",
+          "note_007.txt",
+          "note_020.txt",
+          "note_033.txt"
+        ]
+      },
+      {
+        "statement": "Expanding into the healthcare vertical presents a significant growth opportunity.",
+        "citations": [
+          "interview_healthcare_expert_20260818.txt",
+          "note_028.txt",
+          "note_053.txt",
+          "note_063.txt",
+          "note_095.txt",
+          "vertical_decision_brief.txt"
+        ]
+      },
+      {
+        "statement": "Offering flexible engagement models (milestone-based, hybrid) can attract a wider range of clients.",
+        "citations": [
+          "interview_pinion_winloss_20260729.txt",
+          "note_066.txt",
+          "note_080.txt",
+          "note_094.txt",
+          "note_099.txt"
+        ]
+      },
+      {
+        "statement": "Leveraging paid scoping engagements can showcase expertise and build trust with prospects.",
+        "citations": [
+          "interview_prospect_meridian_evaluation_20260930.txt"
+        ]
+      },
+      {
+        "statement": "Addressing onboarding friction through pre-engagement assessments and guided onboarding services can improve client satisfaction and project delivery.",
+        "citations": [
+          "note_018.txt",
+          "note_048.txt",
+          "onboarding_pilot_results.txt",
+          "onboarding_research.txt"
+        ]
+      },
+      {
+        "statement": "Capitalizing on the emerging EU AI Act compliance work as a new service line.",
+        "citations": [
+          "note_023.txt",
+          "note_095.txt"
+        ]
+      },
+      {
+        "statement": "Exploring portfolio-level engagements with PE firms at a discounted bundle rate.",
+        "citations": [
+          "note_035.txt"
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "description": "Prioritize engineering retention to mitigate risks associated with connector development and platform work.",
+        "owner": "Olivia",
+        "timeframe": "Ongoing",
+        "citations": [
+          "forecast_2027.txt",
+          "integration_roadmap_internal.txt",
+          "note_022.txt",
+          "note_049.txt",
+          "note_063.txt",
+          "note_069.txt"
+        ]
+      },
+      {
+        "description": "Develop and implement a Salesforce connector to address integration needs and secure key renewals.",
+        "owner": "Maja",
+        "timeframe": "H1 2027",
+        "citations": [
+          "integration_roadmap_internal.txt",
+          "note_001.txt",
+          "note_024.txt",
+          "note_078.txt",
+          "note_095.txt",
+          "year_end_lessons_2026.txt"
+        ]
+      },
+      {
+        "description": "Improve the proposal process to create more tailored and differentiated proposals for each client.",
+        "owner": "Ben",
+        "timeframe": "Q1 2027",
+        "citations": [
+          "interview_pinion_winloss_20260729.txt",
+          "note_056.txt",
+          "note_080.txt"
+        ]
+      },
+      {
+        "description": "Address onboarding friction by developing a pre-engagement readiness assessment and guided onboarding services.",
+        "owner": "Aisha",
+        "timeframe": "November",
+        "citations": [
+          "note_018.txt",
+          "note_048.txt",
+          "onboarding_pilot_results.txt",
+          "onboarding_research.txt"
+        ]
+      },
+      {
+        "description": "Actively diversify client portfolios to mitigate risks associated with revenue concentration.",
+        "owner": "David and Jenna",
+        "timeframe": "November",
+        "citations": [
+          "note_053.txt",
+          "note_063.txt",
+          "note_073.txt",
+          "note_099.txt"
+        ]
+      },
+      {
+        "description": "Develop expertise in EU AI Act compliance to offer related services.",
+        "owner": "Tom",
+        "timeframe": "Ongoing",
+        "citations": [
+          "note_023.txt",
+          "note_030.txt",
+          "note_095.txt",
+          "note_098.txt"
+        ]
+      },
+      {
+        "description": "Monitor competitor activity, especially Apex's pricing and expansion strategies.",
+        "owner": "Sarah",
+        "timeframe": "Ongoing",
+        "citations": [
+          "integration_roadmap_internal.txt",
+          "note_025.txt",
+          "note_034.txt",
+          "note_055.txt",
+          "note_096.txt"
+        ]
+      },
+      {
+        "description": "Implement flexible commercial models (milestone-based, hybrid) to better meet client needs.",
+        "owner": "Tom",
+        "timeframe": "Q1 2027",
+        "citations": [
+          "note_080.txt",
+          "note_099.txt",
+          "pricing_benchmarking.txt"
+        ]
+      }
+    ]
+  },
+  "assumptions": [
+    "The Salesforce connector will be sufficient to address integration concerns and defend against Apex.",
+    "Engineering retention efforts will be successful.",
+    "The EU AI Act compliance service line will be profitable.",
+    "Diversifying the client portfolio will not negatively impact margins."
+  ],
+  "limitations": [
+    "The analysis relies on internal notes and interviews, which may be subject to bias.",
+    "The competitive landscape is constantly evolving, and Apex's strategy may change.",
+    "The impact of the EU AI Act is still uncertain.",
+    "The analysis does not include a detailed financial model to assess the profitability of new initiatives."
+  ],
+  "metadata": {
+    "docs_processed": 101,
+    "docs_failed": 13,
+    "model": "google/gemini-2.0-flash-001",
+    "timestamp_utc": "2026-04-28T07:02:08+00:00",
+    "total_tokens_input": 124780,
+    "total_tokens_output": 26578,
+    "estimated_cost_usd": 0.0,
+    "duration_seconds": 208.99
+  }
+}

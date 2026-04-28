@@ -1,0 +1,618 @@
+{
+  "executive_summary": "The firm faces simultaneous pressure across three interdependent fronts that together threaten 34% of revenue. Apex Strategy Group's 30-40% pricing discount has reset mid-market buyer expectations while the firm's integration capability gaps—particularly the missing Salesforce connector—are directly causing renewals to contract or churn. Engineering capacity to deliver that connector depends on two at-risk senior engineers whose compensation sits 8-12% below market, and their departure before the October 31 review would collapse the March 2027 delivery timeline that four major accounts are waiting on. Meanwhile, revenue concentration from the top three clients has climbed to 49%, and all three are in active pricing renegotiations while procurement-led benchmarking spreads sector-wide. The firm has a 6-9 month window on EU AI Act readiness work and a converting healthcare pilot, but capturing either requires resolving the capacity and delivery credibility issues first.",
+  "findings": {
+    "themes": [
+      {
+        "name": "Competitive pricing pressure from Apex Strategy Group",
+        "description": "Apex Strategy Group is systematically pricing 30-40% below market rates across the mid-market segment, winning deals through aggressive pricing combined with credible delivery capabilities. This pricing strategy has reset buyer expectations and is forcing procurement-driven benchmarking conversations at multiple accounts. Apex's Series B funding enables sustained below-market pricing while they scale from 40 to 95 headcount.",
+        "citations": [
+          "apex_brief.txt",
+          "competitor_radar_q4.txt",
+          "helmsley-renewal-brief.txt",
+          "interview_bridgewave_carlos_retro_20261020.txt",
+          "interview_concorde_helena_20261005.txt",
+          "interview_pinion_winloss_20260729.txt",
+          "interview_prospect_meridian_evaluation_20260930.txt",
+          "note_001.txt",
+          "note_011.txt",
+          "note_012.txt",
+          "note_014.txt",
+          "note_017.txt",
+          "note_020.txt",
+          "note_024.txt",
+          "note_026.txt",
+          "note_033.txt",
+          "note_034.txt",
+          "note_038.txt",
+          "note_039.txt",
+          "note_055.txt",
+          "note_056.txt",
+          "note_066.txt",
+          "note_074.txt",
+          "note_076.txt",
+          "note_079.txt",
+          "note_094.txt",
+          "note_096.txt",
+          "note_099.txt",
+          "pricing_benchmarking.txt",
+          "q3_lost_deals.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "high"
+      },
+      {
+        "name": "CRM integration capability gaps as competitive differentiator",
+        "description": "Salesforce and HubSpot connector capabilities have become table-stakes requirements in buyer evaluations, with integration gaps directly causing deal losses and renewal contractions. Multiple high-value accounts have repeatedly requested these integrations over 18-24 months without resolution, creating operational friction (6-8 hours weekly manual work) and competitive vulnerability. The Salesforce connector commitment for H1 2027 is now load-bearing for multiple key account renewals.",
+        "citations": [
+          "competitor_radar_q4.txt",
+          "helmsley-renewal-brief.txt",
+          "integration_roadmap_internal.txt",
+          "interview_bridgewave_carlos_retro_20261020.txt",
+          "interview_helmsley_daniel_heath_20260919.txt",
+          "note_001.txt",
+          "note_013.txt",
+          "note_014.txt",
+          "note_023.txt",
+          "note_024.txt",
+          "note_026.txt",
+          "note_029.txt",
+          "note_036.txt",
+          "note_038.txt",
+          "note_039.txt",
+          "note_055.txt",
+          "note_056.txt",
+          "note_074.txt",
+          "note_078.txt",
+          "note_079.txt",
+          "q3_lost_deals.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "high"
+      },
+      {
+        "name": "Revenue concentration risk in top three clients",
+        "description": "Top three clients (Crestline, Helmsley, Concorde) represent 49% of Q3 revenue, up from 41% in Q3 2025, creating acute portfolio vulnerability. This concentration has worsened for four consecutive quarters while five of the top six clients are simultaneously in pricing or scope renegotiations. The concentration creates strategic constraints and limits optionality for growth investments or market positioning changes.",
+        "citations": [
+          "forecast_2027.txt",
+          "helmsley-renewal-brief.txt",
+          "interview_concorde_helena_20261005.txt",
+          "note_007.txt",
+          "note_053.txt",
+          "note_073.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "high"
+      },
+      {
+        "name": "Client onboarding friction and delivery slippage",
+        "description": "39% of engagements in the past 24 months experienced onboarding delays exceeding 7 days, with the core issue being an assumption that clients have internal owners with both technical and commercial context. This friction has caused 14.5 weeks of cumulative delivery slippage, damaged client relationships, and contributed to at least one near-churn situation. The issue is particularly acute in mid-market accounts and has been raised explicitly in retention conversations.",
+        "citations": [
+          "interview_bridgewave_carlos_retro_20261020.txt",
+          "note_018.txt",
+          "note_036.txt",
+          "note_038.txt",
+          "note_042.txt",
+          "note_048.txt",
+          "note_067.txt",
+          "onboarding_pilot_results.txt",
+          "onboarding_research.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "high"
+      },
+      {
+        "name": "Engineering retention risk and capacity constraints",
+        "description": "Engineering team operating at 105% utilization for two consecutive quarters with compensation 8-12% below market for senior roles. Two senior engineers representing critical capacity have explored external options, with one departure already occurring due to 20% compensation gap and perceived deprioritization of platform work. Loss of remaining at-risk engineers would eliminate all connector delivery capacity and collapse the 2027 integration roadmap that multiple client renewals depend on.",
+        "citations": [
+          "integration_roadmap_internal.txt",
+          "interview_engineer_exit_20260815.txt",
+          "note_020.txt",
+          "note_022.txt",
+          "note_048.txt",
+          "note_063.txt",
+          "note_069.txt",
+          "note_078.txt",
+          "note_079.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "high"
+      },
+      {
+        "name": "EU AI Act compliance as emerging service opportunity",
+        "description": "EU AI Act Phase 2 obligations become effective August 2027, with advisory firms producing AI-derived analysis for high-risk client decisions now falling within regulatory scope. Demand is shifting from legal compliance to operational readiness exercises, creating a 6-9 month first-mover window before offerings commoditize. Multiple clients (Crestline, Helmsley, Concorde) have expressed interest, and specialist capacity is constrained with pricing increasing as the deadline approaches.",
+        "citations": [
+          "interview_concorde_helena_20261005.txt",
+          "interview_eu_ai_act_lawyer_20260925.txt",
+          "interview_helmsley_daniel_heath_20260919.txt",
+          "note_004.txt",
+          "note_011.txt",
+          "note_023.txt",
+          "note_029.txt",
+          "note_030.txt",
+          "note_044.txt",
+          "note_054.txt",
+          "note_077.txt",
+          "note_094.txt",
+          "note_098.txt"
+        ],
+        "salience": "medium"
+      },
+      {
+        "name": "Healthcare vertical market entry assessment",
+        "description": "Healthcare-tagged enquiries tripled from Q1 to Q3 (1→2→7) but conversion remains poor due to credibility gaps with buyers who conduct 'second-meeting credibility tests' on sector fluency. Digital health spinout commercial strategy represents the best-fit entry opportunity, leveraging existing B2B SaaS expertise. The Verdant pilot at $35k is converting to Phase 2 at $200-280k, representing the first real-scope healthcare engagement and turning healthcare from experiment to small workstream.",
+        "citations": [
+          "competitor_radar_q4.txt",
+          "interview_healthcare_expert_20260818.txt",
+          "note_005.txt",
+          "note_028.txt",
+          "note_047.txt",
+          "note_049.txt",
+          "note_053.txt",
+          "note_088.txt",
+          "note_096.txt",
+          "note_097.txt",
+          "vertical_decision_brief.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "medium"
+      },
+      {
+        "name": "Procurement-driven vendor benchmarking and pricing scrutiny",
+        "description": "Client procurement functions now routinely require market benchmarking for professional services renewals over $50k-$500k thresholds, with CFO-led vendor optimization initiatives becoming standard. This represents a sector-wide shift affecting multiple accounts simultaneously (Crestline, Helmsley, Concorde, Lattice) and is compressing pricing power by 4-8% even when relationships remain strong. Buyers are increasingly sophisticated about discount norms and using them in negotiations.",
+        "citations": [
+          "helmsley-renewal-brief.txt",
+          "interview_concorde_helena_20261005.txt",
+          "interview_helmsley_daniel_heath_20260919.txt",
+          "note_001.txt",
+          "note_011.txt",
+          "note_012.txt",
+          "note_020.txt",
+          "note_023.txt",
+          "note_033.txt",
+          "note_039.txt",
+          "note_041.txt",
+          "note_044.txt",
+          "note_061.txt",
+          "note_066.txt",
+          "note_077.txt",
+          "note_094.txt",
+          "pricing_benchmarking.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "high"
+      },
+      {
+        "name": "Engagement model flexibility as competitive requirement",
+        "description": "Buyers increasingly expect milestone-based and hybrid payment structures rather than retainer-only models, with 40% of the sector now offering flexible engagement structures. The firm's retainer-default positioning has directly caused deal losses (Pinion, Marigold) where buyers required payment flexibility. Procurement-led evaluations favor firms offering structural optionality, and the lack of point-engagement pricing ($15-25k bracket) is causing missed opportunities.",
+        "citations": [
+          "competitor_radar_q4.txt",
+          "interview_pinion_winloss_20260729.txt",
+          "note_011.txt",
+          "note_041.txt",
+          "note_061.txt",
+          "note_080.txt",
+          "note_094.txt",
+          "note_099.txt",
+          "pricing_benchmarking.txt"
+        ],
+        "salience": "medium"
+      },
+      {
+        "name": "Mid-market segment competitive vulnerability",
+        "description": "Mid-market segment (34% of Q3 revenue, $1.6M across 11 clients) shows concentrated pressure with only 4 of 11 accounts demonstrating clear renewal intent. Apex is named or implied in 6 of 7 struggling mid-market accounts, with losses clustering in this segment while enterprise accounts remain stable. The segment may require a different engagement model than the current scaled-down enterprise approach, and integration gaps are particularly acute competitive factors here.",
+        "citations": [
+          "competitor_radar_q4.txt",
+          "note_003.txt",
+          "note_008.txt",
+          "note_026.txt",
+          "note_034.txt",
+          "note_076.txt",
+          "note_079.txt",
+          "note_094.txt",
+          "onboarding_research.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "high"
+      }
+    ],
+    "insights": [
+      {
+        "statement": "Apex Strategy Group's competitive threat is concentrated in the mid-market segment ($100-200k ARR accounts) where procurement-led decisions favor their 30-40% pricing discount, while enterprise accounts ($500k+) have not switched despite aggressive outreach, indicating the threat remains segment-specific rather than portfolio-wide.",
+        "citations": [
+          "apex_brief.txt",
+          "competitor_radar_q4.txt",
+          "note_026.txt",
+          "note_034.txt",
+          "note_079.txt",
+          "note_096.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "confidence": "high"
+      },
+      {
+        "statement": "Integration capability has become the decisive factor in renewal outcomes: accounts where Salesforce/HubSpot integration was central to the evaluation (Lattice, Marigold, BridgeWave) experienced losses or contractions, while accounts where integration was not a primary criterion (Crestline, Forge) renewed at or near plan despite pricing pressure.",
+        "citations": [
+          "integration_roadmap_internal.txt",
+          "note_056.txt",
+          "note_074.txt",
+          "note_079.txt",
+          "q3_lost_deals.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "confidence": "high"
+      },
+      {
+        "statement": "The firm's sales process quality gap versus Apex is systematic rather than isolated, with three separate buyers in Q3 commenting on Apex's superior pitch preparation including tailored competitor analysis, earnings commentary references, and customized proposals versus the firm's templated approach.",
+        "citations": [
+          "interview_pinion_winloss_20260729.txt",
+          "interview_prospect_meridian_evaluation_20260930.txt",
+          "note_034.txt",
+          "note_056.txt",
+          "note_080.txt"
+        ],
+        "confidence": "high"
+      },
+      {
+        "statement": "Customer tenure is a stronger retention shield than value delivery quality, with BridgeWave explicitly stating they would have switched to Apex in year two but stayed in year three due to switching costs, and multiple accounts tolerating operational friction (onboarding issues, integration gaps) because of relationship inertia.",
+        "citations": [
+          "interview_bridgewave_carlos_retro_20261020.txt",
+          "note_036.txt",
+          "note_038.txt",
+          "onboarding_research.txt"
+        ],
+        "confidence": "high"
+      },
+      {
+        "statement": "The technical debt from deprioritizing platform infrastructure work is now quantifiable: building the Salesforce connector without the platform substrate requires 30-40% more engineering time, directly validating the departed engineer's concerns about repeated deferral of foundational investments in favor of immediate client needs.",
+        "citations": [
+          "interview_engineer_exit_20260815.txt",
+          "note_078.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "confidence": "high"
+      },
+      {
+        "statement": "Healthcare vertical entry requires multi-year commitment and genuine sector depth rather than surface research, with buyers conducting 'second-meeting credibility tests' on concepts like 340B pricing and the No Surprises Act within the first ten minutes to identify firms pretending expertise, making dabbling more damaging than not entering at all.",
+        "citations": [
+          "interview_healthcare_expert_20260818.txt",
+          "note_005.txt",
+          "vertical_decision_brief.txt"
+        ],
+        "confidence": "high"
+      },
+      {
+        "statement": "Partnership opportunities in this market are won through marketing-engagement signals during the selection period as much as substantive conversation, with firms that published joint content with Relay Systems during evaluation winning selection while those that didn't (including this firm) received only transactional marketing arrangements.",
+        "citations": [
+          "note_037.txt",
+          "note_058.txt",
+          "note_064.txt",
+          "note_070.txt",
+          "note_081.txt",
+          "relay_outcome_post_mortem.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "statement": "Onboarding friction is a structural mid-market characteristic rather than client-specific risk, with 39% of engagements experiencing delays because the standard process assumes clients have allocated someone with both technical fluency and commercial context, which roughly 40% of mid-market clients lack at engagement start.",
+        "citations": [
+          "note_018.txt",
+          "note_048.txt",
+          "onboarding_research.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "confidence": "high"
+      }
+    ],
+    "risks": [
+      {
+        "statement": "If either remaining at-risk senior engineer departs before the compensation review completes by 31 October, all connector delivery capacity for 2027 collapses, forcing public rescission of the Salesforce connector commitment within 14 days and exposing multiple key account renewals (Lattice, Helmsley, Concorde, BridgeWave) to competitive displacement.",
+        "likelihood": "medium",
+        "impact": "high",
+        "citations": [
+          "integration_roadmap_internal.txt",
+          "note_022.txt",
+          "note_063.txt",
+          "note_069.txt",
+          "note_078.txt",
+          "year_end_lessons_2026.txt"
+        ]
+      },
+      {
+        "statement": "Revenue concentration at 49% from top three clients creates catastrophic downside risk if multiple large accounts simultaneously churn or contract, with the defensive scenario in Q1 renewals modeling $1.3M in lost revenue (32% of $4.1M pipeline exposure) as plausible rather than extreme.",
+        "likelihood": "low",
+        "impact": "high",
+        "citations": [
+          "forecast_2027.txt",
+          "note_007.txt",
+          "note_020.txt",
+          "note_033.txt",
+          "note_053.txt",
+          "note_073.txt",
+          "year_end_lessons_2026.txt"
+        ]
+      },
+      {
+        "statement": "Apex Strategy Group's Frankfurt office opening in Q1 2027 positions them closer to Crestline and Helmsley's EU operations, and their healthcare vertical hire (former Bain principal) with active thought leadership signals serious competitive intent in two segments where the firm has major account exposure and limited differentiation.",
+        "likelihood": "medium",
+        "impact": "medium",
+        "citations": [
+          "apex_brief.txt",
+          "competitor_radar_q4.txt",
+          "note_049.txt",
+          "note_096.txt",
+          "vertical_decision_brief.txt"
+        ]
+      },
+      {
+        "statement": "The Salesforce connector delivery timeline of March 2027 is at risk given 30-40% increased engineering complexity from missing platform foundations, and any slip beyond Q1 will trigger scope reductions at BridgeWave ($180k loss confirmed) and potentially Lattice (already partially lost to Apex) and Helmsley (renewal April 2027).",
+        "likelihood": "medium",
+        "impact": "high",
+        "citations": [
+          "integration_roadmap_internal.txt",
+          "note_036.txt",
+          "note_038.txt",
+          "note_074.txt",
+          "note_078.txt",
+          "year_end_lessons_2026.txt"
+        ]
+      },
+      {
+        "statement": "Continued onboarding friction affecting 39% of engagements is now being raised explicitly in retention conversations by clients (BridgeWave, Stellaris) and contributed to at least one near-churn situation, indicating the operational issue is becoming a relationship and competitive risk rather than just an internal efficiency problem.",
+        "likelihood": "high",
+        "impact": "medium",
+        "citations": [
+          "interview_bridgewave_carlos_retro_20261020.txt",
+          "note_036.txt",
+          "note_038.txt",
+          "note_042.txt",
+          "note_048.txt",
+          "onboarding_research.txt",
+          "year_end_lessons_2026.txt"
+        ]
+      },
+      {
+        "statement": "Systematic sales process quality gap versus Apex (three buyers in Q3 citing superior preparation) combined with templated proposals that undermine strong discovery work is causing deal losses in competitive evaluations, and the pattern suggests structural process issues rather than isolated sales mistakes.",
+        "likelihood": "high",
+        "impact": "medium",
+        "citations": [
+          "interview_pinion_winloss_20260729.txt",
+          "interview_prospect_meridian_evaluation_20260930.txt",
+          "note_034.txt",
+          "note_056.txt",
+          "note_080.txt"
+        ]
+      },
+      {
+        "statement": "Mid-market segment (34% of Q3 revenue) shows concentrated competitive pressure with only 4 of 11 accounts demonstrating clear renewal intent and Apex named or implied in 6 of 7 struggling accounts, creating potential for material revenue loss if the segment deteriorates further while enterprise accounts remain stable.",
+        "likelihood": "medium",
+        "impact": "medium",
+        "citations": [
+          "note_026.txt",
+          "note_034.txt",
+          "note_079.txt",
+          "year_end_lessons_2026.txt"
+        ]
+      },
+      {
+        "statement": "Procurement-driven pricing benchmarking is now standard at top-three accounts and spreading sector-wide, with multiple clients simultaneously pressuring pricing by 4-8% even when relationships remain strong, creating compounding margin risk that cannot be offset by individual account negotiations.",
+        "likelihood": "high",
+        "impact": "medium",
+        "citations": [
+          "note_011.txt",
+          "note_012.txt",
+          "note_023.txt",
+          "note_044.txt",
+          "note_061.txt",
+          "note_066.txt",
+          "note_077.txt",
+          "pricing_benchmarking.txt",
+          "year_end_lessons_2026.txt"
+        ]
+      }
+    ],
+    "opportunities": [
+      {
+        "statement": "EU AI Act readiness represents a 6-9 month first-mover window before offerings commoditize by mid-2027, with multiple existing clients (Crestline, Helmsley, Concorde) expressing interest, approved budgets ready to deploy, and specialist capacity constrained with pricing increasing as the August 2027 deadline approaches, creating potential for $600k-$1.5M annual revenue through white-label partnership with Kerwin & Associates.",
+        "citations": [
+          "interview_concorde_helena_20261005.txt",
+          "interview_eu_ai_act_lawyer_20260925.txt",
+          "interview_helmsley_daniel_heath_20260919.txt",
+          "note_004.txt",
+          "note_023.txt",
+          "note_044.txt",
+          "note_077.txt",
+          "note_094.txt",
+          "note_098.txt"
+        ]
+      },
+      {
+        "statement": "Concorde is consolidating two businesses and will operate at 1.4x current scale by mid-2027, requiring roughly double the advisory scope by end of 2027, with Helena explicitly stating current staffing cannot absorb this growth without quality degradation and expecting dedicated engagement director plus additional senior consultant, representing significant revenue expansion if capacity concerns are addressed.",
+        "citations": [
+          "interview_concorde_helena_20261005.txt",
+          "note_023.txt"
+        ]
+      },
+      {
+        "statement": "Helmsley payments BU has received $95-110k of unbilled consulting work over 18 months and the BU lead would support formalizing at $180-220k annual scope, representing an opportunity to convert informal relationship value into $200k incremental revenue through Scenario C hybrid approach that balances formalization with relationship warmth.",
+        "citations": [
+          "helmsley-renewal-brief.txt",
+          "interview_helmsley_daniel_heath_20260919.txt",
+          "note_013.txt",
+          "note_065.txt"
+        ]
+      },
+      {
+        "statement": "Verdant Therapeutics pilot at $35k is converting to Phase 2 at $200-280k for commercial launch readiness, representing the first real-scope healthcare engagement and validating digital health spinout commercial strategy as the best-fit entry opportunity that leverages existing B2B SaaS expertise with learnable healthcare context.",
+        "citations": [
+          "note_028.txt",
+          "note_047.txt",
+          "note_053.txt",
+          "vertical_decision_brief.txt",
+          "year_end_lessons_2026.txt"
+        ]
+      },
+      {
+        "statement": "Redesigned onboarding process reduced average week-1 slip from 6.4 days to 1.1 days across pilot engagements while remaining revenue-neutral or modestly positive, with pre-engagement readiness assessment surfacing client issues they hadn't anticipated and improving engagement quality, creating opportunity to standardize across all new engagements starting Q1 2027.",
+        "citations": [
+          "note_048.txt",
+          "note_067.txt",
+          "onboarding_pilot_results.txt",
+          "onboarding_research.txt"
+        ]
+      },
+      {
+        "statement": "Introducing milestone-based and hybrid engagement structures alongside retainer-only model addresses a systematic competitive disadvantage that directly caused deal losses (Pinion, Marigold) and aligns with sector norms where 40% of competitors offer flexible payment structures, potentially recovering lost deals without reducing day-rates.",
+        "citations": [
+          "interview_pinion_winloss_20260729.txt",
+          "note_011.txt",
+          "note_041.txt",
+          "note_080.txt",
+          "pricing_benchmarking.txt"
+        ]
+      },
+      {
+        "statement": "Paid scoping engagements ($25k for one-week perspective) can serve as effective differentiation mechanism in opaque multi-firm selection processes, with the Atlas Software prospect explicitly requesting this structure and Stellaris expressing interest in a paid pilot for 2027 despite non-renewal, creating a new revenue stream while addressing buyer evaluation needs.",
+        "citations": [
+          "interview_prospect_meridian_evaluation_20260930.txt",
+          "note_075.txt",
+          "pricing_benchmarking.txt"
+        ]
+      },
+      {
+        "statement": "Systematic lost-deal interview process implemented in Q4 can widen competitive intelligence feedback loop beyond the current 1-of-9 completion rate, with buyers willing to provide candid feedback (Pinion, Marigold interviews completed) that reveals systematic process gaps and competitive positioning weaknesses not visible through late-stage signals alone.",
+        "citations": [
+          "interview_pinion_winloss_20260729.txt",
+          "note_034.txt",
+          "note_056.txt",
+          "q3_lost_deals.txt"
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "description": "Deliver Salesforce connector by March 2027 (H1 2027) as committed to Lattice, Helmsley, Concorde, and Crestline, with weekly status notes to leadership starting 18 November and integrated risk register review to ensure timeline is met given 30-40% increased engineering complexity from missing platform foundations.",
+        "owner": "Maja (engineering plan), Marcus (weekly status), Sarah (client outreach)",
+        "timeframe": "March 2027 delivery, weekly updates starting 18 November 2026",
+        "citations": [
+          "integration_roadmap_internal.txt",
+          "note_013.txt",
+          "note_023.txt",
+          "note_024.txt",
+          "note_063.txt",
+          "note_078.txt",
+          "year_end_lessons_2026.txt"
+        ]
+      },
+      {
+        "description": "Complete compensation review by 31 October 2026 with adjustments to top of band where market data supports it, prioritizing the two at-risk senior engineers whose retention is critical for all 2027 connector delivery capacity, and shift from annual to quarterly compensation review cycle for engineering roles to close market gaps before they become departure triggers.",
+        "owner": "Olivia Brand (compensation data), Aisha Brennan (retention conversations and approval)",
+        "timeframe": "31 October 2026 completion deadline",
+        "citations": [
+          "interview_engineer_exit_20260815.txt",
+          "note_020.txt",
+          "note_022.txt",
+          "note_053.txt",
+          "note_063.txt",
+          "note_069.txt"
+        ]
+      },
+      {
+        "description": "Standardize redesigned onboarding process across all new engagements starting Q1 2027, including pre-engagement readiness assessment, named onboarding lead structure, and written escalation path, with clear policy for handling situations where readiness assessment indicates client is not ready to proceed at original scope (smaller scope, deferred timeline, or paid readiness-prep work).",
+        "owner": "Priya (readiness assessment template), Tom (guided onboarding pricing model), Sarah (policy development)",
+        "timeframe": "Q1 2027 standardization, templates due 18 October 2026",
+        "citations": [
+          "note_036.txt",
+          "note_038.txt",
+          "note_048.txt",
+          "note_067.txt",
+          "onboarding_pilot_results.txt",
+          "onboarding_research.txt"
+        ]
+      },
+      {
+        "description": "Implement systematic lost-deal interview process with dedicated analyst for Q4 outreach, updated CRM loss-reason taxonomy to capture granular data, and tracking of suspected-Apex losses separately from confirmed-Apex losses to improve competitive intelligence and pattern recognition beyond current 1-of-9 completion rate.",
+        "owner": "Ben (process draft), dedicated analyst (Q4 outreach)",
+        "timeframe": "Process draft by 8 October 2026, Q4 implementation",
+        "citations": [
+          "competitor_radar_q4.txt",
+          "note_034.txt",
+          "q3_lost_deals.txt"
+        ]
+      },
+      {
+        "description": "Develop and communicate EU AI Act readiness offering through white-label partnership with Kerwin & Associates, with pilot engagements at Crestline (already contracted at $45k carve-out) and Helmsley (interest expressed) to establish reference customers, and formal partnership structure after successful pilots to capture 6-9 month first-mover window before mid-2027 commoditization.",
+        "owner": "Aisha Brennan (partnership decision), Tom (capability check and client communication)",
+        "timeframe": "Partnership decision October 2026, pilot delivery Q4 2026-Q1 2027",
+        "citations": [
+          "interview_concorde_helena_20261005.txt",
+          "interview_eu_ai_act_lawyer_20260925.txt",
+          "interview_helmsley_daniel_heath_20260919.txt",
+          "note_023.txt",
+          "note_029.txt",
+          "note_044.txt",
+          "note_077.txt"
+        ]
+      },
+      {
+        "description": "Introduce milestone-based and hybrid (60/40 retainer-milestone) engagement structures alongside retainer-only model, with standard pricing for three official engagement models and addition of point-engagement tier ($15-25k bracket) to capture opportunities currently lost without conversation, piloting on next 3 proposals and reviewing outcomes in January 2027.",
+        "owner": "Tom (engagement model pricing one-pager), Ben (proposal pilot template)",
+        "timeframe": "Pricing one-pager by 25 November 2026, pilot on next 3 proposals",
+        "citations": [
+          "interview_pinion_winloss_20260729.txt",
+          "note_011.txt",
+          "note_041.txt",
+          "note_080.txt",
+          "pricing_benchmarking.txt"
+        ]
+      },
+      {
+        "description": "Make healthcare vertical practice decision at Q1 2027 partner meeting with concrete data from Verdant Phase 2 conversion and portfolio performance through Q1, including assessment of whether to hire senior healthcare operator (5+ years experience, $250-300k year 1 investment) or continue with 2-3 additional loss-leader pilots to build credibility before full practice launch.",
+        "owner": "Aisha and Jenna (decision), Marcus (Verdant Phase 2 conversion)",
+        "timeframe": "Q1 2027 partner meeting decision, Verdant Phase 2 conversion by December 2026",
+        "citations": [
+          "interview_healthcare_expert_20260818.txt",
+          "note_005.txt",
+          "note_028.txt",
+          "note_047.txt",
+          "note_063.txt",
+          "vertical_decision_brief.txt",
+          "year_end_lessons_2026.txt"
+        ]
+      },
+      {
+        "description": "Prepare Phase 2 paper on revenue concentration risk by January 15, 2027, including specific scenarios for simultaneous defend-and-accelerate strategies with bandwidth assumptions, trigger conditions for forcing a strategic decision, quantified cost of inaction, and Salesforce connector delivery date confirmation to inform assumptions, with explicit stance decision required given concentration worsening for four consecutive quarters to 49% from top three clients.",
+        "owner": "David Kowalski and Jenna Rodriguez (Phase 2 paper), Sarah Patel (connector delivery confirmation)",
+        "timeframe": "Phase 2 paper by 15 January 2027, connector date confirmation by 5 December 2026",
+        "citations": [
+          "note_053.txt",
+          "note_063.txt",
+          "note_073.txt",
+          "year_end_lessons_2026.txt"
+        ]
+      }
+    ]
+  },
+  "assumptions": [
+    "Apex Strategy Group's Series B funding enables sustained below-market pricing through 2027 without forcing them to rationalize rates, meaning their 30-40% discount represents durable competitive positioning rather than temporary customer acquisition spend.",
+    "The Salesforce connector delivery timeline of March 2027 is achievable if both at-risk engineers stay and no additional technical complexity emerges, despite the 30-40% engineering overhead from missing platform foundations.",
+    "Client tolerance for operational friction (onboarding delays, integration gaps) is primarily driven by switching costs and relationship tenure rather than satisfaction with delivery quality, meaning newer accounts face higher churn risk than the data directly shows.",
+    "Procurement-driven pricing pressure affecting multiple accounts simultaneously represents a permanent market shift rather than a cyclical budget optimization cycle, meaning margin compression will persist even if individual relationships strengthen."
+  ],
+  "limitations": [
+    "Win/loss interview completion rate of 11% (1 of 9 lost deals) means competitive intelligence is based on self-selected respondents who may not represent typical loss patterns, and the firm lacks systematic feedback on why it loses in multi-firm evaluations.",
+    "Revenue concentration analysis treats top-three client risk as independent events, but the aggregated findings show these accounts face correlated pressures (procurement benchmarking, integration gaps, Apex outreach), meaning simultaneous churn probability is higher than independent probability would suggest.",
+    "Healthcare vertical assessment relies heavily on a single converting pilot (Verdant) and expert interviews rather than multiple market tests, making it difficult to distinguish between one successful relationship and genuine product-market fit in the segment.",
+    "Engineering capacity and retention risk is assessed through stated exploration of external options and compensation gaps, but the analysis cannot predict whether the October 31 compensation review will be sufficient to retain the two critical engineers or whether other retention factors dominate."
+  ],
+  "metadata": {
+    "docs_processed": 101,
+    "docs_failed": 0,
+    "model": "anthropic/claude-sonnet-4.5",
+    "timestamp_utc": "2026-04-28T06:58:04+00:00",
+    "total_tokens_input": 158663,
+    "total_tokens_output": 43799,
+    "estimated_cost_usd": 0.0,
+    "duration_seconds": 263.41
+  }
+}

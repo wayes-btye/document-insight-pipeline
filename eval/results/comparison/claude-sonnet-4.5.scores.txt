@@ -1,0 +1,29 @@
+Eval against: eval/results/comparison/claude-sonnet-4.5.json
+Corpus:       /home/claude-user/repositories/document-insight-pipeline/input_docs (101 files)
+Manifest:     /home/claude-user/repositories/document-insight-pipeline/eval/manifest.yaml
+
+Tier 1 — hard constraints  (PASS)
+  OK  schema_validity                          1.000  == 1.0
+  OK  citation_hallucination_rate              0.000  <= 0.0
+  OK  required_fields_populated                1.000  == 1.0
+  OK  report_section_completeness              1.000  == 1.0
+
+Tier 2 — synthetic capability  (FAIL)
+  XX  high_theme_recall                        0.750  >= 0.85
+        surfaced=['competitive_displacement_apex', 'integration_gap', 'pricing_pressure'] missed=['mid_market_churn_risk']
+  XX  medium_theme_recall                      0.667  >= 0.7
+        surfaced=['account_concentration_risk', 'onboarding_friction'] missed=['partnership_relay']
+  OK  low_theme_recall                         1.000  >= 0.5
+  XX  citation_precision                       0.788  >= 0.9
+        
+          'Competitive pricing pressure from Apex Strategy Group' → pricing_pressure prec=0.65 bad=['apex_brief.txt', 'competitor_radar_q4.txt', 'helmsley-renewal-brief.txt', 'note_017.txt', 'note_024.txt', 'note_034.txt', 'note_039.txt', 'note_074.txt', 'note_076.txt', 'note_079.txt', 'note_096.txt']
+          'CRM integration capability gaps as competitive differentiator' → integration_gap prec=0.86 bad=['competitor_radar_q4.txt', 'note_026.txt', 'q3_lost_deals.txt']
+          'Revenue concentration risk in top three clients' → account_concentration_risk prec=1.00 bad=[]
+          'Client onboarding friction and delivery slippage' → onboarding_friction prec=1.00 bad=[]
+          'Engineering retention risk and capacity constraints' → talent_retention_engineering prec=0.50 bad=['note_020.txt', 'note_048.txt', 'note_078.txt', 'note_079.txt', 'year_end_lessons_2026.txt']
+          'EU AI Act compliance as emerging service opportunity' → eu_ai_act_compliance prec=0.92 bad=['note_011.txt']
+          'Healthcare vertical market entry assessment' → vertical_expansion_healthcare prec=0.58 bad=['note_049.txt', 'note_053.txt', 'note_088.txt', 'note_097.txt', 'year_end_lessons_2026.txt']
+  OK  doc_coverage                             0.859  >= 0.75
+  OK  false_positive_rate_on_distractors       0.000  <= 0.1
+
+Overall: FAIL

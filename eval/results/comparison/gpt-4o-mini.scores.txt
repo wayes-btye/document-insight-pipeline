@@ -1,0 +1,29 @@
+Eval against: examples/sample_summary_report.json
+Corpus:       /home/claude-user/repositories/document-insight-pipeline/input_docs (101 files)
+Manifest:     /home/claude-user/repositories/document-insight-pipeline/eval/manifest.yaml
+
+Tier 1 — hard constraints  (PASS)
+  OK  schema_validity                          1.000  == 1.0
+  OK  citation_hallucination_rate              0.000  <= 0.0
+  OK  required_fields_populated                1.000  == 1.0
+  OK  report_section_completeness              1.000  == 1.0
+
+Tier 2 — synthetic capability  (FAIL)
+  XX  high_theme_recall                        0.500  >= 0.85
+        surfaced=['integration_gap', 'pricing_pressure'] missed=['competitive_displacement_apex', 'mid_market_churn_risk']
+  XX  medium_theme_recall                      0.667  >= 0.7
+        surfaced=['account_concentration_risk', 'onboarding_friction'] missed=['partnership_relay']
+  OK  low_theme_recall                         0.667  >= 0.5
+  XX  citation_precision                       0.778  >= 0.9
+        
+          'Pricing Pressure' → pricing_pressure prec=0.50 bad=['apex_brief.txt', 'competitor_radar_q4.txt']
+          'Client Concentration Risk' → account_concentration_risk prec=1.00 bad=[]
+          'Integration Challenges' → integration_gap prec=1.00 bad=[]
+          'Onboarding Friction' → onboarding_friction prec=1.00 bad=[]
+          'Opportunities in Regulatory Compliance' → eu_ai_act_compliance prec=0.67 bad=['year_end_lessons_2026.txt']
+          'Talent Retention and Engineering Capacity' → talent_retention_engineering prec=0.50 bad=['year_end_lessons_2026.txt']
+  XX  doc_coverage                             0.207  >= 0.75
+        uncited substantive docs: 73 (showing 5: ['interview_concorde_helena_20261005.txt', 'interview_healthcare_expert_20260818.txt', 'interview_helmsley_daniel_heath_20260919.txt', 'interview_pinion_winloss_20260729.txt', 'interview_prospect_meridian_evaluation_20260930.txt'])
+  OK  false_positive_rate_on_distractors       0.000  <= 0.1
+
+Overall: FAIL

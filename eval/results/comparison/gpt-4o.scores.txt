@@ -1,0 +1,29 @@
+Eval against: eval/results/comparison/gpt-4o.json
+Corpus:       /home/claude-user/repositories/document-insight-pipeline/input_docs (101 files)
+Manifest:     /home/claude-user/repositories/document-insight-pipeline/eval/manifest.yaml
+
+Tier 1 — hard constraints  (PASS)
+  OK  schema_validity                          1.000  == 1.0
+  OK  citation_hallucination_rate              0.000  <= 0.0
+  OK  required_fields_populated                1.000  == 1.0
+  OK  report_section_completeness              1.000  == 1.0
+
+Tier 2 — synthetic capability  (FAIL)
+  XX  high_theme_recall                        0.750  >= 0.85
+        surfaced=['integration_gap', 'mid_market_churn_risk', 'pricing_pressure'] missed=['competitive_displacement_apex']
+  XX  medium_theme_recall                      0.000  >= 0.7
+        surfaced=[] missed=['account_concentration_risk', 'onboarding_friction', 'partnership_relay']
+  OK  low_theme_recall                         1.000  >= 0.5
+  XX  citation_precision                       0.690  >= 0.9
+        
+          'Pricing Competition' → pricing_pressure prec=0.70 bad=['apex_brief.txt', 'competitor_radar_q4.txt', 'note_074.txt']
+          'Integration Capabilities' → integration_gap prec=0.89 bad=['interview_concorde_helena_20261005.txt']
+          'Healthcare Market Strategy' → vertical_expansion_healthcare prec=0.50 bad=['note_088.txt', 'note_049.txt', 'note_076.txt']
+          'EU AI Act Compliance' → eu_ai_act_compliance prec=0.75 bad=['note_014.txt', 'note_095.txt']
+          'Client Retention Challenges' → mid_market_churn_risk prec=0.50 bad=['helmsley-renewal-brief.txt', 'note_007.txt', 'note_069.txt']
+          'Resource and Talent Management' → talent_retention_engineering prec=0.80 bad=['year_end_lessons_2026.txt']
+  XX  doc_coverage                             0.533  >= 0.75
+        uncited substantive docs: 43 (showing 5: ['forecast_2027.txt', 'interview_bridgewave_carlos_retro_20261020.txt', 'interview_helmsley_daniel_heath_20260919.txt', 'interview_pinion_winloss_20260729.txt', 'interview_prospect_meridian_evaluation_20260930.txt'])
+  OK  false_positive_rate_on_distractors       0.000  <= 0.1
+
+Overall: FAIL
