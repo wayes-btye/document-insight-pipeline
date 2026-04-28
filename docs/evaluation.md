@@ -43,16 +43,19 @@ Tier 2 thresholds are achievable but not trivial. They were set based on what a 
 
 ### Tier 3 — Discovered failure modes, post-hoc
 
-This is where Hamel's principle directly applies. After the first real run, we perform error analysis on the actual outputs and document specific failure modes that occurred. Tier 3 evals are then written for those discovered failures.
+This is where Hamel's principle directly applies. After the first real run, we perform error analysis on the actual outputs and document specific failure modes that occurred. Tier 3 entries are then written for those discovered failures.
 
-Examples of what *might* land here (we won't know until we run):
-- Theme conflation (two distinct themes merged into one)
-- Over-decomposition (one theme split into two redundant ones)
-- Generic platitude actions ("monitor the situation", "engage stakeholders")
-- Specific phrasing patterns that read as LLM-generated
-- Failure modes specific to certain document types
+Tier 3 findings live in [`eval/thresholds.yaml`](../eval/thresholds.yaml) under `tier_3_discovered.findings`, with each finding carrying:
 
-Tier 3 is documented in `eval/results/tier3_findings.md` after Phase 6 of the build. It's the most valuable tier — it measures what's actually broken — but cannot be written before the system exists.
+- `id` — short stable identifier
+- `observed` — what actually went wrong on a real run
+- `cause` — why the failure happens
+- `mitigation` — what would close it (production change, model swap, prompt tweak)
+- `threshold_action` — whether we kept or moved the underlying threshold (default: kept)
+
+After the first real run against the 101-doc corpus, five Tier 3 findings were populated covering: doc_coverage gap, citation_precision under target, theme name variance breaking substring matching (mitigated via broader aliases), run-to-run Jaccard at the threshold edge, and medium-theme-recall variance. None of the underlying thresholds were lowered.
+
+Tier 3 is the most valuable tier — it measures what's actually broken — but cannot be written before the system exists.
 
 ## Why this beats pure eval-first
 
@@ -68,7 +71,7 @@ Anticipated objection: *"You wrote the corpus and the eval. Of course it passes.
 
 1. **The corpus contains deliberate difficulty mechanics** (see `corpus-design.md` § Deliberate difficulty mechanics): theme overlap, implicit themes, negation, variable salience, distractor noise, near-duplicates, stylistic variety. The corpus is not a soft target.
 2. **Citation precision is grounded in raw text.** A citation passes only if the cited doc actually contains the theme. The grader re-reads the document; the theme label cannot be self-validating.
-3. **Procedural separation.** The extraction pipeline (`src/extract.py`, `src/aggregate.py`, `src/synthesize.py`) does not import the manifest. The eval harness (`tests/eval/`) does. The tool is structurally blind to its own grading rubric.
+3. **Procedural separation.** The extraction pipeline (`src/extract.py`, `src/aggregate.py`, `src/synthesize.py`) does not import the manifest. The eval harness (`eval/`) does. The tool is structurally blind to its own grading rubric.
 4. **Distractor and false-positive tests.** Tier 2 includes a false-positive rate on distractors. The corpus contains intentional traps (`dismissed_consumer_pivot`); a tool that scores well on recall while also surfacing dismissed pivots fails the eval.
 5. **Honest framing.** The README explicitly states that Tier 2 numbers are indicative on a synthetic distribution. They are evidence the methodology works, not a claim of production-readiness.
 
@@ -89,19 +92,26 @@ These are out of scope here. They are listed in the README as "what would change
 ## How the eval suite runs
 
 ```bash
-make eval                              # all tiers against last committed sample output
-python -m src.cli eval --output ./summary_report.json   # against arbitrary output
-python -m src.cli eval --tier 1        # constraint checks only — fast
-python -m src.cli eval --tier 2        # capability checks against manifest
+# Grade an arbitrary report against the sealed manifest
+python -m eval --report path/to/summary_report.json
+
+# Add run-to-run consistency Jaccard against a second run
+python -m eval --report run_a.json --consistency-against run_b.json
+
+# Convenience targets (run the eval against the committed fixtures)
+make eval-good        # passes every metric
+make eval-bad         # fails specific named metrics
+make eval             # runs both
 ```
 
-Outputs land in `eval/results/<timestamp>/` with:
-- `tier1.json` — pass/fail per constraint
-- `tier2.json` — per-metric scores + per-theme recall breakdown
-- `tier3.md` — written manually after error analysis
-- `summary.md` — human-readable aggregation
+The CLI prints per-tier results with per-metric pass/fail and a final overall verdict. Use `--strict` to exit non-zero if any metric fails (handy in CI). `--verbose` shows details for passing metrics too.
 
-`eval/results/` contains committed reference runs from the canonical `examples/sample_summary_report.json`. These are the numbers cited in the README.
+`eval/results/` contains committed reference runs:
+
+- `eval/results/<timestamp>/` — the canonical reference run plus a second run for the consistency Jaccard, with `scores.txt` capturing the human-readable grade output. These are the numbers cited in the build-plan.
+- `eval/results/comparison/` — outputs and scores from the multi-model comparison (gpt-4o-mini, gpt-4o, claude-3-5-haiku, claude-sonnet-4.5, gemini-2.0-flash-001). Source of the README's comparison table.
+
+Tier 3 findings live in [`eval/thresholds.yaml`](../eval/thresholds.yaml), not in a separate file.
 
 ## References
 

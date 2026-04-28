@@ -1,8 +1,6 @@
 # Build Plan
 
-Phased plan for the project. Status markers reflect what's actually done.
-
-This is the single source of truth for "where are we." Future sessions read this first to pick up cleanly.
+Phased plan for the project, with what's actually done and the key decisions baked in at each phase. Single source of truth for "where the build is".
 
 ---
 
@@ -11,54 +9,52 @@ This is the single source of truth for "where are we." Future sessions read this
 | Phase | Title | Status |
 |-------|-------|--------|
 | 0 | Scoping artifacts | ✅ Complete |
-| 1 | Corpus generation | ✅ Complete (101 docs, manifest populated) |
+| 1 | Corpus generation (101 docs, sealed manifest) | ✅ Complete |
 | 2 | Eval framework code | ✅ Complete |
 | 3 | Project skeleton | ✅ Complete |
 | 4 | Core pipeline implementation | ✅ Complete |
-| 5 | Tests | ✅ Complete (22 tests, ~1s) |
-| 6 | Real run + sample output | ✅ Complete (gpt-4o-mini, 64s, $0.025) |
-| 7 | README + AI-assistance note | ✅ Complete |
-| 8 | Docker + final pass | ✅ Complete |
+| 5 | Tests (22 passing, no API key required) | ✅ Complete |
+| 6 | Real run + sample output + Tier 3 findings | ✅ Complete |
+| 7 | README + AI-assistance polish | ✅ Complete |
+| 8 | Docker + multi-model verification + CI + final pass | ✅ Complete |
+
+Reference run (committed): `openai/gpt-4o-mini`, temperature 0.3, 113s, $0.026 over 101 docs. Multi-model comparison across five OpenRouter-routed models in `eval/results/comparison/`. Tier 1 hard constraints PASS on every model tested; Tier 2 capability varies — see README's comparison table.
 
 ---
 
-## Phase 0 — Scoping artifacts ✅
+## Phase 0 — Scoping artifacts
 
-**Status:** Complete.
-
-**Goal:** Establish the design before any code or corpus generation, so the whole build is anchored.
+**Goal:** Establish the design before any code or corpus generation.
 
 **Done:**
-- `docs/architecture.md` — map-reduce design, component responsibilities, LLM provider strategy, data shapes, deliberate exclusions
-- `docs/corpus-design.md` — fictional scenario (Meridian Advisory), doc-type taxonomy aligned to brief's 5 categories plus ~5% noise, theme planting, deliberate difficulty mechanics
-- `docs/evaluation.md` — three-tier eval framework, defence of synthetic approach, references to Hamel Husain and the eval-driven-development discourse
-- `eval/manifest.yaml` — skeleton (later populated in Phase 1)
-- `eval/thresholds.yaml` — Tier 1/2/3 pass criteria
+- `docs/architecture.md` — map-reduce design, components, data shapes, deliberate exclusions
+- `docs/corpus-design.md` — fictional scenario, doc-type taxonomy, theme planting, deliberate difficulty mechanics
+- `docs/evaluation.md` — three-tier eval framework, defence of synthetic approach
+- `docs/decisions.md` — top-level trade-offs and rejected alternatives (RAG, context stuffing, agentic search)
+- `eval/manifest.yaml` skeleton (later populated in Phase 1)
+- `eval/thresholds.yaml` (Tier 1/2 pre-committed; Tier 3 populated in Phase 6)
 - `private-context/brief.md` — gitignored reference copy of the original brief
-- `.gitignore` — `private-context/`, env, caches, scratch
+- `.gitignore` — `private-context/`, `.env`, caches, scratch
 
 **Key decisions baked in:**
-- Map-reduce over single-shot context stuffing (citations, scaling, observability)
-- OpenAI SDK pointed at OpenRouter (provider abstraction without LangChain)
+- Map-reduce over single-shot context stuffing (citations, scaling, observability) — see `docs/decisions.md`
+- OpenAI SDK pointed at OpenRouter (vendor-agnostic, no LangChain)
 - Mock provider as first-class (keyless runs, CI-friendly)
-- Three-tier eval framework rather than pure EDD (per Hamel Husain's caveat: "write evaluators for errors you discover, not errors you imagine"; Tier 1 covers the legitimate eval-first cases)
-- Synthetic corpus with sealed manifest, with deliberate difficulty mechanics to counter "synthetic eval is too easy"
+- Three-tier eval framework rather than pure EDD (per Hamel Husain's "write evaluators for errors you discover, not errors you imagine")
+- Synthetic corpus with sealed manifest, with deliberate difficulty mechanics
 
 ---
 
-## Phase 1 — Corpus generation ✅
-
-**Status:** Complete.
+## Phase 1 — Corpus generation
 
 **Goal:** Build the corpus before the tool, with declared planted themes, so the tool is built blind to its grading rubric.
 
 **Done:**
 - 101 documents in `input_docs/` covering the brief's 5 doc types plus ~5% intentional noise
-- Doc type breakdown: 30 client notes, 20 meeting summaries, 8 interview transcripts, 18 research snippets, 18 market commentary, 5 edge-case noise
-- Total ~26,000 words. Length range 17 → ~1,800 words per doc.
-- Filename variety: ~85% `note_NNN.txt`, rest topical or dated-topical (e.g. `interview_helmsley_daniel_heath_20260919.txt`, `apex_brief.txt`, `re_resched.txt`). Demonstrates tool is glob-driven not name-driven.
-- 12 themes planted (10 substantive + 2 distractors) with cross-document continuity threads (renewal arcs, persona consistency, recurring entities like Apex/Relay).
-- `eval/manifest.yaml` populated with `actual_doc_count` and `expected_docs` lists per theme. Locked.
+- Doc type breakdown: 30 client notes, 20 meeting summaries, 8 interview transcripts, 18 research snippets, 18 market commentary, 5 edge-case noise. Total ~26,000 words. Length range 17 → ~1,800 words per doc.
+- Filename variety: ~85% `note_NNN.txt`, rest topical or dated-topical (e.g. `interview_helmsley_daniel_heath_20260919.txt`, `apex_brief.txt`, `re_resched.txt`). Demonstrates tool is glob-driven, not name-driven.
+- 12 themes planted (10 substantive + 2 distractors) with cross-document continuity threads
+- `eval/manifest.yaml` populated with `actual_doc_count` and `expected_docs` per theme. Sealed.
 
 **Anti-slop techniques applied during generation:**
 - No em dashes (deliberate ban — strongest AI tell)
@@ -71,153 +67,139 @@ This is the single source of truth for "where are we." Future sessions read this
 - Imperfections deliberately preserved (half-quotes, parenthetical asides, abbreviations)
 
 **Key decisions:**
-- Generated by Claude Opus 4.7 directly in this Claude Code session (Wayes's Claude Max subscription) rather than via OpenRouter API. Reproducibility script `scripts/generate_corpus.py` will be added in Phase 4 as reference, but committed corpus is canonical.
-- 101 docs > original target ~100. Single doc over is fine (brief says "around 100").
+- Corpus generated by Claude Opus 4.7 directly in this Claude Code session (Wayes's Claude Max subscription), not via OpenRouter API. The committed corpus is canonical; no regeneration script is provided (would just be a reference impl, documented in `docs/ai-assistance.md`).
+- 101 docs over original ~100 target. Brief says "around 100" so a single-doc overshoot is fine.
 - Theme counts ended higher than original targets in many cases (e.g. `competitive_displacement_apex` target 12, actual 22). This reflects natural cross-doc theme density. Manifest records actual counts; eval grades against actual.
-- Continuity threads woven across docs (Crestline renewal arc, BridgeWave story, Apex pattern, Relay arc, healthcare exploration) to give the synthesis stage real cross-document patterns to surface.
-
-**Open question for next session:**
-- Sanity-read pass needed before Phase 2 starts. Two options proposed: (A) self-audit by AI for AI-slop tells, (B) Wayes spot-checks 5-10 docs for tone. Wayes leaned A then B.
 
 ---
 
-## Phase 2 — Eval framework code ✅
+## Phase 2 — Eval framework code
 
-**Status:** Complete.
-
-**Goal:** Build the evaluation harness BEFORE the tool itself. Validate the eval works using fake-good and fake-bad outputs as fixtures, so when the real tool is built we know the grading is correct.
+**Goal:** Build the evaluation harness BEFORE the tool. Validate the eval works using fake-good and fake-bad outputs as fixtures, so when the real tool is built we know the grading is correct.
 
 **Done:**
-- `src/schemas.py` — Pydantic models that are the tool's output contract: `PerDocExtract`, `Theme`, `Insight`, `Risk`, `Opportunity`, `Action`, `AggregatedFindings`, `ReportMetadata`, `SummaryReport`. Strict (`extra="forbid"`), required citations enforced via `min_length=1`.
-- `eval/metrics.py` — Pure metric functions for Tier 1 (schema_validity, citation_hallucination_rate, required_fields_populated, report_section_completeness) and Tier 2 (theme_recall per salience, citation_precision, doc_coverage, false_positive_rate_on_distractors, consistency_jaccard).
-- `eval/grader.py` — Orchestrator. Loads manifest+thresholds, runs all metrics, returns `TierResult` per tier with per-metric pass/fail. Schema-invalid case short-circuits Tier 2.
+- `src/schemas.py` — Pydantic contract used by both pipeline and eval. Wire/domain split (LLM-facing payloads have no defaults so OpenAI strict mode is happy; final report types enforce `min_length=1` on citations).
+- `eval/metrics.py` — Pure metric functions for Tier 1 (schema validity, citation hallucination, required fields, section completeness) and Tier 2 (theme recall per salience, citation precision, doc coverage, false-positive rate on distractors, consistency Jaccard).
+- `eval/grader.py` — Loads manifest + thresholds, runs all metrics, returns per-tier results with per-metric pass/fail. Schema-invalid case short-circuits Tier 2.
 - `eval/__main__.py` — CLI: `python -m eval --report path [--strict] [--consistency-against path]`.
-- `eval/fixtures/fake_good.json` — schema-valid output that surfaces all 10 manifest themes with grounded citations and 80% doc coverage. Passes every metric.
-- `eval/fixtures/fake_bad.json` — schema-valid but cites `note_999.txt` (hallucination), surfaces only one primary theme (recall fail), surfaces office-relocation theme + consumer-pivot opportunity (FP fails). Fails the right metrics with informative output.
-- `tests/test_eval_fixtures.py` — pytest sanity tests asserting fake_good passes and fake_bad fails specific metrics by name.
-- `pyproject.toml` (minimal: pydantic, pyyaml, pytest) and `Makefile` (`make test`, `make eval-good`, `make eval-bad`, `make eval`).
+- `eval/fixtures/fake_good.json` (passes every metric) and `fake_bad.json` (fails specific named metrics) with sanity tests.
+- `tests/test_eval_fixtures.py` — assertions that the eval distinguishes good from bad with the right names in the failure list.
+- Minimal `pyproject.toml` and `Makefile` to run the eval; expanded in Phase 3.
 
 **Pre-conditions validated:**
-- Eval runs in pure-CI mode with no API keys (`pytest` and `python -m eval` both pass without env vars).
-- Fake-good fixture passes every metric; fake-bad fails citation_hallucination_rate, all three theme_recall variants, doc_coverage, and false_positive_rate_on_distractors with informative `details=` strings.
-- Thresholds in `eval/thresholds.yaml` are not retrofitted to fake_good — they were committed in Phase 0 before fake_good existed; fake_good was hand-sized to clear them.
+- `pytest` runs in pure-CI mode with no API keys.
+- Fake-good fixture passes every metric; fake-bad fails the right metrics with informative `details=` strings.
+- Thresholds were not retrofitted to fake_good — they were committed first; the fixture was sized to clear them.
 
 **Notable decisions:**
-- Distractor false-positive detection works via canonical_name + aliases substring match against the report item's text, OR any citation to a `pure_noise` file. Required adding `aliases:` lists to the two distractor entries in `eval/manifest.yaml` (no change to expected_docs/ground truth).
-- Theme matching uses bidirectional substring match (alias-in-report OR report-in-alias) with a 5-char minimum to avoid silly hits.
-- Citation precision is macro-averaged across matched themes; unmatched report themes don't contribute (recall already penalises them).
-- `consistency_jaccard` is opt-in via `--consistency-against` since it requires two run outputs.
+- Distractor false-positive detection works via canonical_name + aliases substring match against the report item text, plus a check that no citations point to `pure_noise` files. Required adding `aliases:` lists to the two distractor entries in `eval/manifest.yaml` (search vocabulary, not ground truth — `expected_docs` unchanged).
+- Theme matching uses bidirectional substring match (alias-in-report OR report-in-alias) with a 5-char minimum.
+- Citation precision is macro-averaged across matched themes; unmatched themes don't contribute (recall already penalises them).
+- `consistency_jaccard` is opt-in via `--consistency-against path`.
 
 ---
 
-## Phase 3 — Project skeleton ⏳ NEXT
+## Phase 3 — Project skeleton
 
-**Status:** Pending.
-
-**Already in place from Phase 2:** `src/`, `tests/`, `eval/` directories with `__init__.py`; minimal `pyproject.toml` (pydantic, pyyaml, pytest); `Makefile` with `eval` and `test` targets.
-
-**Planned deliverables:**
-- Expand `pyproject.toml`: add `openai`, `httpx`, `tenacity`, `ruff`, `mypy`
-- `ruff` config (formatter + linter)
-- `mypy` config (strict mode)
-- Expand `Makefile`: `lint`, `format`, `run`, `install`
-- `.env.example` (mirrors `.env`, no secret values)
-- `config.yaml` template (model, batch size, concurrency, cache toggle)
+**Done:**
+- `pyproject.toml` (Python ≥3.11; deps: openai, pydantic, httpx, pyyaml, tenacity; dev deps: pytest, pytest-asyncio, ruff, mypy, types-PyYAML)
+- `[tool.ruff]` config (line-length 110, lint rules E/F/I/B/UP/SIM)
+- `[tool.mypy]` strict config
+- `[tool.pytest]` asyncio mode auto, `expensive` marker
+- Expanded `Makefile`: `install`, `install-dev`, `test`, `test-all`, `lint`, `format`, `typecheck`, `eval`, `eval-good`, `eval-bad`, `run`, `run-mock`, `clean`
+- `.env.example` (gitignored real `.env` template, with model recommendations)
+- `config.yaml` (provider, pipeline, cache, cost prices for 8 models)
 
 ---
 
 ## Phase 4 — Core pipeline implementation
 
-**Status:** Pending.
+**Done:**
+- Provider abstraction: `LLMProvider` Protocol, `MockProvider` (deterministic, keyword-driven, schema-valid output that passes Tier 1), `OpenRouterProvider` (OpenAI SDK pointed at OpenRouter base URL).
+- The OpenRouter provider has two paths: `chat.completions.parse()` for OpenAI-prefixed models (strict structured output enforced at the API), and `chat.completions.create()` with `response_format={"type": "json_object"}` plus manual JSON parsing for everything else (Anthropic, Google, Meta, Mistral). Without this split, only OpenAI models work end-to-end.
+- Pydantic schemas (see Phase 2)
+- Map (`extract.py`): one LLM call per doc, source filename pinned by the pipeline, not the model
+- Reduce (`aggregate.py`): one LLM call over structured extracts (compact JSON, not raw text)
+- Synthesise (`synthesize.py`): one LLM call over `AggregatedFindings` to produce executive_summary + assumptions + limitations
+- Pipeline (`pipeline.py`): bounded async (Semaphore=5 default), defensive citation stripping before output, per-doc failure isolation that surfaces `docs_failed` count in `ReportMetadata`
+- Output writer (Markdown + JSON, both formats by default)
+- Cost tracker with per-stage breakdown and per-1M-token price table
+- Retry handler: SDK retries for transient transport errors, tenacity for schema-validation and non-JSON-content failures
+- Content-hash cache (`src/cache.py`), disabled by default
+- CLI (`src/cli.py`): supports both `--input_dir` and `--input-dir`, `--mock`, `--model`, `--concurrency`, `--format`, `--cache`, `--config`
+- Top-level `analyze_docs.py` shim per the brief's example invocation
+- Prompt hardening: UUID-tagged delimiters around document content in the map prompt, plus a system-prompt notice that document content is untrusted USER DATA
 
-**Planned deliverables:**
-- Provider abstraction: `LLMProvider` interface, `OpenRouterProvider` impl (OpenAI SDK pointed at OpenRouter), `MockProvider` impl
-- Pydantic schemas: `PerDocExtract`, `Theme`, `Insight`, `Risk`, `Opportunity`, `Action`, `AggregatedFindings`, `SummaryReport`
-- Map step: per-doc structured extraction, source filename pinned
-- Reduce step: aggregation over structured extracts (NOT raw text), theme clustering, citation collection
-- Synthesis step: business-readable Markdown report from `AggregatedFindings`
-- CLI entry point: `python -m src.cli analyze --input-dir ... --output ... --model ... --mock`
-- Output writer: Markdown + JSON
-- Cost tracker: token counts, per-stage cost breakdown
-- Retry handler: tenacity with exponential backoff, layered on top of OpenAI SDK retries
-- Cache: content-hash cache for dev iteration (disabled by default)
-- Async with bounded concurrency (configurable, default 5) for the map stage
-- Reproducibility script: `scripts/generate_corpus.py` (reference impl using OpenRouter, even though canonical corpus was generated interactively)
-
-**During this phase: iterate prompts against eval, do NOT lower thresholds to fit.**
+**Iteration discipline:** prompts were tuned but Tier 1/2 thresholds were never lowered. Where a real run missed a threshold, it was documented as a Tier 3 finding rather than papered over.
 
 ---
 
 ## Phase 5 — Tests
 
-**Status:** Pending.
+**Done:**
+- 22 passing tests, 1 expensive (live API) skipped by default
+- `test_schemas.py`: contract enforcement (citation `min_length=1`, unknown-field rejection, salience literals)
+- `test_mock_provider.py`: deterministic keyword detection, admin docs produce empty themes
+- `test_cost.py`: per-stage aggregation, per-million pricing math
+- `test_extract_aggregate.py`: source-file pinning, cross-doc citation aggregation
+- `test_output.py`: Markdown contains all 8 brief sections, JSON parses, format-only filtering
+- `test_pipeline_e2e.py`: full mock pipeline against the 101-doc corpus passes Tier 1 hard constraints
+- `test_eval_fixtures.py`: fake-good passes everything, fake-bad fails specific named metrics
+- `test_openrouter_smoke.py`: live API test, `@pytest.mark.expensive`, skipped without `OPENROUTER_API_KEY`
 
-**Planned deliverables:**
-- Unit tests for each module with mocked LLM
-- Integration test: full pipeline against `MockProvider` end-to-end
-- All tests pass with no API keys set
-- Live API tests marked `@pytest.mark.expensive` (skip by default)
-
----
-
-## Phase 6 — Real run + sample output
-
-**Status:** Pending.
-
-**Planned deliverables:**
-- Real run against `input_docs/` using OpenRouter (default `openai/gpt-4o-mini`)
-- `examples/sample_summary_report.md` and `.json` committed
-- `eval/results/<timestamp>/` committed with Tier 1 + Tier 2 scores
-- Tier 3 error analysis: read the real output, document specific failure modes observed, write evals for them, add to `eval/thresholds.yaml`
+All tests run in mock mode without an API key. `make test` is the entry point. `make test-all` includes the expensive marker.
 
 ---
 
-## Phase 7 — README + AI-assistance note
+## Phase 6 — Real run + Tier 3 findings
 
-**Status:** Pending.
+**Done:**
+- Reference run committed: `examples/sample_summary_report.{md,json}`, generated with `openai/gpt-4o-mini` at temperature 0.3 (the new default), 113s, $0.026, 101 docs.
+- Multi-model comparison: gpt-4o-mini, gpt-4o, claude-3-5-haiku, claude-sonnet-4.5, gemini-2.0-flash-001 all run end-to-end. Outputs in `eval/results/comparison/`. Comparison table in README.
+- Persisted reference run with two-run consistency check at `eval/results/20260428T045004Z/`.
+- Tier 3 findings populated in `eval/thresholds.yaml`: doc_coverage gap, citation_precision under target (multi-theme docs penalised by per-theme strict precision), theme name variance breaking substring matching (mitigated via broader aliases in the manifest's search vocabulary, ground-truth `expected_docs` unchanged), run-to-run Jaccard at the threshold edge, medium-theme-recall variance (model sometimes generalises a Relay-specific theme to "strategic partnerships" so substring matching misses it).
+- Tier 1 hard constraints fully PASS on every model tested. Tier 2 partial — best balanced profile is claude-sonnet-4.5 (only model to clear `doc_coverage`); best value is gemini-2.0-flash (clears `doc_coverage` at near-zero cost).
 
-**Planned deliverables:**
-- `README.md` — front door for any reviewer. Sections:
-  - What it does (1 paragraph)
-  - Run instructions (clone → install → mock-mode run → real-mode run)
-  - Architecture (1 diagram, links to `docs/architecture.md`)
-  - Prompt strategy
-  - Eval framework + reference scores from committed sample run
-  - Honest limitations
-  - "What I'd change for production" (substantive list — cost, retries, async, observability, real eval, schema versioning, human review, PII)
-- `README.md` references `docs/ai-assistance.md` as the AI-usage note, which the brief asks for
-- Polished pass: every link works, every command runs from a fresh clone
+**Discipline note:** thresholds were never lowered to fit any model. Each Tier 2 miss is a documented Tier 3 finding with cause, mitigation, and rationale for keeping the bar.
 
 ---
 
-## Phase 8 — Docker + final pass
+## Phase 7 — README + AI-assistance polish
 
-**Status:** Pending.
+**Done:**
+- `README.md` (front door): what it does, run instructions (install, mock, real, eval, test, Docker), CLI reference, architecture summary with map-reduce defence, prompt strategy, eval framework with the multi-model comparison table, honest limitations, "what I'd change for production", project structure, link to AI-assistance and decisions docs.
+- `docs/ai-assistance.md` updated with phase-by-phase account of what AI did and what human judgment did.
+- `docs/decisions.md` written: top-level trade-offs (map-reduce vs RAG vs context stuffing vs agentic search), and a comprehensive table of every other architectural decision with rejected alternatives.
 
-**Planned deliverables:**
-- `Dockerfile` (slim Python base, non-root user, layer caching for deps)
-- Verify `docker run` produces same output as local
-- Lint/test/typecheck clean
-- End-to-end smoke test from clean clone
-- Conventional-commit history review
-- Decision: push to GitHub public or private (Wayes's call)
+---
+
+## Phase 8 — Docker + multi-model + CI + final pass
+
+**Done:**
+- `Dockerfile`: two-stage build, `python:3.12-slim` base, non-root user, deps cached separately from source. Smoke-tested in mock mode (~0.2s, same output as native) and real-mode against OpenRouter (~136s).
+- `.dockerignore` excludes tests, docs, eval/results, etc.
+- Multi-model compatibility: `OpenRouterProvider` rewritten to handle both OpenAI's strict structured-output mode and the JSON-object-mode-with-manual-parsing path needed for Anthropic/Google/Meta models on OpenRouter. Verified end-to-end with five different models.
+- GitHub Actions CI (`.github/workflows/ci.yml`): runs ruff, mypy, pytest on every push and pull request to main. No API key needed (mock-only test path).
+- Conventional-commit history. No `--no-verify`, no destructive operations, no force-pushes.
+- Repository pushed public to `https://github.com/wayes-btye/document-insight-pipeline`.
 
 ---
 
 ## Dependencies between phases
 
-- Phase 2 depends on Phase 1 (manifest must be sealed before eval is written)
+- Phase 2 depends on Phase 1 (manifest sealed before eval is written)
 - Phase 4 depends on Phase 2 (build the tool to pass the eval, not the other way around)
 - Phase 4 depends on Phase 3 (skeleton must exist to put the code in)
 - Phase 5 depends on Phase 4 (test the actual code)
 - Phase 6 depends on Phase 4 + 5 (real run requires a working tested tool)
 - Phase 7 depends on Phase 6 (README needs real numbers and sample output to reference)
-- Phase 8 is mostly independent but final smoke test needs everything done
+- Phase 8 is mostly independent but the CI smoke needs everything green
 
 ---
 
-## Resource notes for future sessions
+## Notes for future sessions
 
-- **OpenRouter API key**: not yet provided. Wayes will supply when Phase 4 reaches the OpenRouter integration step. Until then, MockProvider development.
-- **Generation effort**: Phase 1 corpus generation was substantial (~26K words of original prose). Future content generation should be similarly disciplined: per-doc spec cards, persona rotation, anti-slop rules.
-- **Budget for prompt iteration**: Phase 4 will require multiple LLM runs against the corpus to iterate the map / reduce / synthesis prompts. Cache enabled during dev to avoid re-billing the per-doc map stage when iterating later stages.
+- **OpenRouter API key**: stored in `.env` (gitignored, chmod 600). `.env.example` documents the format and lists tested models.
+- **Reference run cost**: $0.026 per full corpus pass with `openai/gpt-4o-mini`. Other models documented in the README's comparison table.
+- **Cache**: disabled by default. Enable via `--cache` for prompt iteration to avoid re-billing the per-doc map stage.
+- **Production path**: the gaps that remain (`doc_coverage`, `citation_precision`, `secondary_theme_recall`) close with either a larger reduce-stage model (sonnet-4.5 already clears `doc_coverage`) or embedding-based theme matching in the eval. README's "what I'd change for production" section lists the rest.

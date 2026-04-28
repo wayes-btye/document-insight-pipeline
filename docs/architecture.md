@@ -87,57 +87,68 @@ client = AsyncOpenAI(
 
 **Caching.** `src/cache.py` keys on `sha256(model + messages + schema)`. Hits return cached responses instantly with zero token cost. Default: disabled. Enable via `config.yaml` or `--cache` flag during development to avoid burning tokens iterating on the reduce/synthesis prompts. Documented as dev-only — production deployments would use a proper response cache (Redis) with TTLs.
 
-## Data shapes (sketch)
+## Data shapes
+
+The full schema is in `src/schemas.py`. Sketch:
 
 ```python
-class Theme(BaseModel):
+class Theme(_Strict):
     name: str
     description: str
-    citations: list[str]            # filenames — required, non-empty
-    salience: Literal["high", "medium", "low"]
+    citations: list[str] = Field(min_length=1)   # required, non-empty
+    salience: Salience                           # high / medium / low
 
-class PerDocExtract(BaseModel):
-    source_file: str                # filled by extract.py, not the model
-    themes: list[str]               # short labels
+class PerDocExtractPayload(_Strict):              # what the LLM returns (no source_file)
+    themes: list[str]
     insights: list[str]
     risks: list[str]
     opportunities: list[str]
     actions: list[str]
-    notes: str | None               # free-form one-liner
+    notes: str | None                            # required field, may be null
 
-class AggregatedFindings(BaseModel):
+class PerDocExtract(_Strict):                     # what the pipeline emits (source_file pinned)
+    source_file: str
+    # ... same fields as the payload
+
+class AggregatedFindings(_Strict):
     themes: list[Theme]
     insights: list[Insight]
     risks: list[Risk]
     opportunities: list[Opportunity]
     actions: list[Action]
 
-class SummaryReport(BaseModel):
+class SummaryReport(_Strict):
     executive_summary: str
     findings: AggregatedFindings
     assumptions: list[str]
     limitations: list[str]
-    metadata: ReportMetadata        # docs processed, tokens, cost, model, timing
+    metadata: ReportMetadata        # docs_processed, docs_failed, tokens, cost, model, timing
 ```
+
+The wire/domain split (`PerDocExtractPayload` vs `PerDocExtract`) exists because OpenAI's strict structured-output mode requires every field in the schema to be required (no defaults), but we want to attach the source filename ourselves rather than ask the model to provide it. The same split logic applies to keeping ReportMetadata's run-stats out of the LLM-facing `AggregatedFindings`.
 
 ## CLI surface
 
 ```bash
-python -m src.cli analyze \
-  --input-dir ./input_docs \
+python -m src.cli \
+  --input_dir ./input_docs \
   --output ./summary_report.md \
   --model openai/gpt-4o-mini \
-  --batch-size 10 \
   --concurrency 5 \
   --format both \
   --mock                              # bypass API entirely
 ```
 
-Convenience commands:
+(Both `--input_dir` underscore form and `--input-dir` hyphen form are accepted, matching the brief and conventional Python respectively.)
+
+The eval suite is its own module:
+
 ```bash
-python -m src.cli eval                # run eval suite against last output
-python -m src.cli generate-corpus     # rebuild input_docs/ from manifest
+python -m eval --report path/to/summary_report.json
+python -m eval --report path/to/summary_report.json --strict
 ```
+
+Or via Make: `make run-mock`, `make run`, `make eval-good`, `make eval-bad`. See `Makefile` and `README.md` for the full set.
 
 ## Outputs
 

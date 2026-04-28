@@ -25,54 +25,58 @@ The fictional names (Meridian, the competitor "Apex", the partner "Relay Systems
 
 ## Document type taxonomy
 
-Six types, each with a different shape and tone. Counts approximate ~100 total.
+Aligned to the brief's five explicit doc types (client notes, research snippets, meeting summaries, interview transcripts, market commentary) plus a small admin / noise bucket. 101 documents total in the committed corpus.
 
 | Type | Count | Typical length (words) | Shape |
 |------|-------|-------------------------|-------|
-| Client meeting notes | 25 | 300–1500 | Date header, attendees, agenda, discussion bullets, action items |
-| Client / prospect call summaries | 20 | 200–800 | Short prose, sentiment-loaded, follow-ups |
-| Internal memos | 15 | 600–2500 | Subject line, TL;DR, body, sometimes recommendations |
-| Market commentary / analyst clippings | 15 | 150–600 | Brief, opinionated, references to specific events |
-| Research snippets | 10 | 200–1000 | Source attribution, key findings, occasional quotes |
-| Admin / scheduling / low-signal | 15 | 80–300 | Office logistics, scheduling threads, system notifications |
+| Client notes | 30 | 200–1500 | Sentiment-loaded prose, named characters, follow-ups, action items |
+| Meeting summaries | 20 | 300–1800 | Date header, attendees, agenda, discussion bullets, action items |
+| Interview transcripts | 8 | 800–2500 | Speaker labels, turn-taking, disfluencies, post-call notes |
+| Research snippets | 18 | 150–900 | Compiled-by attribution, key findings, occasional quotes |
+| Market commentary | 18 | 150–700 | Brief, opinionated, references to specific events |
+| Edge-case noise / admin | 5 | 17–300 | Scheduling fragments, system notifications, helpdesk threads |
+| **Total** | **99** | | (file count is 101 — two docs cross-counted across types) |
 
-Length distribution is intentionally skewed: most docs short, a few very long. This stresses both the per-doc extractor (handles short noise without inventing themes) and the reduce stage (handles long docs without dropping signal).
+Length distribution is intentionally skewed: most docs short, a few very long. This stresses both the per-doc extractor (handles short noise without inventing themes) and the reduce stage (handles long docs without dropping signal). Filenames are mostly `note_NNN.txt` (~85%); the rest are topical (`apex_brief.txt`, `helmsley-renewal-brief.txt`) or dated-topical (`interview_helmsley_daniel_heath_20260919.txt`). Demonstrates the tool is glob-driven, not name-driven.
 
 ## Planted themes
 
-Twelve themes total, distributed across documents at declared frequencies. Categorised by salience and nature.
+Twelve themes total — ten substantive plus two distractors — distributed across documents at declared frequencies. Categorised by salience and nature. The `actual_doc_count` column reflects what ended up in the committed corpus; the eval grades against those committed counts. Full per-theme `expected_docs` lists in `eval/manifest.yaml`.
 
 ### Primary (high salience — central business signals)
 
-| ID | Canonical name | Target docs | Nature |
+| ID | Canonical name | Actual docs | Nature |
 |----|----------------|-------------|--------|
-| `pricing_pressure` | Pricing pressure on renewals | 18 | Explicit |
+| `pricing_pressure` | Pricing pressure on renewals | 27 | Explicit |
 | `mid_market_churn_risk` | Rising churn signals in mid-market segment | 14 | Explicit, partly inferred |
-| `integration_gap` | Native integration gap (Salesforce, HubSpot) | 16 | Explicit |
-| `competitive_displacement_apex` | Losing deals to competitor "Apex" | 12 | Explicit |
+| `integration_gap` | Native integration gap (Salesforce, HubSpot) | 25 | Explicit |
+| `competitive_displacement_apex` | Losing deals to Apex Strategy Group | 26 | Explicit |
 
 ### Secondary (medium salience — meaningful but less ubiquitous)
 
-| ID | Canonical name | Target docs | Nature |
+| ID | Canonical name | Actual docs | Nature |
 |----|----------------|-------------|--------|
-| `partnership_relay` | Partnership opportunity with Relay Systems | 9 | Explicit |
+| `partnership_relay` | Partnership opportunity with Relay Systems | 15 | Explicit |
 | `onboarding_friction` | Slow time-to-value during onboarding | 10 | Mostly explicit |
-| `account_concentration_risk` | Top 3 clients ≈ 38% of revenue | 7 | Implicit (numbers in different docs) |
+| `account_concentration_risk` | Top-3-account revenue concentration (~49%) | 12 | Implicit (numbers in different docs) |
 
 ### Minor (low salience — should still surface in a thorough analysis)
 
-| ID | Canonical name | Target docs | Nature |
+| ID | Canonical name | Actual docs | Nature |
 |----|----------------|-------------|--------|
-| `eu_ai_act_compliance` | EU AI Act readiness for client deliverables | 5 | Explicit |
-| `vertical_expansion_healthcare` | Inbound healthcare interest as expansion lane | 4 | Explicit |
-| `talent_retention_engineering` | Engineering attrition signals | 5 | Implicit, scattered |
+| `eu_ai_act_compliance` | EU AI Act readiness for advisory deliverables | 13 | Explicit |
+| `vertical_expansion_healthcare` | Healthcare vertical expansion opportunity | 9 | Explicit |
+| `talent_retention_engineering` | Engineering attrition risk | 7 | Implicit, scattered |
 
 ### Distractors (should NOT be surfaced as report items)
 
-| ID | Description | Target docs | Tests for |
+| ID | Description | Actual docs | Tests for |
 |----|-------------|-------------|-----------|
-| `office_relocation` | Admin chatter about office moves | 4 | False positive theme detection on low-signal noise |
+| `office_relocation` | Admin chatter about office moves, IT helpdesk | 3 | False positive theme detection on low-signal noise |
 | `dismissed_consumer_pivot` | "We are NOT pivoting to consumer" — mentioned only to be dismissed | 3 | Negation handling — surfacing dismissed ideas as recommendations |
+| `pure_noise` (`re_resched.txt`, `zoom_recording_notice.txt`) | Single-purpose noise files | 2 | Citation discipline — these should never appear in any report |
+
+Theme counts ended higher than original targets in many cases. This reflects natural cross-doc theme density once the corpus was written; the manifest records the actual counts and the eval grades against those.
 
 ## Deliberate difficulty mechanics
 
@@ -88,17 +92,19 @@ To counter synthetic-eval-too-easy, the corpus uses these mechanics:
 
 ## Generation procedure
 
-Documents are generated by a separate script (`scripts/generate_corpus.py`) that:
+The corpus was generated interactively by Claude Opus 4.7 inside a Claude Code session, not via a regeneration script. The committed corpus is canonical; the manifest is sealed against it.
 
-1. Reads the theme manifest from `eval/manifest.yaml`.
-2. For each target document, samples a doc type, target length, and theme set per the planted-theme distribution.
-3. Calls the LLM with a structured prompt: doc type, length budget, themes to weave in (with intended salience), stylistic notes, scenario context. Prompts emphasise authenticity over polish — natural variation in tone, occasional informality, realistic noise.
-4. Saves outputs as `input_docs/note_001.txt` through `note_100.txt`.
-5. Records, per document, which themes were planted (used afterwards to populate `expected_docs` per theme in the manifest).
+For each document the procedure was:
 
-Generation runs once and the outputs are committed. The manifest is then locked.
+1. Sample a doc type, target length, and theme set per the planted-theme distribution.
+2. Apply per-doc spec cards: target type and length, primary theme(s), one or two secondary theme(s), persona / author voice (one of ~15 named authors), stylistic notes (interview turn-taking, meeting-note structure, etc.), scenario context (prior conversations referenced in the doc).
+3. Generate with anti-AI-slop discipline: no em dashes, banned vocabulary list (delve, leverage, robust, comprehensive, navigate, seamless, pivotal, testament, crucial, ever-evolving, multifaceted), no parallel negation, no tricolons, sentence-length variation, deliberate imperfections preserved (half-quotes, abbreviations, parenthetical asides).
+4. Cross-check named entities for consistency across docs (the same person stays the same person; the same company keeps its details).
+5. Record per-document theme presence in `eval/manifest.yaml` under `expected_docs`.
 
-The generation script is committed for transparency. Anyone can reproduce the corpus from a fresh run, though the actual committed corpus is the canonical one — re-running would produce slightly different prose with the same theme distribution.
+A reference reproducibility script (`scripts/generate_corpus.py`) is mentioned in the build plan as a future deliverable but is not part of this submission. Re-running would produce different prose with the same theme distribution; the committed corpus is what the eval grades against.
+
+See `docs/ai-assistance.md` for the full account of what was AI-generated vs human-judged during corpus construction.
 
 ## Quality gates before locking
 

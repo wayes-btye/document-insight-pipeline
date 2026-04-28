@@ -150,28 +150,27 @@ Three tiers, defended in [`docs/evaluation.md`](docs/evaluation.md). Built befor
 
 The Tier 3 split is deliberate, following Hamel Husain's pushback on pure eval-driven development: write evaluators for errors you discover, not errors you imagine.
 
-### Reference scores (committed)
+### Reference scores
 
-`openai/gpt-4o-mini`, 101 documents, full corpus, default settings. See [`eval/results/`](eval/results) for the persisted run output and scores.
+The committed reference run (`examples/sample_summary_report.{md,json}`) is `openai/gpt-4o-mini` with the default temperature of 0.3, against the full 101-doc corpus. **Tier 1 fully PASSes on every model we tried.** Tier 2 capability varies — see the comparison table below.
 
-| Tier 1 | Score | Threshold | Pass |
-|---|---|---|---|
-| schema_validity | 1.000 | == 1.0 | ✓ |
-| citation_hallucination_rate | 0.000 | ≤ 0.0 | ✓ |
-| required_fields_populated | 1.000 | == 1.0 | ✓ |
-| report_section_completeness | 1.000 | == 1.0 | ✓ |
+### Multi-model comparison
 
-| Tier 2 | Score | Threshold | Pass |
-|---|---|---|---|
-| primary_theme_recall (high) | 1.000 | ≥ 0.85 | ✓ |
-| secondary_theme_recall (medium) | 0.333 | ≥ 0.70 | ✗ |
-| minor_theme_recall (low) | 0.667 | ≥ 0.50 | ✓ |
-| citation_precision | 0.580 | ≥ 0.90 | ✗ |
-| doc_coverage | 0.435 | ≥ 0.75 | ✗ |
-| false_positive_rate_on_distractors | 0.000 | ≤ 0.10 | ✓ |
-| consistency_jaccard | 0.625 | ≥ 0.65 | ✗ |
+All five models were run end-to-end against the same corpus through the same pipeline. Persisted outputs in [`eval/results/comparison/`](eval/results/comparison). Scores rounded; `✓` = passes the Tier 2 threshold for that metric.
 
-Tier 1 hard constraints fully PASS. Tier 2 capability shows three persistent gaps and one consistency miss against `gpt-4o-mini`. Each is documented in `eval/thresholds.yaml` `tier_3_discovered.findings` with cause, mitigation, and the rationale for keeping the threshold (we don't lower the bar to fit the model).
+| Model | Time | Cost | Hi recall ≥0.85 | Med recall ≥0.70 | Lo recall ≥0.50 | Cite precision ≥0.90 | Doc coverage ≥0.75 | FP on distractors ≤0.10 |
+|---|---|---|---|---|---|---|---|---|
+| `openai/gpt-4o-mini` (default) | 113s | $0.026 | 0.75 | **1.00** ✓ | 0.67 ✓ | 0.44 | 0.25 | 0.00 ✓ |
+| `openai/gpt-4o` | 75s | $0.430 | 0.75 | 0.00 | **1.00** ✓ | 0.69 | 0.53 | 0.00 ✓ |
+| `anthropic/claude-3-5-haiku` | 112s | $0.240 | 0.50 | 0.33 | **1.00** ✓ | **0.88** | 0.35 | 0.00 ✓ |
+| `anthropic/claude-sonnet-4.5` | 263s | $0.61 (est) | 0.75 | 0.67 | **1.00** ✓ | 0.79 | **0.86** ✓ | 0.00 ✓ |
+| `google/gemini-2.0-flash-001` | 209s | $0.02 (est) | 0.75 | 0.67 | **1.00** ✓ | 0.70 | **0.77** ✓ | 0.00 ✓ |
+
+Sonnet-4.5 has the best balanced profile (only model to pass `doc_coverage`); Gemini Flash is the value pick (passes `doc_coverage` at near-zero cost); Haiku has the highest `citation_precision` but lowest recall; gpt-4o-mini is fastest and cheapest but underperforms larger models on coverage. **No model hits all Tier 2 thresholds against the synthetic manifest** — the thresholds were not lowered to fit any one model. The persistent gap is `citation_precision`, which is partly a real model limitation and partly a substring-matching limitation in the eval's theme matcher; documented honestly as Tier 3 finding `citation_precision_under_target` in `eval/thresholds.yaml`.
+
+(Note: the cross-model comparison runs were captured at temperature 0.0 for reproducibility; the committed reference output uses the new default of 0.3 — see "Temperature" in `docs/decisions.md` for why 0.3 not 0.0.)
+
+Threshold rationale and Tier 3 findings in [`eval/thresholds.yaml`](eval/thresholds.yaml).
 
 ---
 
@@ -273,3 +272,5 @@ See [`docs/ai-assistance.md`](docs/ai-assistance.md) for the full account, inclu
 | [`docs/evaluation.md`](docs/evaluation.md) | Three-tier framework, defence of synthetic approach, references |
 | [`docs/build-plan.md`](docs/build-plan.md) | Phased plan and what's done at each phase |
 | [`docs/ai-assistance.md`](docs/ai-assistance.md) | How AI was used, what human judgment did |
+
+Suggested reading order for a reviewer: this README → `docs/decisions.md` → `docs/architecture.md` → `docs/evaluation.md` → `examples/sample_summary_report.md` → `eval/results/comparison/` → `src/` (start with `schemas.py`, then `prompts.py`, then `pipeline.py`).
