@@ -102,7 +102,7 @@ For each document the procedure was:
 4. Cross-check named entities for consistency across docs (the same person stays the same person; the same company keeps its details).
 5. Record per-document theme presence in `eval/manifest.yaml` under `expected_docs`.
 
-A reference reproducibility script (`scripts/generate_corpus.py`) is mentioned in the build plan as a future deliverable but is not part of this submission. Re-running would produce different prose with the same theme distribution; the committed corpus is what the eval grades against.
+A reference reproducibility script (`scripts/generate_corpus.py`) is mentioned in the build plan as future work but is not shipped here. Re-running would produce different prose with the same theme distribution; the committed corpus is what the eval grades against.
 
 See `docs/ai-assistance.md` for the full account of what was AI-generated vs human-judged during corpus construction.
 
