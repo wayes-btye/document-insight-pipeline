@@ -1,0 +1,309 @@
+{
+  "executive_summary": "Q3-Q4 2026 portfolio is shaped by sustained competitive pressure from Apex Strategy Group, a recurring native-integration gap (Salesforce, HubSpot) decisive in multiple losses, and rising churn signals concentrated in the mid-market segment. Top-3 client concentration has increased. Three forward bets, EU AI Act advisory (anchored by Crestline), the Relay Systems partnership outcome, and selective healthcare expansion via the Verdant pilot, frame 2027 strategic optionality.",
+  "findings": {
+    "themes": [
+      {
+        "name": "Pricing pressure on renewals",
+        "description": "Multiple clients pushing back on renewal pricing, requesting larger",
+        "citations": [
+          "note_001.txt",
+          "note_011.txt",
+          "note_012.txt",
+          "note_014.txt",
+          "note_020.txt",
+          "note_023.txt",
+          "note_026.txt",
+          "note_033.txt",
+          "note_036.txt",
+          "note_038.txt",
+          "note_041.txt",
+          "note_044.txt",
+          "note_055.txt"
+        ],
+        "salience": "high"
+      },
+      {
+        "name": "Rising churn signals in mid-market segment",
+        "description": "Increasing churn signals concentrated among mid-market clients",
+        "citations": [
+          "note_002.txt",
+          "note_016.txt",
+          "note_026.txt",
+          "note_032.txt",
+          "note_036.txt",
+          "note_042.txt",
+          "note_045.txt",
+          "note_056.txt",
+          "note_068.txt",
+          "note_071.txt",
+          "note_074.txt",
+          "note_075.txt",
+          "note_079.txt"
+        ],
+        "salience": "high"
+      },
+      {
+        "name": "Native integration gap (Salesforce, HubSpot)",
+        "description": "Clients repeatedly asking for native integrations with Salesforce",
+        "citations": [
+          "note_001.txt",
+          "note_013.txt",
+          "note_014.txt",
+          "note_022.txt",
+          "note_023.txt",
+          "note_024.txt",
+          "note_029.txt",
+          "note_036.txt",
+          "note_038.txt",
+          "note_039.txt",
+          "note_055.txt",
+          "note_056.txt",
+          "note_062.txt"
+        ],
+        "salience": "high"
+      },
+      {
+        "name": "Competitive displacement by Apex Strategy Group",
+        "description": "Apex Strategy Group has emerged as the primary mid-market competitive",
+        "citations": [
+          "note_001.txt",
+          "note_014.txt",
+          "note_017.txt",
+          "note_020.txt",
+          "note_024.txt",
+          "note_026.txt",
+          "note_034.txt",
+          "note_037.txt",
+          "note_049.txt",
+          "note_055.txt",
+          "note_056.txt",
+          "note_062.txt",
+          "note_064.txt"
+        ],
+        "salience": "high"
+      },
+      {
+        "name": "Partnership opportunity with Relay Systems",
+        "description": "Relay Systems partnership conversation through Q3-Q4. Began as",
+        "citations": [
+          "note_003.txt",
+          "note_021.txt",
+          "note_025.txt",
+          "note_035.txt",
+          "note_037.txt",
+          "note_058.txt",
+          "note_063.txt",
+          "note_064.txt",
+          "note_070.txt",
+          "note_081.txt"
+        ],
+        "salience": "medium"
+      },
+      {
+        "name": "Slow time-to-value during onboarding",
+        "description": "Clients citing slow onboarding and lengthy time-to-value during",
+        "citations": [
+          "note_018.txt",
+          "note_036.txt",
+          "note_038.txt",
+          "note_042.txt",
+          "note_048.txt",
+          "note_067.txt",
+          "onboarding_research.txt",
+          "onboarding_pilot_results.txt",
+          "interview_bridgewave_carlos_retro_20261020.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "medium"
+      },
+      {
+        "name": "Top-3-account revenue concentration",
+        "description": "Top three clients (Crestline, Helmsley, Concorde) account for ~49%",
+        "citations": [
+          "note_007.txt",
+          "note_013.txt",
+          "note_050.txt",
+          "note_053.txt",
+          "note_063.txt",
+          "note_065.txt",
+          "note_073.txt",
+          "helmsley-renewal-brief.txt",
+          "forecast_2027.txt",
+          "year_end_lessons_2026.txt"
+        ],
+        "salience": "medium"
+      },
+      {
+        "name": "EU AI Act readiness for advisory deliverables",
+        "description": "Emerging compliance concern around EU AI Act applicability to",
+        "citations": [
+          "note_004.txt",
+          "note_023.txt",
+          "note_029.txt",
+          "note_030.txt",
+          "note_044.txt",
+          "note_054.txt",
+          "note_077.txt"
+        ],
+        "salience": "low"
+      },
+      {
+        "name": "Healthcare vertical expansion opportunity",
+        "description": "Q3 inbound healthcare enquiries up 3.5x year-over-year. Verdant",
+        "citations": [
+          "note_005.txt",
+          "note_028.txt",
+          "note_047.txt",
+          "note_063.txt",
+          "note_067.txt",
+          "vertical_decision_brief.txt",
+          "competitor_radar_q4.txt"
+        ],
+        "salience": "low"
+      },
+      {
+        "name": "Engineering attrition risk",
+        "description": "Engineering team attrition signals scattered across internal docs.",
+        "citations": [
+          "note_022.txt",
+          "note_049.txt",
+          "note_053.txt",
+          "note_063.txt",
+          "note_069.txt",
+          "integration_roadmap_internal.txt",
+          "interview_engineer_exit_20260815.txt"
+        ],
+        "salience": "low"
+      }
+    ],
+    "insights": [
+      {
+        "statement": "Apex Strategy Group is winning mid-market deals on a consistent 30-40% pricing differential, surfaced in three confirmed buyer conversations.",
+        "citations": [
+          "apex_brief.txt",
+          "q3_lost_deals.txt",
+          "note_001.txt"
+        ],
+        "confidence": "high"
+      },
+      {
+        "statement": "Native CRM integration (Salesforce, HubSpot) is the recurring deciding factor in mid-market buyer evaluations and a contributing reason in two confirmed losses.",
+        "citations": [
+          "note_024.txt",
+          "integration_roadmap_internal.txt",
+          "interview_helmsley_daniel_heath_20260919.txt"
+        ],
+        "confidence": "high"
+      },
+      {
+        "statement": "Healthcare inbound enquiries grew 3.5x year-over-year in Q3, but conversion is poor without verticalised credibility.",
+        "citations": [
+          "note_005.txt",
+          "vertical_decision_brief.txt",
+          "interview_healthcare_expert_20260818.txt"
+        ],
+        "confidence": "medium"
+      }
+    ],
+    "risks": [
+      {
+        "statement": "Two senior engineers signalling exit jeopardises the Salesforce connector commitment underpinning Lattice, Helmsley and BridgeWave renewals.",
+        "likelihood": "medium",
+        "impact": "high",
+        "citations": [
+          "note_022.txt",
+          "integration_roadmap_internal.txt",
+          "interview_engineer_exit_20260815.txt"
+        ]
+      },
+      {
+        "statement": "Top-3 client revenue concentration sits at ~49% of Q3 bookings, up from 41% prior year.",
+        "likelihood": "high",
+        "impact": "high",
+        "citations": [
+          "forecast_2027.txt",
+          "year_end_lessons_2026.txt",
+          "helmsley-renewal-brief.txt"
+        ]
+      },
+      {
+        "statement": "Onboarding friction in mid-market engagements is now a buyer-cited concern in renewal conversations.",
+        "likelihood": "medium",
+        "impact": "medium",
+        "citations": [
+          "onboarding_research.txt",
+          "onboarding_pilot_results.txt",
+          "interview_bridgewave_carlos_retro_20261020.txt"
+        ]
+      }
+    ],
+    "opportunities": [
+      {
+        "statement": "EU AI Act readiness work, anchored by the Crestline carve-out, opens a new advisory revenue stream with regulatory tailwind.",
+        "citations": [
+          "note_077.txt",
+          "interview_eu_ai_act_lawyer_20260925.txt",
+          "forecast_2027.txt"
+        ]
+      },
+      {
+        "statement": "Verdant pilot offers a credible first healthcare reference if Phase 2 conversion lands.",
+        "citations": [
+          "note_028.txt",
+          "vertical_decision_brief.txt",
+          "interview_healthcare_expert_20260818.txt"
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "description": "Confirm and stage the Salesforce connector commitment for delivery in H1 2027 ahead of top-account renewals.",
+        "owner": "Aisha Brennan",
+        "timeframe": "by end Jan 2027",
+        "citations": [
+          "integration_roadmap_internal.txt",
+          "note_024.txt",
+          "helmsley-renewal-brief.txt"
+        ]
+      },
+      {
+        "description": "Bring forward the engineering compensation review and complete retention conversations with at-risk seniors.",
+        "owner": "David Kowalski",
+        "timeframe": "by 31 Oct 2026",
+        "citations": [
+          "note_022.txt",
+          "interview_engineer_exit_20260815.txt"
+        ]
+      },
+      {
+        "description": "Decline price-matching against Apex; lead with senior involvement and reference customers in displaced deals.",
+        "owner": "Tom Whitaker",
+        "timeframe": "ongoing from October partner meeting",
+        "citations": [
+          "apex_brief.txt",
+          "note_034.txt",
+          "competitor_radar_q4.txt"
+        ]
+      }
+    ]
+  },
+  "assumptions": [
+    "Apex's pricing differential reflects scope or delivery quality differences not visible in our buyer signal.",
+    "Engineering attrition risk reads as elevated based on 1:1 signals; not all may convert to actual departures.",
+    "Healthcare conversion will track first-engagement outcome (Verdant) more than further inbound volume."
+  ],
+  "limitations": [
+    "Cross-document inference of revenue concentration relies on aggregating partial figures; not all client revenue is consistently disclosed in source docs.",
+    "Lost-deal reasons reflect engagement-lead inference where post-mortem interviews were not completed (5 of 9 Q3 losses).",
+    "Synthetic corpus: buyer sentiment patterns are stylised and may overstate cross-doc consistency."
+  ],
+  "metadata": {
+    "docs_processed": 101,
+    "model": "fixture/fake-good-v1",
+    "timestamp_utc": "2026-04-28T00:00:24.040526+00:00",
+    "total_tokens_input": 0,
+    "total_tokens_output": 0,
+    "estimated_cost_usd": 0.0,
+    "duration_seconds": 0.0
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "executive_summary": "Quarterly review identifies two main strands: pricing pressure from a competitor and an office relocation programme.",
+  "findings": {
+    "themes": [
+      {
+        "name": "Pricing pressure on renewals",
+        "description": "Multiple clients pushing back on renewal pricing, citing budget pressure and procurement-led benchmarking.",
+        "citations": ["note_001.txt", "note_011.txt", "note_014.txt"],
+        "salience": "high"
+      },
+      {
+        "name": "Office relocation and facilities programme",
+        "description": "Vine Street office move and IT helpdesk activity through Q3.",
+        "citations": ["note_006.txt", "note_031.txt", "it_helpdesk_thread.txt"],
+        "salience": "medium"
+      },
+      {
+        "name": "Consumer market expansion opportunity",
+        "description": "Several clients raising interest in consumer-side expansion as a growth lever.",
+        "citations": ["note_008.txt", "note_051.txt", "note_060.txt"],
+        "salience": "medium"
+      }
+    ],
+    "insights": [
+      {
+        "statement": "A new competitor named Apex is winning deals; pricing benchmark research underway in note_999.txt.",
+        "citations": ["apex_brief.txt", "note_999.txt"],
+        "confidence": "high"
+      }
+    ],
+    "risks": [
+      {
+        "statement": "Office move may disrupt productivity in October.",
+        "likelihood": "medium",
+        "impact": "low",
+        "citations": ["note_031.txt", "zoom_recording_notice.txt"]
+      }
+    ],
+    "opportunities": [
+      {
+        "statement": "Pivot to consumer market would open a meaningful growth surface.",
+        "citations": ["note_008.txt"]
+      }
+    ],
+    "actions": [
+      {
+        "description": "Confirm Vine Street facilities arrangements ahead of Q4 onboarding.",
+        "owner": "Olivia Brand",
+        "timeframe": "by end October",
+        "citations": ["note_031.txt"]
+      }
+    ]
+  },
+  "assumptions": [
+    "Apex pricing data is reliable as cited."
+  ],
+  "limitations": [
+    "Some context inferred from limited document sample."
+  ],
+  "metadata": {
+    "docs_processed": 101,
+    "model": "fixture/fake-bad-v1",
+    "timestamp_utc": "2026-12-31T00:00:00+00:00",
+    "total_tokens_input": 0,
+    "total_tokens_output": 0,
+    "estimated_cost_usd": 0.0,
+    "duration_seconds": 0.0
+  }
+}
