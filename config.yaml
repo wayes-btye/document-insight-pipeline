@@ -1,0 +1,60 @@
+# Default runtime configuration.
+# Every value here is overridable via CLI flags. The CLI is the source of truth at runtime;
+# this file is the default for "I haven't passed any flags."
+
+provider:
+  # Model identifier passed to OpenRouter. See https://openrouter.ai/models.
+  # Tool was developed and primarily tested against openai/gpt-4o-mini.
+  # Examples in .env.example.
+  model: openai/gpt-4o-mini
+  # Base URL for the provider. Default points at OpenRouter; switch only if mirroring.
+  base_url: https://openrouter.ai/api/v1
+  # Per-call timeout in seconds. The OpenAI SDK retries transient failures within this budget.
+  timeout_seconds: 60
+
+pipeline:
+  # Concurrency for the map stage. Bounded by an asyncio.Semaphore.
+  # Higher = faster, but watch upstream rate limits.
+  concurrency: 5
+  # Map-stage retries (on top of SDK-level retries) for schema-validation failures.
+  max_retries: 3
+  # Output file prefix. Tool writes <prefix>.md and <prefix>.json.
+  output_basename: summary_report
+  # "md", "json", or "both".
+  format: both
+
+cache:
+  # Content-hash cache for LLM responses, keyed on (model, messages, schema).
+  # Useful when iterating on the reduce/synthesise prompts: the per-doc map calls
+  # don't re-bill. Disabled by default in production.
+  enabled: false
+  directory: .cache
+
+cost:
+  # Indicative per-1M-token prices in USD. Used for the cost-estimate field in the report.
+  # Update from openrouter.ai/models if you switch model — pricing changes occasionally.
+  prices:
+    "openai/gpt-4o-mini":
+      input_per_million: 0.15
+      output_per_million: 0.60
+    "openai/gpt-4o":
+      input_per_million: 2.50
+      output_per_million: 10.00
+    "openai/gpt-4.1-mini":
+      input_per_million: 0.40
+      output_per_million: 1.60
+    "anthropic/claude-3-5-haiku":
+      input_per_million: 0.80
+      output_per_million: 4.00
+    "anthropic/claude-3-5-sonnet":
+      input_per_million: 3.00
+      output_per_million: 15.00
+    "anthropic/claude-sonnet-4":
+      input_per_million: 3.00
+      output_per_million: 15.00
+    "google/gemini-2.0-flash-exp":
+      input_per_million: 0.10
+      output_per_million: 0.40
+    "meta-llama/llama-3.3-70b-instruct":
+      input_per_million: 0.20
+      output_per_million: 0.30
