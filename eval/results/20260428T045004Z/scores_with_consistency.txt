@@ -1,0 +1,29 @@
+Eval against: examples/sample_summary_report.json
+Corpus:       /home/claude-user/repositories/document-insight-pipeline/input_docs (101 files)
+Manifest:     /home/claude-user/repositories/document-insight-pipeline/eval/manifest.yaml
+
+Tier 1 — hard constraints  (PASS)
+  OK  schema_validity                          1.000  == 1.0
+  OK  citation_hallucination_rate              0.000  <= 0.0
+  OK  required_fields_populated                1.000  == 1.0
+  OK  report_section_completeness              1.000  == 1.0
+
+Tier 2 — synthetic capability  (FAIL)
+  OK  high_theme_recall                        1.000  >= 0.85
+  XX  medium_theme_recall                      0.333  >= 0.7
+        surfaced=['onboarding_friction'] missed=['account_concentration_risk', 'partnership_relay']
+  OK  low_theme_recall                         0.667  >= 0.5
+  XX  citation_precision                       0.580  >= 0.9
+        
+          'Pricing Pressure' → pricing_pressure prec=0.55 bad=['apex_brief.txt', 'competitor_radar_q4.txt', 'helmsley-renewal-brief.txt', 'forecast_2027.txt', 'interview_eu_ai_act_lawyer_20260925.txt']
+          'Competitive Landscape Changes' → competitive_displacement_apex prec=0.67 bad=['interview_concorde_helena_20261005.txt', 'note_061.txt', 'note_073.txt']
+          'Client Engagement and Retention Risks' → mid_market_churn_risk prec=0.25 bad=['helmsley-renewal-brief.txt', 'interview_bridgewave_carlos_retro_20261020.txt', 'integration_roadmap_internal.txt']
+          'Onboarding Experience and Integration Challenges' → integration_gap prec=0.60 bad=['onboarding_pilot_results.txt', 'onboarding_research.txt']
+          'Market Growth Opportunities in Healthcare and EU Compliance' → eu_ai_act_compliance prec=0.67 bad=['interview_healthcare_expert_20260818.txt', 'year_end_lessons_2026.txt']
+          'Engineering Team and Talent Retention Concerns' → talent_retention_engineering prec=0.75 bad=['year_end_lessons_2026.txt']
+  XX  doc_coverage                             0.435  >= 0.75
+        uncited substantive docs: 52 (showing 5: ['interview_helmsley_daniel_heath_20260919.txt', 'interview_prospect_meridian_evaluation_20260930.txt', 'note_002.txt', 'note_003.txt', 'note_011.txt'])
+  OK  false_positive_rate_on_distractors       0.000  <= 0.1
+  XX  consistency_jaccard                      0.625  >= 0.65
+
+Overall: FAIL
