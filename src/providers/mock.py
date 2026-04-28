@@ -291,7 +291,14 @@ class MockProvider:
         return LLMResult(payload=cast(T, payload), usage=LLMUsage(input_tokens=in_tokens, output_tokens=out_tokens))
 
 
-_DOC_MARKER = re.compile(r"<<<DOCUMENT START>>>(.*?)<<<DOCUMENT END>>>", re.DOTALL)
+# The mock parses the same delimiters used in src.prompts.MAP_USER_TEMPLATE so it
+# can extract document body and source filename from the user message.
+_DOC_MARKER = re.compile(
+    r"<<<DOC_START_b8f3a7c2_e91d_4f5a_9c2b_1d2e3f4a5b6c>>>"
+    r"(.*?)"
+    r"<<<DOC_END_b8f3a7c2_e91d_4f5a_9c2b_1d2e3f4a5b6c>>>",
+    re.DOTALL,
+)
 _SOURCE_MARKER = re.compile(r"SOURCE_FILE:\s*(\S+)")
 
 

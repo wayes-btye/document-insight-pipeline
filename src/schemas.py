@@ -117,6 +117,7 @@ class SynthesisPayload(_Strict):
 
 class ReportMetadata(_Strict):
     docs_processed: int
+    docs_failed: int = 0
     model: str
     timestamp_utc: str
     total_tokens_input: int

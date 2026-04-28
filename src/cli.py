@@ -84,11 +84,19 @@ def _build_provider(args: argparse.Namespace, cfg: Config) -> LLMProvider:
         model=cfg.provider.model,
         base_url=cfg.provider.base_url,
         timeout_seconds=cfg.provider.timeout_seconds,
+        temperature=cfg.provider.temperature,
     )
 
 
 def _load_dotenv() -> None:
-    """Tiny .env loader so we don't depend on python-dotenv. Best-effort."""
+    """Tiny .env loader so we don't depend on python-dotenv. Best-effort.
+
+    Handles: blank lines, full-line comments, KEY=VALUE pairs with optional
+    surrounding double or single quotes, and trailing inline comments (` # ...`).
+    Does NOT support: multi-line values, escape sequences inside values,
+    unquoted values containing `#` characters. If you need those, install
+    python-dotenv and replace this.
+    """
     env_path = REPO_ROOT / ".env"
     if not env_path.exists():
         return
@@ -97,8 +105,22 @@ def _load_dotenv() -> None:
         if not line or line.startswith("#") or "=" not in line:
             continue
         k, _, v = line.partition("=")
-        k, v = k.strip(), v.strip().strip('"').strip("'")
-        os.environ.setdefault(k, v)
+        k = k.strip()
+        v = v.strip()
+        # Quoted value: take everything inside the matching closing quote;
+        # ignore anything after it (e.g. trailing inline comment).
+        if v.startswith(('"', "'")):
+            quote = v[0]
+            end = v.find(quote, 1)
+            if end != -1:
+                v = v[1:end]
+        else:
+            # Unquoted value: strip a trailing inline comment introduced by ` #`
+            comment_start = v.find(" #")
+            if comment_start != -1:
+                v = v[:comment_start].rstrip()
+        if k:
+            os.environ.setdefault(k, v)
 
 
 async def _amain(argv: list[str] | None = None) -> int:

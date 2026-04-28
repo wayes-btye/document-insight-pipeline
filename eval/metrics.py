@@ -262,49 +262,32 @@ def false_positive_rate_on_distractors(
       - any of its citations is to a pure_noise file.
     Macro across all surfaced items (themes, insights, risks, opportunities, actions).
     """
-    items = _item_texts(report)
-    if not items:
-        return 0.0, []
-
     distractor_aliases: list[str] = []
     for d in distractors:
         distractor_aliases.extend(_theme_aliases(d))
 
-    item_records: list[tuple[str, str]] = []
+    # Single pass: build (label, text, citations) tuples for every surfaced item.
+    items: list[tuple[str, str, list[str]]] = []
     for t in report.findings.themes:
-        item_records.append(("theme:" + t.name, _theme_text(t)))
-        if any(c in pure_noise for c in t.citations):
-            pass  # caught below
+        items.append(("theme:" + t.name, _theme_text(t), t.citations))
     for i in report.findings.insights:
-        item_records.append(("insight", _normalise(i.statement)))
+        items.append(("insight", _normalise(i.statement), i.citations))
     for r in report.findings.risks:
-        item_records.append(("risk", _normalise(r.statement)))
+        items.append(("risk", _normalise(r.statement), r.citations))
     for o in report.findings.opportunities:
-        item_records.append(("opportunity", _normalise(o.statement)))
+        items.append(("opportunity", _normalise(o.statement), o.citations))
     for a in report.findings.actions:
-        item_records.append(("action", _normalise(a.description)))
+        items.append(("action", _normalise(a.description), a.citations))
 
-    citations_per_item: list[list[str]] = []
-    for t in report.findings.themes:
-        citations_per_item.append(t.citations)
-    for i in report.findings.insights:
-        citations_per_item.append(i.citations)
-    for r in report.findings.risks:
-        citations_per_item.append(r.citations)
-    for o in report.findings.opportunities:
-        citations_per_item.append(o.citations)
-    for a in report.findings.actions:
-        citations_per_item.append(a.citations)
+    if not items:
+        return 0.0, []
 
     fps: list[str] = []
-    for (label, text), cites in zip(item_records, citations_per_item, strict=True):
-        is_fp = False
+    for label, text, cites in items:
         if _matches(text, distractor_aliases) or any(c in pure_noise for c in cites):
-            is_fp = True
-        if is_fp:
             fps.append(label)
 
-    return len(fps) / len(item_records), fps
+    return len(fps) / len(items), fps
 
 
 def consistency_jaccard(

@@ -14,6 +14,11 @@ class ProviderConfig:
     model: str = "openai/gpt-4o-mini"
     base_url: str = "https://openrouter.ai/api/v1"
     timeout_seconds: float = 60.0
+    # Default 0.3: balance between consistency and the pattern-matching that an insight
+    # task needs. Set to 0.0 for fully deterministic / reproducible runs (helpful when
+    # debugging the eval harness), set to 0.7+ for more creative theme phrasing.
+    # See docs/decisions.md "Temperature" entry.
+    temperature: float = 0.3
 
 
 @dataclass

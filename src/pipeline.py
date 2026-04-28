@@ -47,8 +47,10 @@ async def run_pipeline(
 
     # ---- Map ----
     log.info("map: %d docs, concurrency=%d, model=%s", len(docs), concurrency, provider.model)
-    extracts = await _run_map(provider, docs, concurrency=concurrency, cost=cost)
-    log.info("map: complete (%d extracts)", len(extracts))
+    extracts, failed_count = await _run_map(provider, docs, concurrency=concurrency, cost=cost)
+    if failed_count:
+        log.warning("map: %d of %d docs failed extraction (see prior warnings)", failed_count, len(docs))
+    log.info("map: complete (%d extracts, %d failed)", len(extracts), failed_count)
 
     # ---- Reduce ----
     log.info("reduce: aggregating %d extracts", len(extracts))
@@ -73,6 +75,7 @@ async def run_pipeline(
     duration = time.perf_counter() - started
     metadata = ReportMetadata(
         docs_processed=len(extracts),
+        docs_failed=failed_count,
         model=provider.model,
         timestamp_utc=datetime.now(UTC).isoformat(timespec="seconds"),
         total_tokens_input=cost.total_input_tokens,
@@ -96,17 +99,21 @@ async def _run_map(
     *,
     concurrency: int,
     cost: CostTracker,
-) -> list[PerDocExtract]:
+) -> tuple[list[PerDocExtract], int]:
+    """Map stage. Returns (extracts, failed_count)."""
     sem = asyncio.Semaphore(concurrency)
     results: list[PerDocExtract | None] = [None] * len(docs)
+    failed = 0
 
     async def worker(i: int, doc: Path) -> None:
+        nonlocal failed
         async with sem:
             try:
                 extract, result = await extract_one(provider, doc)
                 cost.add("map", result.usage)
                 results[i] = extract
             except Exception as exc:
+                failed += 1
                 log.warning("map: failed on %s: %s — emitting empty extract", doc.name, exc)
                 # Failure isolation: skip this doc rather than aborting the run.
                 results[i] = PerDocExtract(
@@ -120,7 +127,7 @@ async def _run_map(
                 )
 
     await asyncio.gather(*(worker(i, doc) for i, doc in enumerate(docs)))
-    return [r for r in results if r is not None]
+    return [r for r in results if r is not None], failed
 
 
 def _strip_unknown_citations(findings: AggregatedFindings, valid_files: set[str]) -> AggregatedFindings:
